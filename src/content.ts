@@ -7,6 +7,17 @@ export const conference = {
   organizers: ['IIT Roorkee', 'CSIR–IIP Dehradun', 'HKUST'],
 };
 
+/** Visible event copy stays here so the 2027 prototype cannot be mistaken for IAHS 2025. */
+export const siteCopy = {
+  edition: '[ Edition to be confirmed ]',
+  location: 'IIT Roorkee, India',
+  heroPhotoAlt: 'IIT Roorkee campus building',
+  registrationStatus: 'Registration details to be confirmed',
+  programmeStatus: 'Scientific programme to be confirmed',
+  contact: '[ Official conference email to be confirmed ]',
+  milestones: ['Call for Abstracts', 'Abstract Deadline', 'Early-Bird Registration Close', 'Scientific Assembly'],
+};
+
 export type Page = {
   slug: string;
   title: string;

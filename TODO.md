@@ -1,37 +1,22 @@
-# Organizer decisions and replacement checklist
+# Organizer decisions and launch checklist
 
 ## Identity and content
 
-- [ ] Confirm official conference name, acronym, theme, dates and timezone.
-- [ ] Confirm exact organizer names, display order and logo usage rules. Current order follows the brief: IIT Roorkee, CSIR–IIP Dehradun, HKUST.
-- [ ] Review the 19 inner pages; mark pages to keep, remove or add before launch.
-- [ ] Assign an owner to each page and provide approved text, contacts and policies.
-- [ ] Supply scientific and local committee names, roles, affiliations and portraits.
-- [ ] Supply important dates, session schedule, accepted abstracts, themes and presentation types.
-- [ ] Confirm venue building, campus directions, accessibility, travel and accommodation information.
-- [ ] Confirm sponsor/partner list and logo permissions.
+- [ ] Confirm the official 2027 name, theme, exact dates, and event timezone in `src/content.ts`.
+- [ ] Approve organizer names, order, and usage of each official logo.
+- [ ] Review the 19-page inventory and supply approved copy for each page.
+- [ ] Supply the scientific timetable, abstract dataset, programme book, speakers, committees, and important dates.
+- [ ] Confirm fees, registration rules, visa guidance, accommodation, transport, venue, and accessibility details.
 
-## Assets
+## Imagery and rights
 
-- [ ] Hero photograph: 1400 × 900 px slot.
-- [ ] Venue/campus photograph: 1200 × 800 px home slot; 1200 × 720 px inner-page slots.
-- [ ] Organizer logos: fit within 260 × 120 px slots, ideally SVG.
-- [ ] Sponsor logos: fit within 220 × 100 px slots.
-- [ ] Gallery/posters: 600 × 750 px portrait slots.
-- [ ] Supply additional destination, airport, campus and route images/maps as relevant.
-- [ ] Store approved files in `public/assets/` and replace each labeled `ImageSlot`.
+- [ ] Replace the generated campus hero with an approved 2027 photograph sized for a wide, full-bleed banner.
+- [ ] Supply an approved inner-page banner image if photography is desired.
+- [ ] Add approved organizer, partner, and sponsor marks to `public/assets/`.
+- [ ] Supply page-specific destination photos, maps, posters, and alt text.
 
 ## Workflows
 
-- [ ] Choose official registration/payment system and link.
-- [ ] Choose abstract submission system and link.
-- [ ] Decide whether newsletter signup is needed and provide privacy notice/service.
-- [ ] Provide event application, visa/clearance and sponsor enquiry destinations.
-- [ ] Decide whether programme data can ship as a static file and define its final search fields.
-
-## Before launch
-
-- [ ] Obtain safe reference screenshots for desktop/mobile visual comparison; original site certificate prevented direct browser inspection.
-- [ ] Replace all bracketed hints, sample timetable cells and demo search entries.
-- [ ] Add final alt text, review links and keyboard behavior, and check responsive layouts on devices.
-- [ ] Confirm hosting, domain, analytics/cookie policy, languages and final approval process.
+- [ ] Connect registration, abstract submission, newsletter, and sponsor enquiries to confirmed services.
+- [ ] Enable programme search only after approved records and filter fields are supplied.
+- [ ] Verify all content, links, responsive pages, keyboard behavior, and reduced motion on target devices before launch.

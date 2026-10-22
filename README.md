@@ -1,44 +1,32 @@
-# IIT Roorkee conference 2027 — UI concept
+# IIT Roorkee conference 2027 prototype
 
-Responsive React + TypeScript prototype for a 2027 conference organized by IIT Roorkee, CSIR–IIP Dehradun and HKUST. The [IAHS 2025 site](https://iahs2025.com/Homepage) informs the page structure and interaction patterns. The official 2027 name, theme, dates and almost all content are still unknown, so every provisional area is labeled in the UI. This is a local design review build with no backend, payments or submission handling.
+Static React + TypeScript conference site based on visual inspection of the [IAHS 2025 reference](https://iahs2025.com/Homepage) on 22 October 2026. The reference's dark overlaid header, campus hero composition, Poppins/Ubuntu typography, pink accent, colored countdown boxes, programme table, search fields, white logo cards, inner-page banner, and mobile menu informed this version.
 
-## Run locally
+The official 2027 conference name, theme, dates, schedule, registration system, speakers, policies, and most assets are still unknown. They remain visibly labeled as pending. The generated hero is a visual stand-in and **not an official IIT Roorkee photograph**. Organizer and sponsor marks are placeholders pending approval. The inner-page banner uses a CSS gradient until approved imagery is supplied.
 
-Requires Node.js 20.19+ or 22.12+.
+## Run
 
 ```bash
 npm install
 npm run dev
+npm run build
 ```
 
-Open the Local URL printed by Vite. To create a static production bundle, run `npm run build`; the output is in `dist/`. A static host must serve `index.html` for unknown paths so direct links such as `/registration` work.
+For direct links such as `/registration`, configure the static host to serve `index.html` for unknown routes.
 
-## Codebase map
+## Files
 
-| Location | Purpose |
+| File | Purpose |
 | --- | --- |
-| `src/main.tsx` | Shared header/footer, home sections, inner-page templates, navigation and demo programme search. |
-| `src/content.ts` | Event constants, page inventory and placeholder section descriptions. Start here when editing content or page order. |
-| `src/styles.css` | Responsive layout, colors, typography, buttons and focus states. |
-| `public/assets/` | Approved photos, logos, posters, maps and downloads when supplied. |
-| `TODO.md` | Content, workflow and design decisions that remain open. |
-| `AGENTS.md` | Maintenance conventions for future contributors and coding agents. |
+| `src/content.ts` | Event fields, page inventory, navigation, milestone labels, and page-specific hints. |
+| `src/main.tsx` | Shared header, footer, homepage and inner-page families. |
+| `src/styles.css` | Reference-inspired desktop and mobile styling, focus, and reduced-motion behavior. |
+| `public/assets/campus-hero-generated.png` | Generated campus-style hero stand-in. |
 
-## Updating the concept
+| `TODO.md` | Organizer inputs still needed for a production-ready site. |
 
-1. Change official event information in `src/content.ts`.
-2. Adjust the page list and navigation groups in the same file. Each `slug` becomes a page URL.
-3. Replace a white `ImageSlot` with an `<img>` that references `/assets/your-file.webp` or `/assets/your-logo.svg`. Preserve its intended aspect ratio and add meaningful `alt` text.
-4. Replace bracketed content hints and ghost lines with approved copy.
-5. Replace the `sampleSessions` demo records in `src/main.tsx` with a typed local data file when the programme is supplied. The search currently filters by text, theme and contribution type in the browser.
-6. Link buttons to the organizers' chosen registration, abstract, newsletter and other systems once confirmed.
+The 19 inner pages in `src/content.ts` remain reachable through the shared navigation. Forms and programme search are display-only until organizers provide a real destination and approved data. Logo blocks intentionally carry clear pending labels.
 
-No real form submits data. Sample timetable entries and search records are deliberately marked as examples. All 19 inner pages from the reference menu are represented so organizers can review what to keep or remove.
+## Verification
 
-## Design and reference limits
-
-The reference's public page inventory and homepage section sequence were inspected on 22 October 2026. A visual browser review was blocked by an expired certificate on the source site, so precise colors, fonts and animation have **not** been verified for pixel parity. This concept uses a blue, teal and warm accent academic style and should receive a side-by-side review when a safe reference or screenshots are available. Reference content, photos, logos and source code were not copied.
-
-## Accessibility and performance
-
-The design uses semantic links and headings, a skip link, visible keyboard focus, Escape to close menus, reduced-motion support, responsive tables with horizontal overflow, and no external fonts or image downloads. The current asset placeholders have explicit aspect ratios. Before launch, review final imagery, color contrast, real content semantics, keyboard navigation and device performance again.
+The production build succeeds. The homepage and scientific-program page were visually checked at desktop and mobile viewport sizes; keyboard focus and reduced-motion CSS remain present. Final content and approved marks should receive another responsive and accessibility review before launch.

@@ -50,11 +50,18 @@ export const pages: Page[] = [
   { slug: 'about-us', title: 'About Us', group: 'Other', intro: 'About the 2027 conference and its organizing institutions.', sections: [section('Conference vision', 'Add approved conference purpose and theme.'), section('Organizing institutions', 'Add approved institutional descriptions and links.', 'list')] },
 ];
 
-export const navGroups = [
-  { label: 'Programs', slugs: ['scientific-program', 'side-events', 'scientific-excursion'] },
-  { label: 'Attend', slugs: ['abstract-submission', 'author-guidelines', 'registration', 'participant-clearance', 'venue'] },
-  { label: 'Hospitality', slugs: ['about-roorkee', 'delhi-airport', 'reaching-roorkee', 'accommodation', 'campus-life', 'uttarakhand'] },
-  { label: 'Committee', slugs: ['scientific-committee', 'local-committee'] },
+export type NavItem = { kind: 'home' } | { kind: 'page'; slug: string } | { kind: 'group'; label: string; slugs: string[] };
+
+/** The complete primary navigation is kept beside the page inventory. */
+export const navigation: NavItem[] = [
+  { kind: 'home' },
+  { kind: 'group', label: 'Programs', slugs: ['scientific-program', 'side-events', 'scientific-excursion'] },
+  { kind: 'page', slug: 'sponsoring-exhibition' },
+  { kind: 'group', label: 'Attend', slugs: ['abstract-submission', 'author-guidelines', 'registration', 'participant-clearance', 'venue'] },
+  { kind: 'group', label: 'Hospitality', slugs: ['about-roorkee', 'delhi-airport', 'reaching-roorkee', 'accommodation', 'campus-life', 'uttarakhand'] },
+  { kind: 'group', label: 'Committee', slugs: ['scientific-committee', 'local-committee'] },
+  { kind: 'page', slug: 'newsletter' },
+  { kind: 'page', slug: 'about-us' },
 ];
 
 export const pathFor = (slug: string) => `/${slug}`;

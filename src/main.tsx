@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { conference, navGroups, pages, pathFor, siteCopy, type Page } from './content';
+import { conference, navigation, pages, pathFor, siteCopy, type Page } from './content';
 import './styles.css';
 
 const pageBySlug = new Map(pages.map((page) => [page.slug, page]));
@@ -22,16 +22,16 @@ function Header() {
     <div className="organizer-marks" aria-label="Other organizer identities pending approval">{conference.organizers.slice(1).map(name => <span key={name}>{name}</span>)}</div>
     <button className="menu-toggle" type="button" aria-expanded={mobileOpen} aria-controls="main-navigation" onClick={() => setMobileOpen(!mobileOpen)}><span className="menu-lines" aria-hidden="true">☰</span><span className="sr-only">{mobileOpen ? 'Close menu' : 'Open menu'}</span></button>
   </div><nav id="main-navigation" className={`site-nav ${mobileOpen ? 'open' : ''}`} aria-label="Main navigation"><div className="shell nav-inner">
-    <a href="/" aria-current={location.pathname === '/' ? 'page' : undefined}>Home</a>
-    <NavGroup {...navGroups[0]} open={openGroup === navGroups[0].label} setOpen={setOpenGroup}/>
-    <a href="/sponsoring-exhibition">Sponsoring &amp; Exhibition</a>
-    {navGroups.slice(1).map(group => <NavGroup key={group.label} {...group} open={openGroup === group.label} setOpen={setOpenGroup}/>)}
-    <a href="/newsletter">Newsletter</a><a href="/about-us">About Us</a>
+    {navigation.map(item => item.kind === 'page'
+      ? <a key={item.slug} href={pathFor(item.slug)} aria-current={location.pathname.replace(/\/$/, '') === pathFor(item.slug) ? 'page' : undefined}>{pageBySlug.get(item.slug)?.title}</a>
+      : item.kind === 'home'
+        ? <a key="home" href="/" aria-current={location.pathname === '/' ? 'page' : undefined}>Home</a>
+        : <NavGroup key={item.label} {...item} open={openGroup === item.label} setOpen={setOpenGroup}/>) }
   </div></nav></header>;
 }
 
 function NavGroup({ label, slugs, open, setOpen }: { label: string; slugs: string[]; open: boolean; setOpen: (value: string | null) => void }) {
-  return <div className={`nav-group ${open ? 'open' : ''}`}><button type="button" aria-expanded={open} onClick={() => setOpen(open ? null : label)}>{label}<span aria-hidden="true">⌄</span></button><div className="nav-dropdown">{slugs.map(slug => <a key={slug} href={pathFor(slug)}>{pageBySlug.get(slug)?.title}</a>)}</div></div>;
+  return <div className={`nav-group ${open ? 'open' : ''}`}><button type="button" aria-expanded={open} onClick={() => setOpen(open ? null : label)}>{label}<span aria-hidden="true">⌄</span></button><div className="nav-dropdown">{slugs.map(slug => <a key={slug} href={pathFor(slug)} aria-current={location.pathname.replace(/\/$/, '') === pathFor(slug) ? 'page' : undefined}>{pageBySlug.get(slug)?.title}</a>)}</div></div>;
 }
 
 function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
@@ -70,7 +70,7 @@ function DetailBody({ item }: { item: Page['sections'][number] }) {
 }
 
 function InnerPage({ page }: { page: Page }) {
-  return <main id="main"><div className="inner-banner"><h1>{page.title}</h1></div><section className="content-section shell inner-content"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span>{page.group}</span><span>›</span><strong>{page.title}</strong></nav><SectionHeading eyebrow="VARIOUS" title={page.title}/><p className="inner-intro">{page.intro}</p><div className="inner-layout"><div className="detail-content">{page.sections.map((item,index)=><section className="detail-block" id={`section-${index}`} key={item.title}><h3>{item.title}</h3><DetailBody item={item}/></section>)}</div><aside className="page-sidebar"><h3>On this page</h3>{page.sections.map((item,index)=><a href={`#section-${index}`} key={item.title}>{item.title}</a>)}<h3>Related pages</h3>{pages.filter(other=>other.group===page.group&&other.slug!==page.slug).slice(0,4).map(other=><a href={pathFor(other.slug)} key={other.slug}>{other.title}</a>)}</aside></div></section><section className="inner-callout"><div className="shell"><b>Explore the event</b><span>Continue planning your visit</span><a href="/registration">Registration ›</a><a href="/reaching-roorkee">Travel ›</a></div></section></main>;
+  return <main id="main"><div className="inner-banner"><h1>{page.title}</h1></div><section className="content-section shell inner-content"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span>{page.group}</span><span>›</span><strong>{page.title}</strong></nav><SectionHeading eyebrow="VARIOUS" title={page.title}/><p className="inner-intro">{page.intro}</p><div className="content-status" role="note"><b>Page structure ready for organizer review</b><span>Section headings are planned. Event details, links, images and policies will be added after confirmation.</span></div><div className="inner-layout"><div className="detail-content">{page.sections.map((item,index)=><section className="detail-block" id={`section-${index}`} key={item.title}><h3>{item.title}</h3><DetailBody item={item}/></section>)}</div><aside className="page-sidebar"><h3>On this page</h3>{page.sections.map((item,index)=><a href={`#section-${index}`} key={item.title}>{item.title}</a>)}<h3>Related pages</h3>{pages.filter(other=>other.group===page.group&&other.slug!==page.slug).slice(0,4).map(other=><a href={pathFor(other.slug)} key={other.slug}>{other.title}</a>)}</aside></div></section><section className="inner-callout"><div className="shell"><b>Explore the event</b><span>Continue planning your visit</span><a href="/registration">Registration ›</a><a href="/reaching-roorkee">Travel ›</a></div></section></main>;
 }
 
 function Footer() {

@@ -25,7 +25,7 @@ For direct links such as `/registration`, configure the static host to serve `in
 
 | `TODO.md` | Organizer inputs still needed for a production-ready site. |
 
-The 19 inner pages in `src/content.ts` remain reachable through the shared navigation. Forms and programme search are display-only until organizers provide a real destination and approved data. Logo blocks intentionally carry clear pending labels.
+All 19 inner pages in `src/content.ts` now have a reviewable structure with page-specific section headings, organizer handover hints, shared breadcrumbs, related links, and a content-pending notice. The complete primary navigation is also defined in `src/content.ts`, so its links and page inventory stay together. Forms and programme search are display-only until organizers provide a real destination and approved data. Logo blocks intentionally carry clear pending labels.
 
 ## Verification
 

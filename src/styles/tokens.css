@@ -1,0 +1,21 @@
+:root {
+  color-scheme: light;
+  --ink: #10263f;
+  --river: #1f5f8b;
+  --shallows: #dce9f1;
+  --paper: #fbfcfd;
+  --silt: #6b6a60;
+  --marigold: #d8962a;
+  --hairline: rgba(107, 106, 96, 0.4);
+  --radius: 4px;
+  --container: 1120px;
+  --gutter: 24px;
+  --body-font: "Public Sans", Arial, sans-serif;
+  --heading-font: "Newsreader", Georgia, serif;
+  --body-size: 17px;
+  --small-size: 14px;
+  --heading-3-size: 22px;
+  --heading-2-size: 34px;
+  --heading-1-size: 52px;
+  --section-space: 96px;
+}

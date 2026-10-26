@@ -1,0 +1,261 @@
+{
+  "groups": [
+    {
+      "id": "patron",
+      "title": "Patron",
+      "layout": "featured",
+      "members": [
+        {
+          "id": "patron-1",
+          "name": "Placeholder name",
+          "role": "Director, IIT Roorkee",
+          "photo": {
+            "src": "/placeholders/portrait.svg",
+            "alt": "Placeholder portrait for the Patron",
+            "focus": "center"
+          },
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "leadership",
+      "title": "",
+      "layout": "pair",
+      "members": [
+        {
+          "id": "lead-1",
+          "name": "Placeholder name",
+          "role": "Director, CSIR-IIP Dehradun",
+          "placeholder": true
+        },
+        {
+          "id": "lead-2",
+          "name": "Placeholder name",
+          "role": "Professor, HKUST",
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "conveners",
+      "title": "Conveners",
+      "layout": "grid",
+      "members": [
+        {
+          "id": "convener-a",
+          "name": "Placeholder convener A",
+          "role": "Convener",
+          "placeholder": true
+        },
+        {
+          "id": "convener-b",
+          "name": "Placeholder convener B",
+          "role": "Convener",
+          "placeholder": true
+        },
+        {
+          "id": "convener-c",
+          "name": "Placeholder convener C",
+          "role": "Convener",
+          "placeholder": true
+        },
+        {
+          "id": "convener-d",
+          "name": "Placeholder convener D",
+          "role": "Convener",
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "advisory",
+      "title": "Advisory committee",
+      "layout": "list",
+      "members": [
+        {
+          "id": "advisor-1",
+          "name": "Placeholder member A",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "advisor-2",
+          "name": "Placeholder member B",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "advisor-3",
+          "name": "Placeholder member C",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "advisor-4",
+          "name": "Placeholder member D",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "advisor-5",
+          "name": "Placeholder member E",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "advisor-6",
+          "name": "Placeholder member F",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "advisor-7",
+          "name": "Placeholder member G",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "advisor-8",
+          "name": "Placeholder member H",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "organising",
+      "title": "Organising committee",
+      "layout": "list",
+      "members": [
+        {
+          "id": "organiser-1",
+          "name": "Placeholder member A",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-2",
+          "name": "Placeholder member B",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-3",
+          "name": "Placeholder member C",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-4",
+          "name": "Placeholder member D",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-5",
+          "name": "Placeholder member E",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-6",
+          "name": "Placeholder member F",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-7",
+          "name": "Placeholder member G",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-8",
+          "name": "Placeholder member H",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-9",
+          "name": "Placeholder member I",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-10",
+          "name": "Placeholder member J",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-11",
+          "name": "Placeholder member K",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-12",
+          "name": "Placeholder member L",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-13",
+          "name": "Placeholder member M",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        },
+        {
+          "id": "organiser-14",
+          "name": "Placeholder member N",
+          "affiliation": "Placeholder affiliation",
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "students",
+      "title": "Student council",
+      "layout": "grid",
+      "members": [
+        {
+          "id": "student-1",
+          "name": "Placeholder member A",
+          "role": "Placeholder role A",
+          "placeholder": true
+        },
+        {
+          "id": "student-2",
+          "name": "Placeholder member B",
+          "role": "Placeholder role B",
+          "placeholder": true
+        },
+        {
+          "id": "student-3",
+          "name": "Placeholder member C",
+          "role": "Placeholder role C",
+          "placeholder": true
+        },
+        {
+          "id": "student-4",
+          "name": "Placeholder member D",
+          "role": "Placeholder role D",
+          "placeholder": true
+        },
+        {
+          "id": "student-5",
+          "name": "Placeholder member E",
+          "role": "Placeholder role E",
+          "placeholder": true
+        },
+        {
+          "id": "student-6",
+          "name": "Placeholder member F",
+          "role": "Placeholder role F",
+          "placeholder": true
+        }
+      ]
+    }
+  ]
+}

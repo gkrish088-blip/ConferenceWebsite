@@ -1,0 +1,45 @@
+{
+  "description": "Placeholder: Replace with a two or three paragraph description of the conference.\n\nPlaceholder: Add a short paragraph describing the academic focus and intended audience.\n\nPlaceholder: Add a short paragraph about the participating institutions.",
+  "institutions": [
+    {
+      "id": "iitr",
+      "name": "IIT Roorkee",
+      "logo": {
+        "src": "/assets/logos/iitr.svg",
+        "alt": "Placeholder logo for IIT Roorkee",
+        "focus": "center"
+      },
+      "description": "Placeholder: Add a short, approved description of IIT Roorkee.",
+      "url": "#",
+      "linkLabel": "Institution link placeholder",
+      "placeholder": true
+    },
+    {
+      "id": "csir-iip",
+      "name": "CSIR-IIP",
+      "logo": {
+        "src": "/assets/logos/csir-iip.svg",
+        "alt": "Placeholder logo for CSIR-IIP",
+        "focus": "center"
+      },
+      "description": "Placeholder: Add a short, approved description of CSIR-IIP.",
+      "url": "#",
+      "linkLabel": "Institution link placeholder",
+      "placeholder": true
+    },
+    {
+      "id": "hkust",
+      "name": "HKUST",
+      "logo": {
+        "src": "/assets/logos/hkust.svg",
+        "alt": "Placeholder logo for HKUST",
+        "focus": "center"
+      },
+      "description": "Placeholder: Add a short, approved description of HKUST.",
+      "url": "#",
+      "linkLabel": "Institution link placeholder",
+      "placeholder": true
+    }
+  ],
+  "placeholder": true
+}

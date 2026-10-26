@@ -1,0 +1,24 @@
+{
+  "persons": [
+    {
+      "id": "contact-a",
+      "name": "Placeholder contact A",
+      "role": "Placeholder role",
+      "email": "contact-a@example.org",
+      "phone": "",
+      "placeholder": true
+    },
+    {
+      "id": "contact-b",
+      "name": "Placeholder contact B",
+      "role": "Placeholder role",
+      "email": "contact-b@example.org",
+      "phone": "",
+      "placeholder": true
+    }
+  ],
+  "address": "Placeholder address: Department of Hydrology, IIT Roorkee, Roorkee, Uttarakhand, India.",
+  "mapUrl": "#",
+  "mapLabel": "Map link placeholder",
+  "placeholder": true
+}

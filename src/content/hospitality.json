@@ -1,0 +1,84 @@
+{
+  "intro": "Placeholder: Add a short hospitality introduction. See [arrival information](#hospitality-exit-delhi-t3) and [accommodation details](#hospitality-accommodation) when they are available.",
+  "items": [
+    {
+      "id": "about-roorkee",
+      "title": "About Roorkee",
+      "body": "Placeholder: Add approved visitor information about Roorkee.",
+      "images": [
+        {
+          "src": "/placeholders/hospitality.svg",
+          "alt": "Placeholder hospitality image for About Roorkee",
+          "focus": "center"
+        }
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "exit-delhi-t3",
+      "title": "How To Exit Delhi Airport T3",
+      "body": "Placeholder: Add approved arrival guidance for Delhi Airport Terminal 3.",
+      "images": [
+        {
+          "src": "/placeholders/hospitality.svg",
+          "alt": "Placeholder hospitality image for Delhi Airport T3",
+          "focus": "center"
+        }
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "reach-iitr",
+      "title": "How To Reach IIT Roorkee",
+      "body": "Placeholder: Add approved rail, road and local travel guidance.",
+      "images": [
+        {
+          "src": "/placeholders/hospitality.svg",
+          "alt": "Placeholder hospitality image for travel to IIT Roorkee",
+          "focus": "center"
+        }
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "accommodation",
+      "title": "Accommodation",
+      "body": "Placeholder: Add approved accommodation options and booking information.",
+      "images": [
+        {
+          "src": "/placeholders/hospitality.svg",
+          "alt": "Placeholder accommodation image",
+          "focus": "center"
+        }
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "life-and-food",
+      "title": "Life And Food At IIT Roorkee",
+      "body": "Placeholder: Add approved campus, food and accessibility information.",
+      "images": [
+        {
+          "src": "/placeholders/hospitality.svg",
+          "alt": "Placeholder campus and dining image",
+          "focus": "center"
+        }
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "uttarakhand",
+      "title": "Uttarakhand Destination",
+      "body": "Placeholder: Add approved regional visitor information.",
+      "images": [
+        {
+          "src": "/placeholders/hospitality.svg",
+          "alt": "Placeholder regional destination image",
+          "focus": "center"
+        }
+      ],
+      "placeholder": true
+    }
+  ],
+  "placeholder": true
+}

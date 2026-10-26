@@ -1,0 +1,45 @@
+{
+  "details": "Placeholder: Add approved registration details, fee notes and instructions for attendees.",
+  "sponsorshipHeading": "Sponsorship",
+  "sponsorshipIntro": "Placeholder: Add a one-line introduction to the sponsorship tiers.",
+  "links": [
+    { "label": "Register", "url": "#", "placeholder": true },
+    { "label": "Submit an abstract", "url": "#", "placeholder": true }
+  ],
+  "tiers": [
+    {
+      "id": "tier-a",
+      "name": "Tier A placeholder",
+      "amount": "Placeholder amount",
+      "benefits": [
+        "Placeholder benefit one",
+        "Placeholder benefit two",
+        "Placeholder benefit three"
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "tier-b",
+      "name": "Tier B placeholder",
+      "amount": "Placeholder amount",
+      "benefits": [
+        "Placeholder benefit one",
+        "Placeholder benefit two",
+        "Placeholder benefit three"
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "tier-c",
+      "name": "Tier C placeholder",
+      "amount": "Placeholder amount",
+      "benefits": [
+        "Placeholder benefit one",
+        "Placeholder benefit two",
+        "Placeholder benefit three"
+      ],
+      "placeholder": true
+    }
+  ],
+  "placeholder": true
+}

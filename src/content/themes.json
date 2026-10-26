@@ -1,0 +1,54 @@
+{
+  "placeholder": true,
+  "emptyText": "Placeholder: Themes to be announced.",
+  "items": [
+    {
+      "id": "theme-1",
+      "title": "Theme 1 placeholder",
+      "summary": "Placeholder: Add a one-line theme description.",
+      "placeholder": true
+    },
+    {
+      "id": "theme-2",
+      "title": "Theme 2 placeholder",
+      "summary": "Placeholder: Add a one-line theme description.",
+      "placeholder": true
+    },
+    {
+      "id": "theme-3",
+      "title": "Theme 3 placeholder",
+      "summary": "Placeholder: Add a one-line theme description.",
+      "placeholder": true
+    },
+    {
+      "id": "theme-4",
+      "title": "Theme 4 placeholder",
+      "summary": "Placeholder: Add a one-line theme description.",
+      "placeholder": true
+    },
+    {
+      "id": "theme-5",
+      "title": "Theme 5 placeholder",
+      "summary": "Placeholder: Add a one-line theme description.",
+      "placeholder": true
+    },
+    {
+      "id": "theme-6",
+      "title": "Theme 6 placeholder",
+      "summary": "Placeholder: Add a one-line theme description.",
+      "placeholder": true
+    },
+    {
+      "id": "theme-7",
+      "title": "Theme 7 placeholder",
+      "summary": "Placeholder: Add a one-line theme description.",
+      "placeholder": true
+    },
+    {
+      "id": "theme-8",
+      "title": "Theme 8 placeholder",
+      "summary": "Placeholder: Add a one-line theme description.",
+      "placeholder": true
+    }
+  ]
+}

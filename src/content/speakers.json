@@ -1,0 +1,94 @@
+{
+  "guestHeading": "Guest of Honor",
+  "delegatesHeading": "Delegates",
+  "placeholderPhoto": {
+    "src": "/placeholders/portrait.svg",
+    "alt": "Placeholder portrait for a conference participant",
+    "focus": "center"
+  },
+  "guestsOfHonor": [
+    {
+      "id": "guest-of-honor-1",
+      "name": "Placeholder name",
+      "role": "Placeholder role",
+      "affiliation": "Placeholder institution",
+      "bio": "Placeholder: Add one approved sentence about the Guest of Honor.",
+      "photo": {
+        "src": "/placeholders/portrait.svg",
+        "alt": "Placeholder portrait for the Guest of Honor",
+        "focus": "center"
+      },
+      "placeholder": true
+    }
+  ],
+  "delegates": [
+    {
+      "id": "delegate-1",
+      "name": "Placeholder delegate A",
+      "affiliation": "Placeholder institution",
+      "photo": {
+        "src": "/placeholders/portrait.svg",
+        "alt": "Placeholder portrait for delegate A",
+        "focus": "center"
+      },
+      "placeholder": true
+    },
+    {
+      "id": "delegate-2",
+      "name": "Placeholder delegate B",
+      "affiliation": "Placeholder institution",
+      "photo": {
+        "src": "/placeholders/portrait.svg",
+        "alt": "Placeholder portrait for delegate B",
+        "focus": "center"
+      },
+      "placeholder": true
+    },
+    {
+      "id": "delegate-3",
+      "name": "Placeholder delegate C",
+      "affiliation": "Placeholder institution",
+      "photo": {
+        "src": "/placeholders/portrait.svg",
+        "alt": "Placeholder portrait for delegate C",
+        "focus": "center"
+      },
+      "placeholder": true
+    },
+    {
+      "id": "delegate-4",
+      "name": "Placeholder delegate D",
+      "affiliation": "Placeholder institution",
+      "photo": {
+        "src": "/placeholders/portrait.svg",
+        "alt": "Placeholder portrait for delegate D",
+        "focus": "center"
+      },
+      "placeholder": true
+    },
+    {
+      "id": "delegate-5",
+      "name": "Placeholder delegate E",
+      "affiliation": "Placeholder institution",
+      "photo": {
+        "src": "/placeholders/portrait.svg",
+        "alt": "Placeholder portrait for delegate E",
+        "focus": "center"
+      },
+      "placeholder": true
+    },
+    {
+      "id": "delegate-6",
+      "name": "Placeholder delegate F",
+      "affiliation": "Placeholder institution",
+      "photo": {
+        "src": "/placeholders/portrait.svg",
+        "alt": "Placeholder portrait for delegate F",
+        "focus": "center"
+      },
+      "placeholder": true
+    }
+  ],
+  "emptyDelegatesText": "To be announced.",
+  "placeholder": true
+}

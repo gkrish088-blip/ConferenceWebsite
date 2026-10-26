@@ -1,28 +1,40 @@
-# Organizer decisions and launch checklist
+# Content to confirm with the organizers
 
-## Identity and content
+Replace placeholders in `src/content/*.json` only with confirmed, approved information. Keep placeholder flags accurate until replacement data is ready.
 
-- [ ] Confirm the official 2027 name, theme, exact dates, and event timezone in `src/content.ts`.
-- [ ] Approve organizer names, order, and usage of each official logo.
-- [ ] Review the 19-page skeletons and section headings, then supply approved copy for each page.
-- [ ] Supply the scientific timetable, abstract dataset, programme book, speakers, committees, and important dates.
-- [ ] Confirm fees, registration rules, visa guidance, accommodation, transport, venue, and accessibility details.
+## Event identity and programme
 
-## Imagery and rights
+- [ ] Official full and short conference names and approved description.
+- [ ] Exact event dates, local time and venue details.
+- [ ] Approved names and descriptions for the three institutions, plus their destination URLs and official marks.
+- [ ] Theme titles and short descriptions.
+- [ ] Milestone names, dates and notes.
 
-- [ ] Replace the generated campus hero with an approved 2027 photograph sized for a wide, full-bleed banner.
-- [ ] Supply an approved inner-page banner image if photography is desired.
-- [ ] Add approved organizer, partner, and sponsor marks to `public/assets/`.
-- [ ] Supply page-specific destination photos, maps, posters, and alt text.
+## Speakers and committee
 
-## Workflows
+- [ ] Guest of Honor name, role, affiliation, approved biography and portrait.
+- [ ] Six delegate names, affiliations and approved portraits.
+- [ ] Patron and both institution leadership names and roles.
+- [ ] Four Convener names.
+- [ ] Eight Advisory Committee members.
+- [ ] Fourteen Organising Committee members.
+- [ ] Six Student Council members and roles.
 
-- [ ] Connect registration, abstract submission, newsletter, and sponsor enquiries to confirmed services.
-- [ ] Enable programme search only after approved records and filter fields are supplied.
-- [ ] Verify all content, links, responsive pages, keyboard behavior, and reduced motion on target devices before launch.
+## Registration and contact
 
-## Prototype structure
+- [ ] Registration details and approved registration and abstract submission URLs.
+- [ ] Sponsorship tier names, amounts and three approved benefits per tier.
+- [ ] Two contact persons, roles and email addresses.
+- [ ] Official mailing address and map URL.
 
-- [x] Add a page skeleton for every page in the primary navigation.
-- [x] Keep the primary navigation and page inventory together in `src/content.ts`.
-- [x] Mark every inner page as ready for organizer review while keeping unconfirmed details visibly pending.
+## Hospitality
+
+- [ ] Short approved introduction and the copy for all six hospitality topics.
+- [ ] One approved image and useful alt text for each topic.
+- [ ] Confirm airport, travel, accommodation, campus, food and regional visitor guidance.
+
+## Launch review
+
+- [ ] Replace placeholder logos, portraits and hospitality images with approved assets.
+- [ ] Run `npm run validate:content`, `npm run report:placeholders`, both builds and the verification checklist.
+- [ ] Run `npm run check:launch` after every placeholder has been replaced.

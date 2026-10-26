@@ -1,10 +1,11 @@
 # Working on this prototype
 
-- Keep this a small React + TypeScript static site unless approved workflows require server features.
-- Put event-specific content and the page inventory in `src/content.ts`. Avoid repeating dates, titles and organizer names in components.
-- Keep shared UI in `src/main.tsx` until component size justifies splitting into focused files. Explain non-obvious behavior in comments; prefer clear names over commentary on each line.
-- Put approved images and logos in `public/assets/`; do not embed third-party imagery or unapproved organizer marks.
-- Preserve the page families, shared navigation, breadcrumb, callout and footer patterns when editing.
-- Mark unknown content clearly. Do not present invented sample fees, dates, speakers or policies as real.
-- Check desktop and mobile layout, keyboard focus and reduced-motion behavior for changes affecting UI.
+- Keep this a small React + TypeScript static site. Do not add server features or dependencies beyond `docs/00-decisions.md` without approval.
+- Put all visible event-specific content and the page inventory in schema-validated JSON under `src/content/`. Do not hardcode event copy in React components.
+- Keep shared UI in focused files under `src/components/`; use `src/sections/` for page sections and `src/app/` for entry page composition.
+- Put approved images and logos in `public/assets/`. Keep placeholder art clearly labeled and do not use unapproved organizer marks or third-party imagery.
+- Preserve the one-page section navigation, identity band, shared footer, hospitality accordions and separate countdown launch mode.
+- Mark unknown content clearly and set `placeholder: true`. Do not present invented names, facts, dates, fees, speakers, policies or addresses as real.
+- Follow the palette, typography and layout rules in `docs/03-design-choices.md` and the behavior requirements in `docs/04-section-specs.md`.
+- Check desktop and mobile layout, keyboard focus, reduced-motion behavior, content validation and both launch builds when changes affect the site.
 - Update `README.md` and `TODO.md` when the page map, workflows or content ownership changes.

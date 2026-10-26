@@ -1,5 +1,3 @@
-# Approved media goes here
+# Local conference assets
 
-`campus-hero-generated.png` is an AI-generated visual stand-in, not an official campus photograph.
-
-Replace remaining logo and page-image placeholders with approved files here. Prefer descriptive names such as `hero-roorkee.webp`, `iitr-logo.svg`, and `venue-hall.webp`. Preserve the component aspect ratios and provide meaningful alt text.
+Institution logo SVGs are neutral placeholders until approved marks are supplied. Portrait and hospitality image placeholders live in `public/placeholders/`. Real images and logos should only replace these after organizer approval and should remain local to the site.

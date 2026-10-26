@@ -1,32 +1,44 @@
-# IIT Roorkee conference 2027 prototype
+# IIT Roorkee conference website
 
-Static React + TypeScript conference site based on visual inspection of the [IAHS 2025 reference](https://iahs2025.com/Homepage) on 22 October 2026. The reference's dark overlaid header, campus hero composition, Poppins/Ubuntu typography, pink accent, colored countdown boxes, programme table, search fields, white logo cards, inner-page banner, and mobile menu informed this version.
+A static React and TypeScript conference site. The main page is a single, data-driven page; the countdown landing page is available as `/countdown/` in the full build and as `/` in the landing build. Event copy and the page inventory live in schema-validated JSON files under `src/content/`.
 
-The official 2027 conference name, theme, dates, schedule, registration system, speakers, policies, and most assets are still unknown. They remain visibly labeled as pending. The generated hero is a visual stand-in and **not an official IIT Roorkee photograph**. Organizer and sponsor marks are placeholders pending approval. The inner-page banner uses a CSS gradient until approved imagery is supplied.
+## Page map
 
-## Run
+| Route | Purpose |
+| --- | --- |
+| `/` | Main conference page: overview, institutions, themes, dates, speakers, committee, registration, hospitality and contact. |
+| `/countdown/` | Countdown landing page in the full build. |
+| `/` | Countdown landing page in the landing-only build. |
+
+The main navigation uses section anchors. Hospitality has six independent accordion items with direct hash links such as `/#hospitality-accommodation`.
+
+## Run locally
 
 ```bash
 npm install
 npm run dev
-npm run build
 ```
 
-For direct links such as `/registration`, configure the static host to serve `index.html` for unknown routes.
+## Checks and builds
 
-## Files
+```bash
+npm run lint
+npm run typecheck
+npm test
+npm run validate:content
+npm run report:placeholders
+npm run build:landing
+npm run build:full
+npm run capture:screenshots
+```
 
-| File | Purpose |
-| --- | --- |
-| `src/content.ts` | Event fields, page inventory, navigation, milestone labels, and page-specific hints. |
-| `src/main.tsx` | Shared header, footer, homepage and inner-page families. |
-| `src/styles.css` | Reference-inspired desktop and mobile styling, focus, and reduced-motion behavior. |
-| `public/assets/campus-hero-generated.png` | Generated campus-style hero stand-in. |
+`npm run build:landing` writes the countdown site to `dist/`. `npm run build:full` writes the main site and `/countdown/` entry to `dist/`. The landing build serves the countdown page at `/`; the full build serves the main page at `/` and the countdown at `/countdown/`. `npm run check:launch` intentionally fails until placeholder event data and links have been replaced with approved details.
 
-| `TODO.md` | Organizer inputs still needed for a production-ready site. |
+## Content and assets
 
-All 19 inner pages in `src/content.ts` now have a reviewable structure with page-specific section headings, organizer handover hints, shared breadcrumbs, related links, and a content-pending notice. The complete primary navigation is also defined in `src/content.ts`, so its links and page inventory stay together. Forms and programme search are display-only until organizers provide a real destination and approved data. Logo blocks intentionally carry clear pending labels.
+- `src/content/*.json` owns event copy, page inventory, labels, links, dates, people, hospitality topics and accessibility strings. `src/content/schema.ts` validates the data.
+- `src/main.tsx`, `src/app/`, `src/components/` and `src/sections/` render the shared page patterns from those JSON records.
+- `public/assets/logos/` and `public/placeholders/` contain neutral placeholders. Replace them only with approved marks and imagery.
+- `docs/` contains the supplied decisions, architecture, design and section requirements. `skills/verify-site/SKILL.md` contains the verification checklist.
 
-## Verification
-
-The production build succeeds. The homepage and scientific-program page were visually checked at desktop and mobile viewport sizes; keyboard focus and reduced-motion CSS remain present. Final content and approved marks should receive another responsive and accessibility review before launch.
+Every unconfirmed event-specific item is marked as a placeholder. Do not present example names, dates, costs, biographies, policies or destinations as verified information.

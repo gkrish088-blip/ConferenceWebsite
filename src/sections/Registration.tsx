@@ -12,6 +12,29 @@ export function RegistrationSection() {
     <Section id="registration" title={title} alternate>
       <div data-registration-details>
         <RichText text={registration.details} />
+        {registration.feeGroups.map((group) => (
+          <table className={styles.feeTable} key={group.id}>
+            <caption>{group.title}</caption>
+            <thead>
+              <tr>
+                <th scope="col">{registration.feeColumns.category}</th>
+                <th scope="col">
+                  {registration.feeColumns.withoutAccommodation}
+                </th>
+                <th scope="col">{registration.feeColumns.withAccommodation}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {group.rows.map((row) => (
+                <tr key={row.category}>
+                  <th scope="row">{row.category}</th>
+                  <td>{row.withoutAccommodation}</td>
+                  <td>{row.withAccommodation}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ))}
       </div>
       <div className={styles.registrationLinks} data-registration-links>
         {registration.links.map((link, index) => (

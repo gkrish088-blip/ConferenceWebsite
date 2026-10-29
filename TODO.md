@@ -4,32 +4,36 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 
 ## Event identity and programme
 
-- [ ] Official full and short conference names and approved description.
-- [ ] Exact event dates, local time and venue details.
+- [x] Populate full and short conference names and description from the supplied poster and proposal.
+- [x] Populate 6–8 December 2027 and IIT Roorkee venue from the poster.
+- [ ] Confirm exact start/end times and room or building details; replace the provisional midnight countdown target.
 - [ ] Approved names and descriptions for the three institutions, plus their destination URLs and official marks.
-- [ ] Theme titles and short descriptions.
-- [ ] Milestone names, dates and notes.
+- [x] Populate all poster themes (air purification and gas separation grouped to retain the eight-item limit).
+- [ ] Supply abstract and registration milestone dates; only the conference date is currently documented.
 
 ## Speakers and committee
 
 - [ ] Guest of Honor name, role, affiliation, approved biography and portrait.
 - [ ] Six delegate names, affiliations and approved portraits.
 - [ ] Patron and both institution leadership names and roles.
-- [ ] Four Convener names.
-- [ ] Eight Advisory Committee members.
+- [x] Populate the three named conveners and their affiliations from the poster and proposal.
+- [x] Populate five proposed international advisory committee members from the proposal.
+- [ ] Confirm advisory appointments and supply any additional committee members.
 - [ ] Fourteen Organising Committee members.
 - [ ] Six Student Council members and roles.
 
 ## Registration and contact
 
-- [ ] Registration details and approved registration and abstract submission URLs.
-- [ ] Sponsorship tier names, amounts and three approved benefits per tier.
+- [x] Populate early bird and standard fees for all seven categories, GST, payment method and accommodation notes.
+- [ ] Supply registration deadlines, payment instructions, registration URL and abstract submission URL.
+- [x] Populate all four sponsorship packages, amounts and supplied benefits.
 - [ ] Two contact persons, roles and email addresses.
 - [ ] Official mailing address and map URL.
 
 ## Hospitality
 
-- [ ] Short approved introduction and the copy for all six hospitality topics.
+- [x] Populate the three-night accommodation arrangement from the registration fee sheet.
+- [ ] Supply the hospitality introduction, accommodation booking details and the remaining hospitality text.
 - [ ] One approved image and useful alt text for each topic.
 - [ ] Confirm airport, travel, accommodation, campus, food and regional visitor guidance.
 

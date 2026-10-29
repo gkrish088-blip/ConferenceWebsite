@@ -1,40 +1,13 @@
 {
   "placeholder": true,
-  "emptyText": "Placeholder: Dates to be announced.",
+  "emptyText": "Submission and registration deadlines to be announced.",
   "milestones": [
     {
-      "id": "abstract-open",
-      "label": "Milestone 1 placeholder",
-      "date": "2027-03-01T00:00:00+05:30",
-      "note": "",
-      "placeholder": true
-    },
-    {
-      "id": "abstract-deadline",
-      "label": "Milestone 2 placeholder",
-      "date": "2027-06-15T23:59:00+05:30",
-      "note": "",
-      "placeholder": true
-    },
-    {
-      "id": "acceptance",
-      "label": "Milestone 3 placeholder",
-      "date": "2027-08-01T00:00:00+05:30",
-      "note": "",
-      "placeholder": true
-    },
-    {
-      "id": "early-registration",
-      "label": "Milestone 4 placeholder",
-      "date": "2027-09-30T23:59:00+05:30",
-      "note": "",
-      "placeholder": true
-    },
-    {
       "id": "conference",
-      "label": "Milestone 5 placeholder",
-      "date": "2027-12-15T09:00:00+05:30",
-      "note": "",
+      "label": "Conference: 6–8 December 2027",
+      "date": "2027-12-06T00:00:00+05:30",
+      "note": "Conference dates are supplied in the poster. Exact start time, abstract deadlines and registration deadlines are to be confirmed.",
+      "showTime": false,
       "placeholder": true
     }
   ]

@@ -1,20 +1,43 @@
 {
-  "name": "Placeholder: International Conference on Hydrology",
-  "shortName": "Placeholder conference name",
-  "tagline": "Placeholder: one sentence describing the hydrology conference.",
-  "datesText": "Placeholder dates: 15 to 17 December 2027 (IST)",
-  "venue": "Placeholder venue: Department of Hydrology, IIT Roorkee, Roorkee, India",
-  "eventStart": "2027-12-15T09:00:00+05:30",
-  "eventEnd": "2027-12-17T18:00:00+05:30",
+  "name": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environmental Sustainability",
+  "shortName": "MemDesAI-2027",
+  "tagline": "Connecting membrane science, desalination, artificial intelligence and environmental sustainability.",
+  "datesText": "6 to 8 December 2027 (IST). Start time to be confirmed.",
+  "venue": "IIT Roorkee, Uttarakhand, India",
+  "eventStart": "2027-12-06T00:00:00+05:30",
   "nav": [
-    { "id": "about", "label": "About" },
-    { "id": "themes", "label": "Themes" },
-    { "id": "dates", "label": "Dates" },
-    { "id": "speakers", "label": "Speakers" },
-    { "id": "committee", "label": "Committee" },
-    { "id": "registration", "label": "Registration" },
-    { "id": "hospitality", "label": "Hospitality" },
-    { "id": "contact", "label": "Contact" }
+    {
+      "id": "about",
+      "label": "About"
+    },
+    {
+      "id": "themes",
+      "label": "Themes"
+    },
+    {
+      "id": "dates",
+      "label": "Dates"
+    },
+    {
+      "id": "speakers",
+      "label": "Speakers"
+    },
+    {
+      "id": "committee",
+      "label": "Committee"
+    },
+    {
+      "id": "registration",
+      "label": "Registration"
+    },
+    {
+      "id": "hospitality",
+      "label": "Hospitality"
+    },
+    {
+      "id": "contact",
+      "label": "Contact"
+    }
   ],
   "landing": {
     "enterLabel": "Enter site",
@@ -33,7 +56,7 @@
     "closeMenuLabel": "Close navigation menu",
     "navigationLabel": "Primary navigation",
     "externalLinkText": "opens in a new tab",
-    "countdownLabel": "Time remaining until the conference",
+    "countdownLabel": "Time remaining until the conference date; exact start time to be confirmed",
     "skipLinkLabel": "Skip to content"
   },
   "footer": {

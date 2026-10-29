@@ -205,6 +205,29 @@ export const committeeSchema = z.object({
 export const registrationSchema = z
   .object({
     details: richText,
+    feeColumns: z.object({
+      category: z.string().min(1),
+      withoutAccommodation: z.string().min(1),
+      withAccommodation: z.string().min(1),
+    }),
+    feeGroups: z
+      .array(
+        z.object({
+          id: slug,
+          title: z.string().min(1),
+          rows: z
+            .array(
+              z.object({
+                category: z.string().min(1),
+                withoutAccommodation: z.string().min(1),
+                withAccommodation: z.string().min(1),
+              }),
+            )
+            .min(1),
+          placeholder: z.boolean(),
+        }),
+      )
+      .min(1),
     sponsorshipHeading: z.string().min(1),
     sponsorshipIntro: richText,
     links: z
@@ -230,11 +253,12 @@ export const registrationSchema = z
             id: slug,
             name: z.string().min(1),
             amount: z.string().min(1),
-            benefits: z.array(z.string().min(1)).length(3),
+            benefits: z.array(z.string().min(1)).min(1),
           })
           .merge(placeholder),
       )
-      .length(3),
+      .min(3)
+      .max(4),
   })
   .merge(placeholder);
 

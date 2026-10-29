@@ -1,54 +1,54 @@
 {
-  "placeholder": true,
-  "emptyText": "Placeholder: Themes to be announced.",
+  "placeholder": false,
+  "emptyText": "Themes to be announced.",
   "items": [
     {
       "id": "theme-1",
-      "title": "Theme 1 placeholder",
-      "summary": "Placeholder: Add a one-line theme description.",
-      "placeholder": true
+      "title": "Membrane technology",
+      "summary": "Nanocomposite and thin-film composite membranes, membrane fabrication and characterization.",
+      "placeholder": false
     },
     {
       "id": "theme-2",
-      "title": "Theme 2 placeholder",
-      "summary": "Placeholder: Add a one-line theme description.",
-      "placeholder": true
+      "title": "Role of AI in membranes",
+      "summary": "AI-assisted fabrication, machine-learning-assisted design, fouling prediction, digital twins and process control.",
+      "placeholder": false
     },
     {
       "id": "theme-3",
-      "title": "Theme 3 placeholder",
-      "summary": "Placeholder: Add a one-line theme description.",
-      "placeholder": true
+      "title": "Desalination",
+      "summary": "Seawater and brackish-water treatment, brine management and resource recovery.",
+      "placeholder": false
     },
     {
       "id": "theme-4",
-      "title": "Theme 4 placeholder",
-      "summary": "Placeholder: Add a one-line theme description.",
-      "placeholder": true
+      "title": "Water & wastewater treatment",
+      "summary": "Contaminant removal and treatment systems at process scale.",
+      "placeholder": false
     },
     {
       "id": "theme-5",
-      "title": "Theme 5 placeholder",
-      "summary": "Placeholder: Add a one-line theme description.",
-      "placeholder": true
+      "title": "Air purification & gas separation",
+      "summary": "Membrane-based air filtration and pollutant capture, CO₂ capture and industrial gas separation membranes.",
+      "placeholder": false
     },
     {
       "id": "theme-6",
-      "title": "Theme 6 placeholder",
-      "summary": "Placeholder: Add a one-line theme description.",
-      "placeholder": true
+      "title": "Geomembranes",
+      "summary": "Containment, lining systems and civil and environmental applications.",
+      "placeholder": false
     },
     {
       "id": "theme-7",
-      "title": "Theme 7 placeholder",
-      "summary": "Placeholder: Add a one-line theme description.",
-      "placeholder": true
+      "title": "Fuel cells",
+      "summary": "Membrane materials for energy conversion and storage systems.",
+      "placeholder": false
     },
     {
       "id": "theme-8",
-      "title": "Theme 8 placeholder",
-      "summary": "Placeholder: Add a one-line theme description.",
-      "placeholder": true
+      "title": "Biomedical & healthcare",
+      "summary": "Hemodialysis, drug delivery, blood purification, tissue engineering, biosensors and diagnostics.",
+      "placeholder": false
     }
   ]
 }

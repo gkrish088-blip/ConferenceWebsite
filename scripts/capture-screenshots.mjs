@@ -550,8 +550,8 @@ async function checkMainInteractions(browser) {
   );
   const tierCount = await page.locator("[data-sponsorship-tier]").count();
   expect(
-    tierCount === 3,
-    `Expected three sponsorship tiers; found ${tierCount}`,
+    tierCount === 4,
+    `Expected four sponsorship tiers; found ${tierCount}`,
   );
   const registrationOrder = await page
     .locator("#registration > div")
@@ -770,7 +770,7 @@ async function checkMainInteractions(browser) {
   expect(
     (await navBrand.isVisible()) &&
       (await navBrand.getAttribute("href")) === "#top" &&
-      (await navBrand.textContent())?.trim() === "Placeholder conference name",
+      (await navBrand.textContent())?.trim() === "MemDesAI-2027",
     "Sticky navigation did not show the short conference name link after the identity band scrolled away",
   );
   const underline = await page
@@ -1061,7 +1061,7 @@ async function verifyMilestoneCount(browser, count) {
                 labelNodes: 0,
                 outOfBounds: 0,
                 emptyState: section.innerText.includes(
-                  "Placeholder: Dates to be announced.",
+                  "Submission and registration deadlines to be announced.",
                 ),
               };
             }
@@ -1219,7 +1219,7 @@ async function verifyContentExtremes(browser) {
           many: {
             themes: 8,
             delegates: 6,
-            listGroups: [8, 14],
+            listGroups: [5, 14],
             hospitalityImages: 18,
           },
         }[scenario];
@@ -1227,7 +1227,7 @@ async function verifyContentExtremes(browser) {
           themes: document.querySelectorAll("#themes article").length,
           themesEmpty: document
             .querySelector("#themes")
-            ?.textContent?.includes("Placeholder: Themes to be announced."),
+            ?.textContent?.includes("Themes to be announced."),
           delegates: document.querySelectorAll("#speakers [data-delegate-card]")
             .length,
           delegatesEmpty: document

@@ -16,7 +16,7 @@
   min-height: 100svh;
   flex-direction: column;
   justify-content: center;
-  gap: clamp(36px, 5vh, 56px);
+  gap: clamp(16px, 2vh, 24px);
   box-sizing: border-box;
   margin-inline: auto;
   padding-block: 12px;
@@ -62,7 +62,7 @@
 .landingHeader h1 {
   margin: 0 0 14px;
   color: var(--paper);
-  font-size: clamp(40px, 5vw, 72px);
+  font-size: clamp(28px, 3vw, 44px);
   line-height: 1.06;
   overflow-wrap: anywhere;
 }
@@ -208,11 +208,11 @@
 
   .landingHeader h1 {
     margin-bottom: 6px;
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .landingTagline {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.35;
   }
 

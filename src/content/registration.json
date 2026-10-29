@@ -1,45 +1,168 @@
 {
-  "details": "Placeholder: Add approved registration details, fee notes and instructions for attendees.",
+  "details": "Registration fees include 18% GST and admission to all conference sessions. Payment is by online transfer only.\n\nFees with accommodation include three nights: Institute Guest House or an equivalent hotel for speakers and participants, and shared boys’ or girls’ hostel accommodation for students.\n\nEarly bird and standard registration deadlines, payment instructions, registration and abstract submission links are to be announced.",
   "sponsorshipHeading": "Sponsorship",
-  "sponsorshipIntro": "Placeholder: Add a one-line introduction to the sponsorship tiers.",
+  "sponsorshipIntro": "Four sponsorship packages offer opportunities for visibility, technical engagement and exhibition participation.",
   "links": [
-    { "label": "Register", "url": "#", "placeholder": true },
-    { "label": "Submit an abstract", "url": "#", "placeholder": true }
+    {
+      "label": "Register",
+      "url": "#",
+      "placeholder": true
+    },
+    {
+      "label": "Submit an abstract",
+      "url": "#",
+      "placeholder": true
+    }
   ],
   "tiers": [
     {
       "id": "tier-a",
-      "name": "Tier A placeholder",
-      "amount": "Placeholder amount",
+      "name": "Platinum Sponsor",
+      "amount": "₹ 3,00,000",
       "benefits": [
-        "Placeholder benefit one",
-        "Placeholder benefit two",
-        "Placeholder benefit three"
+        "Logo visibility on the homepage and all materials",
+        "Exclusive main-stage branding during breaks and branding on side panels",
+        "Supply three promotional materials for the conference kit",
+        "Keynote or plenary slot for a technical presentation",
+        "Prime-location exhibition space",
+        "Featured in all media campaigns and emails",
+        "Free registration for three delegates"
       ],
-      "placeholder": true
+      "placeholder": false
     },
     {
       "id": "tier-b",
-      "name": "Tier B placeholder",
-      "amount": "Placeholder amount",
+      "name": "Gold Sponsor",
+      "amount": "₹ 2,00,000",
       "benefits": [
-        "Placeholder benefit one",
-        "Placeholder benefit two",
-        "Placeholder benefit three"
+        "Prominent logo visibility in secondary placement",
+        "Branding on side panels",
+        "Supply two promotional materials for the conference kit",
+        "Invited talk or session chair slot for a technical presentation",
+        "Good-visibility exhibition booth",
+        "Featured in selected campaigns",
+        "Free registration for two delegates"
       ],
-      "placeholder": true
+      "placeholder": false
     },
     {
       "id": "tier-c",
-      "name": "Tier C placeholder",
-      "amount": "Placeholder amount",
+      "name": "Silver Sponsor",
+      "amount": "₹ 1,00,000",
       "benefits": [
-        "Placeholder benefit one",
-        "Placeholder benefit two",
-        "Placeholder benefit three"
+        "Standard logo visibility in shared sections",
+        "Branding on the shared backdrop",
+        "Supply one promotional material for the conference kit",
+        "Session chair opportunity",
+        "Standard exhibition table",
+        "Basic acknowledgment",
+        "Free registration for one delegate"
       ],
-      "placeholder": true
+      "placeholder": false
+    },
+    {
+      "id": "supporting-partner",
+      "name": "Supporting Partner",
+      "amount": "₹ 50,000",
+      "benefits": [
+        "Logo visibility on shared sections",
+        "Branding on the shared backdrop",
+        "Basic acknowledgment",
+        "Free registration for one delegate"
+      ],
+      "placeholder": false
     }
   ],
-  "placeholder": true
+  "placeholder": true,
+  "feeColumns": {
+    "category": "Category",
+    "withoutAccommodation": "Without accommodation",
+    "withAccommodation": "With accommodation"
+  },
+  "feeGroups": [
+    {
+      "id": "early-bird",
+      "title": "Early bird registration",
+      "rows": [
+        {
+          "category": "Indian students",
+          "withoutAccommodation": "₹ 3,000",
+          "withAccommodation": "₹ 5,900"
+        },
+        {
+          "category": "Foreign students",
+          "withoutAccommodation": "$175",
+          "withAccommodation": "$400"
+        },
+        {
+          "category": "Indian academic delegates",
+          "withoutAccommodation": "₹ 5,900",
+          "withAccommodation": "₹ 10,900"
+        },
+        {
+          "category": "Foreign academic delegates",
+          "withoutAccommodation": "$230",
+          "withAccommodation": "$520"
+        },
+        {
+          "category": "Indian accompanying person",
+          "withoutAccommodation": "₹ 2,000",
+          "withAccommodation": "₹ 4,000"
+        },
+        {
+          "category": "International accompanying person",
+          "withoutAccommodation": "$115",
+          "withAccommodation": "$170"
+        },
+        {
+          "category": "Non-academic participants",
+          "withoutAccommodation": "₹ 10,900",
+          "withAccommodation": "₹ 14,160"
+        }
+      ],
+      "placeholder": false
+    },
+    {
+      "id": "standard",
+      "title": "Standard registration",
+      "rows": [
+        {
+          "category": "Indian students",
+          "withoutAccommodation": "₹ 3,500",
+          "withAccommodation": "₹ 7,080"
+        },
+        {
+          "category": "Foreign students",
+          "withoutAccommodation": "$230",
+          "withAccommodation": "$460"
+        },
+        {
+          "category": "Indian academic delegates",
+          "withoutAccommodation": "₹ 7,080",
+          "withAccommodation": "₹ 12,980"
+        },
+        {
+          "category": "Foreign academic delegates",
+          "withoutAccommodation": "$290",
+          "withAccommodation": "$580"
+        },
+        {
+          "category": "Indian accompanying person",
+          "withoutAccommodation": "₹ 5,000",
+          "withAccommodation": "₹ 5,500"
+        },
+        {
+          "category": "International accompanying person",
+          "withoutAccommodation": "$170",
+          "withAccommodation": "$230"
+        },
+        {
+          "category": "Non-academic participants",
+          "withoutAccommodation": "₹ 12,980",
+          "withAccommodation": "₹ 16,520"
+        }
+      ],
+      "placeholder": false
+    }
+  ]
 }

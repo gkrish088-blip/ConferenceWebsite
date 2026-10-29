@@ -270,6 +270,8 @@ Rules: `featured` has exactly 1 member, `pair` exactly 2, `grid` 1 to 12, `list`
 
 Links come from the professor's Drive PDF. Do not invent URLs.
 
+The PDF import adds required `feeColumns` labels (`category`, `withoutAccommodation`, `withAccommodation`) and `feeGroups`. Each fee group has an `id`, `title`, `placeholder` flag and a nonempty `rows` array. Each row has `category`, `withoutAccommodation` and `withAccommodation` strings, preserving the supplied currency and amount formatting. Sponsorship accepts three or four tiers, each with one or more benefits. See the populated JSON and `schema.ts` for the complete current shape.
+
 ### hospitality.json
 
 ```json

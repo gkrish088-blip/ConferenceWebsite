@@ -800,9 +800,38 @@
 
 .sponsorshipTiers {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin-top: 40px;
+}
+
+.feeTable {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 32px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: clamp(14px, 1.4vw, 17px);
+}
+
+.feeTable caption {
+  margin-bottom: 16px;
+  font-family: var(--heading-font);
+  font-size: var(--heading-3-size);
+  text-align: left;
+}
+
+.feeTable th,
+.feeTable td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--hairline);
+  overflow-wrap: anywhere;
+  text-align: left;
+  vertical-align: top;
+}
+
+.feeTable td {
+  font-variant-numeric: tabular-nums;
 }
 
 .sponsorshipTier {

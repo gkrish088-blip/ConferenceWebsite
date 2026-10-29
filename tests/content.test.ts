@@ -32,19 +32,19 @@ describe("content records", () => {
     ]);
     expect(about.institutions).toHaveLength(3);
     expect(themes.items).toHaveLength(8);
-    expect(dates.milestones).toHaveLength(5);
+    expect(dates.milestones).toHaveLength(1);
     expect(speakers.guestsOfHonor).toHaveLength(1);
     expect(speakers.delegates).toHaveLength(6);
     expect(
       committee.groups.find((group) => group.id === "advisory")?.members,
-    ).toHaveLength(8);
+    ).toHaveLength(5);
     expect(
       committee.groups.find((group) => group.id === "organising")?.members,
     ).toHaveLength(14);
     expect(
       committee.groups.find((group) => group.id === "students")?.members,
     ).toHaveLength(6);
-    expect(registration.tiers).toHaveLength(3);
+    expect(registration.tiers).toHaveLength(4);
     expect(hospitality.items).toHaveLength(6);
   });
 

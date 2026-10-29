@@ -44,82 +44,66 @@
       "members": [
         {
           "id": "convener-a",
-          "name": "Placeholder convener A",
+          "name": "Dr. Bhaskar Jyoti Deka",
           "role": "Convener",
-          "placeholder": true
+          "affiliation": "Associate Professor, Department of Hydrology, IIT Roorkee; Joint Faculty, Centre for Nanotechnology",
+          "placeholder": false
         },
         {
           "id": "convener-b",
-          "name": "Placeholder convener B",
-          "role": "Convener",
-          "placeholder": true
+          "name": "Dr. Racha Surya Murali",
+          "role": "Co-Convener",
+          "affiliation": "Principal Scientist, Adsorption and Membrane Separation, CSIR-IIP Dehradun",
+          "placeholder": false
         },
         {
           "id": "convener-c",
-          "name": "Placeholder convener C",
-          "role": "Convener",
-          "placeholder": true
-        },
-        {
-          "id": "convener-d",
-          "name": "Placeholder convener D",
-          "role": "Convener",
-          "placeholder": true
+          "name": "Dr. Anshul Yadav",
+          "role": "Co-Convener",
+          "affiliation": "Assistant Professor, Water Resources Development and Management, IIT Roorkee",
+          "placeholder": false
         }
       ]
     },
     {
       "id": "advisory",
-      "title": "Advisory committee",
+      "title": "Proposed international advisory committee",
       "layout": "list",
       "members": [
         {
           "id": "advisor-1",
-          "name": "Placeholder member A",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "name": "Prof. Alicia Kyoung Jin An",
+          "affiliation": "Department of Chemical and Biological Engineering, Hong Kong University of Science and Technology",
+          "role": "Proposed international advisory committee member",
+          "placeholder": false
         },
         {
           "id": "advisor-2",
-          "name": "Placeholder member B",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "name": "Prof. Ho Kyong Shon",
+          "affiliation": "ARC Research Hub for Nutrients in a Circular Economy; Center for Technology in Water and Wastewater, School of Civil and Environmental Engineering, University of Technology Sydney, Australia",
+          "role": "Proposed international advisory committee member",
+          "placeholder": false
         },
         {
           "id": "advisor-3",
-          "name": "Placeholder member C",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "name": "Dr. Volkan Filiz",
+          "affiliation": "Institute of Membrane Research, Helmholtz-Zentrum Hereon, Hamburg, Germany",
+          "role": "Proposed international advisory committee member",
+          "placeholder": false
         },
         {
           "id": "advisor-4",
-          "name": "Placeholder member D",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "name": "Prof. Dr.-Ing. Mark Hlawitschka",
+          "affiliation": "Johannes Kepler University Linz, Austria",
+          "role": "Proposed international advisory committee member",
+          "placeholder": false
         },
         {
           "id": "advisor-5",
-          "name": "Placeholder member E",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
-        },
-        {
-          "id": "advisor-6",
-          "name": "Placeholder member F",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
-        },
-        {
-          "id": "advisor-7",
-          "name": "Placeholder member G",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
-        },
-        {
-          "id": "advisor-8",
-          "name": "Placeholder member H",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "name": "Prof. Sanghyun Jeong",
+          "affiliation": "Pusan National University, South Korea",
+          "role": "Proposed international advisory committee member",
+          "placeholder": false
         }
       ]
     },

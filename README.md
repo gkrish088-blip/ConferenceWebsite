@@ -42,3 +42,5 @@ npm run capture:screenshots
 - `docs/` contains the supplied decisions, architecture, design and section requirements. `skills/verify-site/SKILL.md` contains the verification checklist.
 
 Every unconfirmed event-specific item is marked as a placeholder. Do not present example names, dates, costs, biographies, policies or destinations as verified information.
+
+Text has been populated from the three supplied PDFs: the MemDesAI-2027 poster, conference proposal and registration fee sheet. See [content sources and remaining confirmations](docs/07-content-sources.md) for the source mapping and provisional details. Registration now includes early bird and standard fee tables and all four sponsorship packages. Images and logos remain placeholders.

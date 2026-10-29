@@ -1,5 +1,5 @@
 {
-  "description": "Placeholder: Replace with a two or three paragraph description of the conference.\n\nPlaceholder: Add a short paragraph describing the academic focus and intended audience.\n\nPlaceholder: Add a short paragraph about the participating institutions.",
+  "description": "MemDesAI-2027 brings together academia, national laboratories and industry working across membrane technology, desalination, artificial intelligence and environmental sustainability. Membrane separation offers an energy-efficient platform for water purification and resource recovery. The conference connects affordable, low-carbon desalination, AI-driven design and process control, and sustainable membrane manufacturing.\n\nJointly organized by the Indian Institute of Technology Roorkee and CSIR–Indian Institute of Petroleum, Dehradun, in collaboration with the Department of Chemical and Biological Engineering at the Hong Kong University of Science and Technology, the three-day conference is planned to include plenary and invited talks, parallel technical sessions, poster presentations, an industry exhibition and a young researchers’ forum. Doctoral scholars, master’s students and early-career researchers will have opportunities to present their work, receive mentorship and build professional networks.\n\nThe conference aims to strengthen research collaborations, industry partnerships and technology transfer. Planned outcomes include peer-reviewed proceedings, a special issue in a reputed journal, international research partnerships, best paper and poster awards, technology demonstrations, hands-on sessions and academic–industry discussions. Programme details and publication arrangements remain to be confirmed.",
   "institutions": [
     {
       "id": "iitr",
@@ -9,7 +9,7 @@
         "alt": "Placeholder logo for IIT Roorkee",
         "focus": "center"
       },
-      "description": "Placeholder: Add a short, approved description of IIT Roorkee.",
+      "description": "Host and joint organizer of MemDesAI-2027. The Department of Hydrology and Centre for Nanotechnology contribute expertise in desalination, membrane distillation, nanocomposite membrane fabrication and computational modelling. IIT Roorkee will lead the Desalination and Environmental Sustainability tracks.",
       "url": "#",
       "linkLabel": "Institution link placeholder",
       "placeholder": true
@@ -22,7 +22,7 @@
         "alt": "Placeholder logo for CSIR-IIP",
         "focus": "center"
       },
-      "description": "Placeholder: Add a short, approved description of CSIR-IIP.",
+      "description": "Joint organizer of MemDesAI-2027. CSIR–Indian Institute of Petroleum, Dehradun, contributes expertise in catalysis, petroleum refining, industrial membrane applications, process modelling and plant-level data analytics. It will co-lead the Membrane Technology track and support engagement with the petroleum and energy sectors.",
       "url": "#",
       "linkLabel": "Institution link placeholder",
       "placeholder": true
@@ -35,7 +35,7 @@
         "alt": "Placeholder logo for HKUST",
         "focus": "center"
       },
-      "description": "Placeholder: Add a short, approved description of HKUST.",
+      "description": "The Department of Chemical and Biological Engineering at the Hong Kong University of Science and Technology collaborates on MemDesAI-2027. Prof. Alicia Kyoung Jin An is listed in the proposal’s International Advisory Committee.",
       "url": "#",
       "linkLabel": "Institution link placeholder",
       "placeholder": true

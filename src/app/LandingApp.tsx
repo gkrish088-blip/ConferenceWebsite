@@ -55,10 +55,17 @@ export function LandingApp({ fullMode }: { fullMode: boolean }) {
         </div>
         <div className={styles.landingMarks}>
           {about.institutions.map((institution) => (
-            <div className={styles.landingMark} key={institution.id}>
+            <a
+              className={styles.landingMark}
+              key={institution.id}
+              href={institution.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${institution.name} (${site.accessibility.externalLinkText})`}
+            >
               <img src={institution.logo.src} alt={institution.logo.alt} />
               <span>{institution.name}</span>
-            </div>
+            </a>
           ))}
         </div>
       </div>

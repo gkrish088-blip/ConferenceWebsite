@@ -863,6 +863,13 @@ async function checkMainInteractions(browser) {
     await menu.isVisible(),
     "Mobile menu button is not visible below 900px",
   );
+  for (const logoLink of await page.locator("[data-identity-band] a").all()) {
+    await page.keyboard.press("Tab");
+    expect(
+      await logoLink.evaluate((element) => document.activeElement === element),
+      "Institution logo link is not keyboard reachable before the mobile menu",
+    );
+  }
   await page.keyboard.press("Tab");
   expect(
     (await page.evaluate(() =>

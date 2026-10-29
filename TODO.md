@@ -7,7 +7,9 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 - [x] Populate full and short conference names and description from the supplied poster and proposal.
 - [x] Populate 6–8 December 2027 and IIT Roorkee venue from the poster.
 - [ ] Confirm exact start/end times and room or building details; replace the provisional midnight countdown target.
-- [ ] Approved names and descriptions for the three institutions, plus their destination URLs and official marks.
+- [x] Connect the supplied IIT Roorkee, CSIR-IIP and HKUST logos throughout both site modes.
+- [x] Add verified official institution websites to the About links and every logo.
+- [ ] Confirm institution descriptions with the organizers.
 - [x] Populate all poster themes (air purification and gas separation grouped to retain the eight-item limit).
 - [ ] Supply abstract and registration milestone dates; only the conference date is currently documented.
 
@@ -39,6 +41,6 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 
 ## Launch review
 
-- [ ] Replace placeholder logos, portraits and hospitality images with approved assets.
+- [ ] Replace placeholder portraits and hospitality images with approved assets.
 - [ ] Run `npm run validate:content`, `npm run report:placeholders`, both builds and the verification checklist.
 - [ ] Run `npm run check:launch` after every placeholder has been replaced.

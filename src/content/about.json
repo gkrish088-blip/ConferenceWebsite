@@ -5,41 +5,41 @@
       "id": "iitr",
       "name": "IIT Roorkee",
       "logo": {
-        "src": "/assets/logos/iitr.svg",
-        "alt": "Placeholder logo for IIT Roorkee",
+        "src": "/assets/logos/iitr.png",
+        "alt": "IIT Roorkee logo",
         "focus": "center"
       },
       "description": "Host and joint organizer of MemDesAI-2027. The Department of Hydrology and Centre for Nanotechnology contribute expertise in desalination, membrane distillation, nanocomposite membrane fabrication and computational modelling. IIT Roorkee will lead the Desalination and Environmental Sustainability tracks.",
-      "url": "#",
-      "linkLabel": "Institution link placeholder",
-      "placeholder": true
+      "url": "https://iitr.ac.in/",
+      "linkLabel": "Visit IIT Roorkee website",
+      "placeholder": false
     },
     {
       "id": "csir-iip",
       "name": "CSIR-IIP",
       "logo": {
-        "src": "/assets/logos/csir-iip.svg",
-        "alt": "Placeholder logo for CSIR-IIP",
+        "src": "/assets/logos/csir-iip.png",
+        "alt": "CSIR-IIP logo",
         "focus": "center"
       },
       "description": "Joint organizer of MemDesAI-2027. CSIR–Indian Institute of Petroleum, Dehradun, contributes expertise in catalysis, petroleum refining, industrial membrane applications, process modelling and plant-level data analytics. It will co-lead the Membrane Technology track and support engagement with the petroleum and energy sectors.",
-      "url": "#",
-      "linkLabel": "Institution link placeholder",
-      "placeholder": true
+      "url": "https://www.iip.res.in/",
+      "linkLabel": "Visit CSIR-IIP website",
+      "placeholder": false
     },
     {
       "id": "hkust",
       "name": "HKUST",
       "logo": {
-        "src": "/assets/logos/hkust.svg",
-        "alt": "Placeholder logo for HKUST",
+        "src": "/assets/logos/hkust.png",
+        "alt": "HKUST logo",
         "focus": "center"
       },
       "description": "The Department of Chemical and Biological Engineering at the Hong Kong University of Science and Technology collaborates on MemDesAI-2027. Prof. Alicia Kyoung Jin An is listed in the proposal’s International Advisory Committee.",
-      "url": "#",
-      "linkLabel": "Institution link placeholder",
-      "placeholder": true
+      "url": "https://hkust.edu.hk/",
+      "linkLabel": "Visit HKUST website",
+      "placeholder": false
     }
   ],
-  "placeholder": true
+  "placeholder": false
 }

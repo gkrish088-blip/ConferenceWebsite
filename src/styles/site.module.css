@@ -46,6 +46,11 @@
   align-items: flex-start;
   gap: 12px;
   min-width: 0;
+  text-decoration: none;
+}
+
+.institutionMark:hover > span {
+  text-decoration: underline;
 }
 
 .institutionMark > span {
@@ -67,6 +72,9 @@
 .logoImage {
   width: 150px;
   height: 62px;
+  box-sizing: border-box;
+  padding: 3px;
+  background: #fff;
   object-fit: contain;
   object-position: left center;
 }

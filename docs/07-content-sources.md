@@ -1,6 +1,6 @@
 # Supplied PDF content
 
-The text import uses the three PDFs supplied in the project root. No external sources or images were added.
+The text import uses the three PDFs supplied in the project root. The institution logos were subsequently supplied in `assets/logos/` and copied into `public/assets/logos/` for use throughout the site. Official institute websites were then checked online and added to the About links and all logos: [IIT Roorkee](https://iitr.ac.in/), [CSIR-IIP](https://www.iip.res.in/) and [HKUST](https://hkust.edu.hk/). These links open in a new tab and share the destinations in `about.json`.
 
 - `MemDesAI-2027_Poster 1.pptx.pdf`: conference title and short name, 6–8 December 2027 dates, IIT Roorkee venue, joint organizers and HKUST departmental collaboration, themes and three conveners.
 - `MemTechAI_2027_Proposal.pdf`: background, audience, objectives, planned format, institutional responsibilities, convener affiliations and five proposed international advisory committee members.
@@ -12,7 +12,7 @@ The advisory committee is explicitly labelled proposed. Planned proceedings, jou
 
 The PDFs provide calendar dates but no event start or end times. The countdown temporarily targets the beginning of 6 December 2027 in IST; `site.placeholder` and the conference milestone's placeholder flag remain true, and the visible date text states that the start time is to be confirmed. The previous invented end time has been removed. Organizers must supply exact times before launch. Submission and registration deadlines have not been invented from the proposal's planning quarters.
 
-No emails, phone numbers, postal address, map URL, registration URL, abstract submission URL, named speakers, patron names, student council roster, or full organizing committee roster are supplied. These remain placeholders. HKUST advisory membership is not treated as confirmation of a separate leadership appointment or speaker role. Institutional URLs and all imagery remain placeholders.
+No emails, phone numbers, postal address, map URL, registration URL, abstract submission URL, named speakers, patron names, student council roster, or full organizing committee roster are supplied. These remain placeholders. HKUST advisory membership is not treated as confirmation of a separate leadership appointment or speaker role. Portraits and hospitality imagery remain placeholders. Institution and About placeholder flags have been cleared after adding supplied logos and verified official websites.
 
 Accommodation copy is populated only with the fee sheet's three-night arrangement. Booking instructions, availability, travel guidance and other hospitality information still need organizer input.
 
@@ -22,6 +22,8 @@ Content editors should update `src/content/*.json`. Registration table headings 
 
 Content validation, TypeScript, all 23 tests, both launch builds and the responsive browser suite passed after the import. Screenshots in `screenshots/` cover 1440, 1024, 768 and 390 pixels. The browser suite checks keyboard interactions, reduced motion, countdown states, content-list extremes and external requests; it reported no external requests or browser errors. Countdown typography was adjusted to fit the full conference name.
 
+After adding the institute links, a browser check verified all nine main-page logo links and all three countdown-page logo links at desktop and mobile widths. It checked their destinations, new-tab behavior, keyboard focus and the About text links. External navigation was intercepted locally during the click checks. The mobile keyboard regression check now includes the three header logo links before the menu button.
+
 ESLint and formatting checks for the changed source files passed. The repository-wide lint command still reports formatting warnings in 42 untouched files. Both builds also emit dependency annotation warnings from Zod. No dependency changes were made.
 
-The placeholder report lists 51 records: about 4, committee 23, contact 3, dates 2, hospitality 7, registration 3, site 1 and speakers 8. Themes have no placeholder records. The remaining records include assets and partially completed sections; this is not a count of missing text fields. The site is not ready for the final no-placeholder launch check.
+After adding the institution links, the placeholder report lists 47 records: committee 23, contact 3, dates 2, hospitality 7, registration 3, site 1 and speakers 8. About and themes have no placeholder records. The remaining records include assets and partially completed sections; this is not a count of missing text fields. The site is not ready for the final no-placeholder launch check.

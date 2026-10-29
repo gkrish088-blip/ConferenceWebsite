@@ -38,9 +38,10 @@ npm run capture:screenshots
 
 - `src/content/*.json` owns event copy, page inventory, labels, links, dates, people, hospitality topics and accessibility strings. `src/content/schema.ts` validates the data.
 - `src/main.tsx`, `src/app/`, `src/components/` and `src/sections/` render the shared page patterns from those JSON records.
-- `public/assets/logos/` and `public/placeholders/` contain neutral placeholders. Replace them only with approved marks and imagery.
+- `public/assets/logos/` contains the supplied institution PNG logos used throughout the site. `public/placeholders/` contains the remaining portrait and hospitality placeholders. Replace imagery only with approved assets.
+- Institute website links live in `src/content/about.json` and are shared by the About links and clickable logos in the header, footer and countdown page. External links open in a new tab.
 - `docs/` contains the supplied decisions, architecture, design and section requirements. `skills/verify-site/SKILL.md` contains the verification checklist.
 
 Every unconfirmed event-specific item is marked as a placeholder. Do not present example names, dates, costs, biographies, policies or destinations as verified information.
 
-Text has been populated from the three supplied PDFs: the MemDesAI-2027 poster, conference proposal and registration fee sheet. See [content sources and remaining confirmations](docs/07-content-sources.md) for the source mapping and provisional details. Registration now includes early bird and standard fee tables and all four sponsorship packages. Images and logos remain placeholders.
+Text has been populated from the three supplied PDFs: the MemDesAI-2027 poster, conference proposal and registration fee sheet. See [content sources and remaining confirmations](docs/07-content-sources.md) for the source mapping and provisional details. Registration now includes early bird and standard fee tables and all four sponsorship packages. Supplied institution logos are connected; portraits and hospitality images remain placeholders.

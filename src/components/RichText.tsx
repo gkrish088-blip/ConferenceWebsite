@@ -67,11 +67,28 @@ export function RichText({ text, className, onAnchorClick }: RichTextProps) {
 
   return (
     <div className={className ?? styles.richText}>
-      {paragraphs.map((paragraph, index) => (
-        <p key={`paragraph-${index}`}>
-          {inlineNodes(paragraph, `paragraph-${index}`, onAnchorClick)}
-        </p>
-      ))}
+      {paragraphs.map((paragraph, index) => {
+        const key = `paragraph-${index}`;
+        const lines = paragraph.split("\n");
+        const marker = lines[0].startsWith("1. ") ? /^\d+\. / : /^- /;
+        if (lines.length > 1 && lines.every((line) => marker.test(line))) {
+          const List = lines[0].startsWith("1. ") ? "ol" : "ul";
+          return (
+            <List key={key}>
+              {lines.map((line, lineIndex) => (
+                <li key={line}>
+                  {inlineNodes(
+                    line.replace(marker, ""),
+                    `${key}-${lineIndex}`,
+                    onAnchorClick,
+                  )}
+                </li>
+              ))}
+            </List>
+          );
+        }
+        return <p key={key}>{inlineNodes(paragraph, key, onAnchorClick)}</p>;
+      })}
     </div>
   );
 }

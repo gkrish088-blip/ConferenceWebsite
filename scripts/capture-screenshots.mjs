@@ -518,11 +518,9 @@ async function checkMainInteractions(browser) {
   );
   expect(
     (await page
-      .locator(
-        '#hospitality [role="region"] img[src="/placeholders/hospitality.svg"]',
-      )
+      .locator('#hospitality [role="region"] img[src^="/assets/hospitality/"]')
       .count()) === 6,
-    "Each hospitality item should have one placeholder image",
+    "Each hospitality item should have one travel photograph",
   );
   expect(
     (await page.locator("[data-identity-band] a img").count()) === 3,

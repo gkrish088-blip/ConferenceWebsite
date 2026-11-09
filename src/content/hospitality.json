@@ -1,41 +1,65 @@
 {
-  "intro": "Placeholder: Add a short hospitality introduction. See [arrival information](#hospitality-exit-delhi-t3) and [accommodation details](#hospitality-accommodation) when they are available.",
+  "intro": "Welcome to MemDesAI 2027 at IIT Roorkee from 6 to 8 December 2027. Use the [arrival information](#hospitality-exit-delhi-t3) and [accommodation details](#hospitality-accommodation) to plan your visit.",
   "items": [
     {
       "id": "about-roorkee",
       "title": "About Roorkee",
-      "body": "Placeholder: Add approved visitor information about Roorkee.",
+      "body": "Roorkee is in Haridwar district, Uttarakhand, on the Upper Ganga Canal. It is approx. 170–180 km north of Delhi, 60–70 km from Dehradun and 29–32 km from Haridwar. These distances are between cities and vary with the route and starting point. [Roorkee municipal profile](https://nnroorkee.uk.gov.in/about-roorkee/) · [IIT Roorkee travel guide](https://iitr.ac.in/Departments/Hydrology%20Department/About%20Us/How%20To%20Reach%20Us.html) · [Uttarakhand Waqf Board directions](https://uttarakhandwaqfboard.uk.gov.in/places-centres/peeran-kaliyar-roorkee/)\n\nThe town’s engineering heritage is closely tied to the canal and the Solani Aqueduct. Roorkee’s engineering college was established in 1847 to train engineers for the canal works. It became IIT Roorkee in 2001. [IIT Roorkee history](https://www.iitr.ac.in/Institute/History.html) · [IIT Roorkee heritage](https://www.iitr.ac.in/Institute/Heritage.html) · [IIT Roorkee campus history](https://www.iitr.ac.in/estateworks/campus.html)\n\nDecember normally brings cool mornings and evenings. Roorkee’s December average daily low and high are approx. 8 °C and 22 °C, so pack warm layers. Winter fog across the northern plains can delay flights and slow rail and road journeys. Leave extra time for connections and check the forecast and your operator’s travel updates before setting out. [IMD Roorkee climate records, p. 331](https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf) · [IMD fog and transport guidance](https://mausam.imd.gov.in/met-oly/Met-Olympiad-Study-Material-Senior.pdf) · [IMD regional forecasts](https://mausam.imd.gov.in/dehradun/)",
       "images": [
         {
-          "src": "/placeholders/hospitality.svg",
-          "alt": "Placeholder hospitality image for About Roorkee",
-          "focus": "center"
+          "src": "/assets/hospitality/about-roorkee.webp",
+          "alt": "Historic masonry bridge over the Ganges Canal near Roorkee",
+          "focus": "center",
+          "credit": {
+            "prefix": "Photo by",
+            "author": "Fowler&fowler at English Wikipedia",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:GangesCanalRoorkee2008.jpg",
+            "licence": "CC BY-SA 3.0",
+            "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "changes": "Cropped, resized and converted to WebP"
+          }
         }
       ],
-      "placeholder": true
+      "placeholder": false
     },
     {
       "id": "exit-delhi-t3",
       "title": "How To Exit Delhi Airport T3",
-      "body": "Placeholder: Add approved arrival guidance for Delhi Airport Terminal 3.",
+      "body": "1. **Clear immigration if you arrived on an international flight.** Follow the Arrivals signs and keep your passport and relevant entry documents ready. Check [Delhi Airport’s arrivals guide](https://www.newdelhiairport.in/immigration-and-customs/arrivals) before flying.\n2. **Collect your baggage.** Check the screens for your flight’s carousel. International passengers then clear customs, using the appropriate declaration channel.\n3. **Exit to the arrivals hall.** Follow the signs for ground transport. Terminal 3 has ATMs and currency exchange, and the [airport app](https://www.newdelhiairport.in/hoi-app/) offers eSIM booking. [Terminal 3 facilities](https://www.newdelhiairport.in/blog/an-exciting-journey-through-delhi-airport-t3-discovering-the-amenities)\n\n- **Taxi or app cab:** Delhi Traffic Police lists [prepaid booths at Terminal 3](https://www.traffic.delhipolice.gov.in/prepaid-booths). Ask whether the booth can book an interstate trip to Roorkee. For an app cab, Delhi Airport lists the [Multi-Level Car Park, Level 0](https://www.newdelhiairport.in/to-and-from-airport/cab-or-taxi/) as the Terminal 3 pickup area. Check your booking and follow the current signs.\n- **Metro:** Take the [Airport Express](https://www.newdelhiairport.in/to-and-from-airport/metro/) to New Delhi Railway Station. For Kashmere Gate inter-state bus terminus, change to the Yellow Line at New Delhi. Check the [Delhi Metro route planner](https://new.delhimetrorail.com/en) and your onward train or bus before leaving the airport.",
       "images": [
         {
-          "src": "/placeholders/hospitality.svg",
-          "alt": "Placeholder hospitality image for Delhi Airport T3",
-          "focus": "center"
+          "src": "/assets/hospitality/exit-delhi-t3.webp",
+          "alt": "International arrivals hall at Delhi Airport Terminal 3",
+          "focus": "center",
+          "credit": {
+            "prefix": "Photo by",
+            "author": "Bharatahs",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:International_Arrivals_area_at_Indira_Gandhi_International_Airport.jpg",
+            "licence": "CC BY-SA 4.0",
+            "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "changes": "Cropped, resized and converted to WebP"
+          }
         }
       ],
-      "placeholder": true
+      "placeholder": false
     },
     {
       "id": "reach-iitr",
       "title": "How To Reach IIT Roorkee",
-      "body": "Placeholder: Add approved rail, road and local travel guidance.",
+      "body": "- **By road from Delhi:** Roorkee is approx. 170–180 km from Delhi. Allow approx. 4–6 hours as a planning estimate. One route is via Meerut and Muzaffarnagar. The starting point, traffic and road conditions affect the journey. [IIT Roorkee travel guide](https://iitr.ac.in/Departments/Earthquake%20Department/About%20Us/Contact%20Us%20-%20Reach%20Us.html) [Road journey estimates](https://www.crsi38.iitr.ac.in/travel)\n- **By train:** Search for Roorkee (RK) on [IRCTC Rail Connect](https://contents.irctc.co.in/en/IRCTC_andriod_App.html) or the [IRCTC booking site](https://www.irctc.co.in/nget/train-search). Delhi services vary by departure station and train. Allow approx. 2½–5 hours on the train and check the service and fare for your date. [IIT Roorkee rail estimates](https://www.crsi38.iitr.ac.in/travel)\n- **By bus:** Search [Uttarakhand Transport Corporation](https://www.utconline.uk.gov.in/bookTicket.aspx) for services from Kashmere Gate ISBT. IIT Roorkee also lists Anand Vihar ISBT as an option. Confirm the boarding terminal and whether the bus stops at Roorkee. [IIT Roorkee bus guidance](https://iitr.ac.in/Departments/Earthquake%20Department/About%20Us/Contact%20Us%20-%20Reach%20Us.html)\n- **From Dehradun Airport:** Jolly Grant Airport is approx. 60–75 km by road from IIT Roorkee. A taxi can take you to campus. [IIT Roorkee distance guidance](https://iitr.ac.in/Departments/Hydrology%20Department/static/PDF/2025/Admission_Brochure_2024.pdf) [IIT Roorkee airport guidance](https://iitr.ac.in/Departments/Earthquake%20Department/About%20Us/Contact%20Us%20-%20Reach%20Us.html)\n- **Last leg:** The railway station is approx. 2.5–3 km from IIT Roorkee. The bus station is near campus. Use a local auto-rickshaw, e-rickshaw or taxi for the campus gate. [IIT Roorkee local travel guide](https://www.crsi38.iitr.ac.in/travel) · [Visitor transport guide](https://ir.iitr.ac.in/pdf/GUIDE_TO_IIT_ROORKEE.pdf)\n\nAllow extra connection time if [India Meteorological Department](https://mausam.imd.gov.in/) issues a fog warning. Dense fog can slow driving and affect flights and trains. [IMD transport advisory](https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2024-12-2025_1766563964.pdf)\n\n**To be confirmed by the organisers:** Any conference transfers and the campus reporting point.",
       "images": [
         {
-          "src": "/placeholders/hospitality.svg",
-          "alt": "Placeholder hospitality image for travel to IIT Roorkee",
-          "focus": "center"
+          "src": "/assets/hospitality/reach-iitr.webp",
+          "alt": "Railway tracks and a passenger platform at Roorkee railway station",
+          "focus": "center",
+          "credit": {
+            "prefix": "Photo courtesy",
+            "author": "Sanyam Bahga",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roorkee_Railway_Station.JPG",
+            "licence": "CC BY-SA 4.0",
+            "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "changes": "Cropped, resized and converted to WebP"
+          }
         }
       ],
       "placeholder": true
@@ -43,12 +67,20 @@
     {
       "id": "accommodation",
       "title": "Accommodation",
-      "body": "Registration fees with accommodation include three nights. Speakers and participants will be accommodated in the Institute Guest House or an equivalent hotel; students will be accommodated in boys’ or girls’ hostels on a sharing basis.\n\nPlaceholder: Booking instructions, check-in and check-out dates, availability and accessibility information are to be confirmed.",
+      "body": "Registration fees with accommodation include three nights. Speakers and participants will be accommodated in the Institute Guest House or an equivalent hotel; students will be accommodated in boys’ or girls’ hostels on a sharing basis.\n\nIIT Roorkee’s [guest house directory](https://www.iitr.ac.in/Campus%20Life/Guest%20House/index.html) lists on-campus options such as Khosla International House and the Nigam Visitors’ Hostel. The [guest house office](https://ghbooking.iitr.ac.in/) describes furnished rooms across several buildings. The Institute calls its student residences [bhawans](https://iitr.ac.in/Administration/Deans%20Structure/DOSW/Quick%20Links/Bhawans.html).\n\n**To be confirmed by the organisers:** room availability and allocation, booking instructions, check-in and check-out dates, and accessible accommodation.",
       "images": [
         {
-          "src": "/placeholders/hospitality.svg",
-          "alt": "Placeholder accommodation image",
-          "focus": "center"
+          "src": "/assets/hospitality/accommodation.webp",
+          "alt": "Exterior of the Nigam guest house at IIT Roorkee",
+          "focus": "center",
+          "credit": {
+            "prefix": "Photo by",
+            "author": "Ravi Dwivedi",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:MC_Nigam_Guest_House%2C_IIT_Roorkee.jpg",
+            "licence": "CC BY-SA 4.0",
+            "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "changes": "Resized and converted to WebP"
+          }
         }
       ],
       "placeholder": true
@@ -56,12 +88,20 @@
     {
       "id": "life-and-food",
       "title": "Life And Food At IIT Roorkee",
-      "body": "Placeholder: Add approved campus, food and accessibility information.",
+      "body": "IIT Roorkee’s main campus has lawns, sports grounds, and the historic main building. The Institute’s [campus facilities guide](https://iitr.ac.in/Campus%20Life/Facilities/index.html) lists cafés and on-campus bank and ATM facilities, and its [student residence guide](https://iitr.ac.in/Administration/Deans%20Structure/DOSW/Quick%20Links/Bhawans.html) describes hostel canteens. IIT Roorkee publishes [mess menus](https://mess.iitr.ac.in/) for students.\n\nThe [Institute’s network guide](https://www.iitr.ac.in/support/faq/alldocs.html) covers eduroam and guest Wi-Fi. The [Institute Hospital](https://iitr.ac.in/Hospital/index.html) lists emergency and outpatient services. IIT Roorkee also documents [e-rickshaws](https://www.iitr.ac.in/GP/green_initiatives.html) within campus and between campus and the town, bus stand and railway station. See the [campus overview](https://iitr.ac.in/Departments/Management%20Studies%20Department/About%20Us/Facilities.html) for more on the grounds and facilities.\n\n**To be confirmed by the organisers:** conference meals and vegetarian and non-vegetarian options, guest Wi-Fi access, delegate access to campus facilities, and any event-specific transport or accessibility arrangements.",
       "images": [
         {
-          "src": "/placeholders/hospitality.svg",
-          "alt": "Placeholder campus and dining image",
-          "focus": "center"
+          "src": "/assets/hospitality/life-and-food.webp",
+          "alt": "Lawns and paths beside Govind Bhawan student residence at IIT Roorkee",
+          "focus": "center",
+          "credit": {
+            "prefix": "Photo by",
+            "author": "Abhi2254015",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Govind_Bhawan%2C_IIT_Roorkee.jpg",
+            "licence": "CC BY-SA 4.0",
+            "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "changes": "Cropped, resized and converted to WebP"
+          }
         }
       ],
       "placeholder": true
@@ -69,15 +109,23 @@
     {
       "id": "uttarakhand",
       "title": "Uttarakhand Destination",
-      "body": "Placeholder: Add approved regional visitor information.",
+      "body": "Use these approximate distances and travel times to plan a visit before or after the conference. Allow extra time for connections and winter fog. [IIT Roorkee distance guide](https://iitr.ac.in/Departments/Hydrology%20Department/About%20Us/How%20To%20Reach%20Us.html) · [IMD fog guidance](https://mausam.imd.gov.in/met-oly/Met-Olympiad-Study-Material-Senior.pdf)\n\n- **Haridwar** is approx. 30 km away. Allow approx. 45–60 minutes by road. The evening Ganga Aarti takes place at Har Ki Pauri on the river. [Haridwar University journey guide](https://huroorkee.ac.in/blog/weekend-guide-hu-students-haridwar-rishikesh-mussoorie) · [Incredible India](https://www.incredibleindia.gov.in/en/uttarakhand/haridwar/har-ki-pauri)\n- **Rishikesh** is approx. 52 km away. Allow approx. 1¼–1¾ hours by road via Haridwar, plus any wait between services. Triveni Ghat is a riverside stop. [Haridwar University journey guide](https://huroorkee.ac.in/blog/weekend-guide-hu-students-haridwar-rishikesh-mussoorie) · [Incredible India](https://www.incredibleindia.gov.in/en/uttarakhand/rishikesh/triveni-ghat)\n- **Dehradun** is approx. 60–70 km and 2 hours by road. Visit the Forest Research Institute for its heritage architecture. **Mussoorie**, approx. 100 km from Roorkee, is a longer trip. Allow approx. 3–4 hours by road via Dehradun. [Local journey estimates](https://huroorkee.ac.in/blog/weekend-guide-hu-students-haridwar-rishikesh-mussoorie) [Uttarakhand Waqf Board](https://uttarakhandwaqfboard.uk.gov.in/places-centres/peeran-kaliyar-roorkee/) · [Incredible India](https://www.incredibleindia.gov.in/en/uttarakhand/dehradun/forest-research-institute) · [Uttarakhand Tourism itinerary](https://uttarakhandtourism.gov.in/package-details/Dehradun%20to%20Lakhamandal)\n- **Rajaji National Park** generally opens from mid-November to mid-June. Check gate access and safari bookings before travelling. [Incredible India](https://www.incredibleindia.gov.in/en/uttarakhand/dehradun/rajaji-national-park) · [National Tiger Conservation Authority](https://ntca.gov.in/tiger-reserves/)\n- **Piran Kaliyar Sharif** is approx. 9–10 km from Roorkee railway station. Allow approx. 15 minutes by road from the station. [Uttarakhand Waqf Board visitor guide](https://uttarakhandwaqfboard.uk.gov.in/places-centres/peeran-kaliyar-roorkee/)",
       "images": [
         {
-          "src": "/placeholders/hospitality.svg",
-          "alt": "Placeholder regional destination image",
-          "focus": "center"
+          "src": "/assets/hospitality/uttarakhand.webp",
+          "alt": "Steps at Har Ki Pauri ghat beside the Ganges in Haridwar",
+          "focus": "center",
+          "credit": {
+            "prefix": "Photo by",
+            "author": "Pinakpani",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Har_ki_Pouri_ghat_at_Haridwar.jpg",
+            "licence": "CC BY-SA 4.0",
+            "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "changes": "Resized and converted to WebP"
+          }
         }
       ],
-      "placeholder": true
+      "placeholder": false
     }
   ],
   "placeholder": true

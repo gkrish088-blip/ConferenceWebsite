@@ -1688,3 +1688,68 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* The filtration design shares the original section markup and interactions. */
+[data-interactive] .identityBand,
+[data-interactive] .siteFooter {
+  position: relative;
+  z-index: 1;
+  color: var(--ink);
+  background: var(--page-background);
+}
+[data-interactive]
+  :is(.identityBand, .institutionBlock, .siteFooter)
+  .logoImage {
+  border-radius: calc(var(--radius) / 2);
+}
+[data-interactive] .navShell {
+  position: relative;
+  min-height: 0;
+  background: var(--page-background);
+}
+[data-interactive] .navBrand {
+  font-size: 21px;
+}
+[data-interactive] .navLinks {
+  gap: clamp(8px, 1.3vw, 20px);
+}
+[data-interactive] .registrationNavLink {
+  border-radius: 999px;
+  background: var(--marigold);
+  color: var(--accent-text);
+}
+[data-interactive] .registrationNavLink:hover {
+  text-decoration: underline;
+}
+[data-interactive] :is(.section, .sectionAlternate) {
+  background: transparent;
+  border-bottom: 1px solid var(--hairline);
+}
+[data-interactive] .sectionHeading {
+  font-size: var(--heading-2-size);
+}
+[data-interactive] .themeItem {
+  background: color-mix(in srgb, var(--surface), transparent 14%);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+[data-interactive] .themeList {
+  display: grid;
+  gap: 12px;
+}
+[data-interactive] .siteFooter :is(p, a) {
+  color: var(--ink);
+}
+
+@media (max-width: 899px) {
+  [data-interactive] .navLinks {
+    max-height: calc(100dvh - 72px);
+    gap: 0;
+    overflow: auto;
+    background: var(--page-background);
+  }
+  [data-interactive] .registrationNavLink[aria-current="location"] {
+    text-decoration: underline;
+  }
+}

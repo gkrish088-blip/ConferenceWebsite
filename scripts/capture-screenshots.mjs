@@ -1,10 +1,13 @@
-import { fileURLToPath } from "node:url";
 import { mkdir } from "node:fs/promises";
+import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { chromium, expect } from "@playwright/test";
 import { build, preview } from "vite";
 
 const browser = await chromium.launch();
-const directory = new URL("../screenshots/", import.meta.url);
+const directory =
+  process.env.MEMDESAI_QA_DIRECTORY ??
+  fileURLToPath(new URL("../screenshots/", import.meta.url));
 await mkdir(directory, { recursive: true });
 
 async function withBuild(mode, check) {
@@ -20,64 +23,139 @@ async function withBuild(mode, check) {
   }
 }
 
-const snapshot = (canvas) => canvas.evaluate((element) => element.toDataURL());
+const title =
+  "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environmental Sustainability";
+const links = [
+  "About",
+  "Themes",
+  "Dates",
+  "Speakers",
+  "Committee",
+  "Registration",
+  "Hospitality",
+  "Contact",
+];
+const annotations =
+  /Six forms|Opposite charges|About the chemistry|Interactive schematic|Microfiltration|Ultrafiltration|Nanofiltration|Reverse osmosis|Second-pass RO|Interactive filtration schematic|A meeting of minds|Follow the flow/;
 const themeButton = (page, theme) =>
   page.getByRole("button", { name: `Switch to ${theme} theme` });
 
 try {
   await withBuild("full", async (url) => {
-    for (const width of [1600, 390, 320]) {
+    for (const width of [375, 768, 1440]) {
       const page = await browser.newPage({
-        viewport: { width, height: 803 },
+        viewport: { width, height: 900 },
         reducedMotion: "reduce",
       });
       const errors = [];
       page.on("pageerror", (error) => errors.push(error.message));
       await page.goto(url);
       await expect(
-        page.getByRole("heading", { name: "MemDesAI 2027", exact: true }),
+        page.getByRole("heading", { name: title, exact: true }),
       ).toBeVisible();
+      await expect(page).toHaveTitle("MemDesAI 2027");
+      await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+        "content",
+        "MemDesAI 2027",
+      );
       await page.keyboard.press("Tab");
       await expect(
         page.getByRole("link", { name: "Skip to content" }),
       ).toBeFocused();
-      await page.keyboard.press("Tab");
+      await page.keyboard.press("Enter");
+      await expect(page.locator("#main-content")).toBeFocused();
+      await expect(page.locator("#top")).toHaveCount(1);
+      await expect(page.locator("main #top")).toHaveCount(0);
+      await expect(page.locator("main h1 + p")).toHaveText(
+        "Connecting membrane science, desalination, artificial intelligence and environmental sustainability.",
+      );
+      await expect(
+        page
+          .locator("[data-flow-hero]")
+          .getByRole("link", { name: "Register" }),
+      ).toHaveAttribute("aria-disabled", "true");
+      await expect(page.locator("#about h2")).toHaveText(
+        "About the conference",
+      );
       await expect(page.locator("#themes article")).toHaveCount(10);
       await expect(
-        page.locator("#about").getByText(/Through keynote lectures/),
-      ).toBeVisible();
-      await expect(page.locator("[data-flow-node]")).toHaveCount(5);
-      for (const id of [
-        "dates",
-        "speakers",
-        "committee",
-        "registration",
-        "hospitality",
-        "contact",
-      ]) {
-        await expect(page.locator(`#${id}`)).toHaveCount(1);
-      }
+        page.locator("[data-flow-node][aria-hidden='true']:empty"),
+      ).toHaveCount(5);
+      await expect(page.locator("body")).not.toContainText(annotations);
 
-      const canvas = page.locator("canvas").first();
-      const still = await snapshot(canvas);
-      await page.waitForTimeout(150);
-      expect(await snapshot(canvas)).toBe(still);
-      await themeButton(page, "light").click();
-      await expect(page.locator('[data-theme="light"]')).toBeVisible();
-      await page.evaluate(() => document.fonts.ready);
-      await page.screenshot({
-        path: fileURLToPath(new URL(`flow-light-${width}.png`, directory)),
-      });
-      expect(
-        await page.evaluate(() => document.documentElement.scrollWidth),
-      ).toBeLessThanOrEqual(width);
-      await page.reload();
-      await themeButton(page, "dark").click();
-      await expect(page.locator('[data-theme="dark"]')).toBeVisible();
-      await page.evaluate(() => document.fonts.ready);
-      await page.screenshot({
-        path: fileURLToPath(new URL(`flow-dark-${width}.png`, directory)),
-      });
+      const nav = page.getByRole("navigation", { name: "Primary navigation" });
+      const mobile = width < 900;
+      const menu = nav.getByRole("button", { name: "Open navigation menu" });
+      const close = nav.getByRole("button", { name: "Close navigation menu" });
+      await expect(nav).toHaveCount(1);
+      if (mobile) {
+        await expect(menu).toHaveAttribute(
+          "aria-controls",
+          "site-navigation-links",
+        );
+        await expect(menu).toHaveAttribute("aria-expanded", "false");
+        await menu.click();
+        await expect(close).toHaveAttribute("aria-expanded", "true");
+      }
+      await expect(nav.locator("#site-navigation-links a")).toHaveText(links);
+      await nav.getByRole("link", { name: "Dates", exact: true }).click();
+      if (mobile) await expect(menu).toHaveAttribute("aria-expanded", "false");
+      await expect(
+        nav.getByRole("link", { name: "MemDesAI-2027" }),
+      ).toBeVisible();
+      await expect(nav.locator('a[href="#dates"]')).toHaveAttribute(
+        "aria-current",
+        "location",
+      );
+
+      const canvas = page.locator("canvas");
+      await expect(canvas).toHaveCSS("position", "fixed");
+      await expect(canvas).toHaveCSS("z-index", "0");
+      await expect(canvas).toHaveCSS("pointer-events", "none");
+      await expect(page.locator("main")).toHaveCSS("z-index", "1");
+      await expect(canvas).toHaveAttribute("data-motion", "static");
+
+      for (const theme of ["dark", "light"]) {
+        if (theme === "light") {
+          if (mobile) await menu.click();
+          await expect(
+            page.getByRole("button", { name: "Pause animation" }),
+          ).toHaveCount(1);
+          await themeButton(page, "light").click();
+          if (mobile) await close.click();
+        }
+        await expect(page.locator(`[data-theme="${theme}"]`)).toBeVisible();
+        await page.evaluate(() => document.fonts.ready);
+        await page.evaluate(() => window.scrollTo(0, 0));
+        await page.screenshot({
+          path: resolve(directory, `after-${theme}-${width}-home.png`),
+        });
+        for (const [section, target] of [
+          ["about", "#about article:first-of-type a:last-of-type"],
+          ["dates", "#dates time:visible"],
+          ["speakers", "#speakers article"],
+          ["committee", "#committee h2"],
+          ["registration", "#registration table td"],
+          ["hospitality", "#hospitality button"],
+          ["contact", "#contact a"],
+        ]) {
+          await page.locator(target).first().click({ trial: true });
+          if (["about", "dates", "registration"].includes(section)) {
+            await page
+              .locator(`#${section}`)
+              .evaluate((element) => element.scrollIntoView());
+            await page.screenshot({
+              path: resolve(
+                directory,
+                `after-${theme}-${width}-${section}.png`,
+              ),
+            });
+          }
+        }
+        expect(
+          await page.evaluate(() => document.documentElement.scrollWidth),
+        ).toBeLessThanOrEqual(width);
+      }
 
       const accordion = page
         .locator("#hospitality")
@@ -85,7 +163,9 @@ try {
         .first();
       await accordion.click();
       await expect(accordion).toHaveAttribute("aria-expanded", "true");
-      await page.goto(new URL("countdown/", url).href);
+      await page.reload();
+      await expect(page.locator('[data-theme="light"]')).toBeVisible();
+      await page.getByRole("link", { name: "Conference countdown" }).click();
       await expect(
         page.getByRole("link", { name: "Enter site" }),
       ).toHaveAttribute("href", "/");
@@ -94,17 +174,21 @@ try {
       console.log(`Interactive layout and controls passed at ${width}px`);
     }
 
-    const page = await browser.newPage();
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 },
+    });
     await page.goto(url);
-    const canvas = page.locator("canvas").first();
-    const particleMotion = async () => {
-      const before = await snapshot(canvas);
-      await page.waitForTimeout(100);
-      return before !== (await snapshot(canvas));
-    };
-    await expect.poll(particleMotion).toBe(true);
-    await page.getByRole("button", { name: "Pause animation" }).first().click();
-    await expect.poll(particleMotion).toBe(false);
+    const canvas = page.locator("canvas");
+    await expect(canvas).toHaveAttribute("data-motion", "running");
+    await page.getByRole("button", { name: "Pause animation" }).click();
+    await expect(canvas).toHaveAttribute("data-motion", "static");
+    await page.getByRole("button", { name: "Resume animation" }).click();
+    await expect(canvas).toHaveAttribute("data-motion", "running");
+    await page.locator("footer").evaluate((footer) => {
+      footer.style.minHeight = "120vh";
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "instant" });
+    });
+    await expect(canvas).toHaveAttribute("data-motion", "static");
     await page.close();
   });
 

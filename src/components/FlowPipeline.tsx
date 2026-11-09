@@ -75,8 +75,9 @@ export function FlowPipeline({ paused }: { paused: boolean }) {
       scroll = window.scrollY,
       raf = 0,
       last = 0;
-    let active = true,
-      disposed = false;
+    const main = canvas.parentElement!.querySelector("main")!;
+    let visible = false;
+    let disposed = false;
     let ripples: { x: number; y: number; age: number }[] = [];
     let hitTargets: { x: number; y: number; particle: TapSpring }[] = [];
     let pointer: { x: number; y: number } | null = null;
@@ -277,7 +278,8 @@ export function FlowPipeline({ paused }: { paused: boolean }) {
     function draw(now: number) {
       cancelAnimationFrame(raf);
       if (disposed || !points.length) return;
-      const moving = active && !pause.current && !reduced.matches;
+      const moving =
+        visible && !document.hidden && !pause.current && !reduced.matches;
       const dt = moving ? Math.min((now - (last || now)) / 1000, 0.035) : 0;
       last = now;
       ctx.clearRect(0, 0, width, height);
@@ -529,7 +531,8 @@ export function FlowPipeline({ paused }: { paused: boolean }) {
         return;
       const x = e.clientX,
         y = e.clientY + scroll;
-      if (reduced.matches || pause.current) return;
+      if (!visible || document.hidden || reduced.matches || pause.current)
+        return;
       // A radial impulse repels every species, including neutral water and organics.
       let affected = false;
       for (const target of hitTargets) {
@@ -546,10 +549,12 @@ export function FlowPipeline({ paused }: { paused: boolean }) {
       }
       // Existing RAF handles the next frame; do not restart/reset its clock on clicks.
     };
-    const visibility = () => {
-      active = !document.hidden;
+    const visibility = () => kick();
+    const intersection = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
       kick();
-    };
+    });
+    intersection.observe(main);
     let resizeTimer: ReturnType<typeof setTimeout>;
     const onResize = () => {
       clearTimeout(resizeTimer);
@@ -562,7 +567,7 @@ export function FlowPipeline({ paused }: { paused: boolean }) {
     document.addEventListener("visibilitychange", visibility);
     reduced.addEventListener("change", kick);
     const layout = new ResizeObserver(onResize);
-    layout.observe(document.querySelector("main")!);
+    layout.observe(main);
     size();
     document.fonts.ready.then(() => {
       if (!disposed) size();
@@ -573,6 +578,7 @@ export function FlowPipeline({ paused }: { paused: boolean }) {
       cancelAnimationFrame(raf);
       clearTimeout(resizeTimer);
       layout.disconnect();
+      intersection.disconnect();
       restart.current = () => {};
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);

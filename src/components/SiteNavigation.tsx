@@ -3,7 +3,9 @@ import { site } from "../content";
 import { useScrollSpy } from "../lib/useScrollSpy";
 import styles from "../styles/site.module.css";
 
-export function SiteNavigation() {
+export function SiteNavigation({
+  controls,
+}: { controls?: React.ReactNode } = {}) {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const [identityScrolledOut, setIdentityScrolledOut] = React.useState(false);
   const activeId = useScrollSpy(site.nav.map((item) => item.id));
@@ -76,6 +78,7 @@ export function SiteNavigation() {
               {item.label}
             </a>
           ))}
+          {controls}
         </div>
       </div>
     </nav>

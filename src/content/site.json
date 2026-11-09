@@ -1,6 +1,11 @@
 {
   "name": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environmental Sustainability",
   "shortName": "MemDesAI-2027",
+  "logo": {
+    "src": "/assets/logos/memdesai-2027.jpg",
+    "alt": "MemDesAI 2027 conference logo",
+    "focus": "center"
+  },
   "tagline": "Connecting membrane science, desalination, artificial intelligence and environmental sustainability.",
   "datesText": "6 to 8 December 2027 (IST). Start time to be confirmed.",
   "venue": "IIT Roorkee, Uttarakhand, India",

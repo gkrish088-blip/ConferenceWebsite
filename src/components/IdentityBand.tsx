@@ -6,6 +6,17 @@ export function IdentityBand() {
   return (
     <div className={styles.identityBand} id="top" data-identity-band>
       <div className={styles.container}>
+        {site.logo ? (
+          <img
+            className={styles.conferenceLogo}
+            src={site.logo.src}
+            alt={site.logo.alt}
+            width={1600}
+            height={682}
+          />
+        ) : (
+          <p className={styles.identityName}>{site.shortName}</p>
+        )}
         <div className={styles.identityMarks}>
           {about.institutions.map((institution) => (
             <InstitutionMark
@@ -15,7 +26,6 @@ export function IdentityBand() {
             />
           ))}
         </div>
-        <p className={styles.identityName}>{site.shortName}</p>
       </div>
     </div>
   );

@@ -80,3 +80,9 @@ Breakpoints: 1200, 900, 600. Laptop is the design target. Below 900 the nav coll
 ## Copy tone for placeholders
 
 Realistic, short, clearly fake. No lorem ipsum walls. Example: "Placeholder: one-paragraph description of the conference goes here (60 to 80 words)." This tells the content editor exactly what is needed.
+
+## Interactive branch
+
+The interactive home page uses the continuous filtration schematic with the
+existing light and dark palettes, Bodoni Moda and Jost, and a pause control.
+The approved static palette and typography still apply to the countdown.

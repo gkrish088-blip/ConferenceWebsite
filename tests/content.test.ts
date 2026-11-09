@@ -31,7 +31,7 @@ describe("content records", () => {
       "contact",
     ]);
     expect(about.institutions).toHaveLength(3);
-    expect(themes.items).toHaveLength(8);
+    expect(themes.items).toHaveLength(10);
     expect(dates.milestones).toHaveLength(1);
     expect(speakers.guestsOfHonor).toHaveLength(1);
     expect(speakers.delegates).toHaveLength(6);
@@ -77,7 +77,7 @@ describe("content records", () => {
     ).toThrow();
   });
 
-  it("allows zero themes but rejects more than eight", () => {
+  it("allows zero themes but rejects more than ten", () => {
     expect(
       themesSchema.parse({
         placeholder: true,
@@ -85,7 +85,7 @@ describe("content records", () => {
         items: [],
       }).items,
     ).toHaveLength(0);
-    const nine = Array.from({ length: 9 }, (_, index) => ({
+    const eleven = Array.from({ length: 11 }, (_, index) => ({
       id: `theme-${index + 1}`,
       title: `Theme ${index + 1} placeholder`,
       summary: "Placeholder: theme summary.",
@@ -95,7 +95,7 @@ describe("content records", () => {
       themesSchema.parse({
         placeholder: true,
         emptyText: "Placeholder: no themes.",
-        items: nine,
+        items: eleven,
       }),
     ).toThrow();
   });

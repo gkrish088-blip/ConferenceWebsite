@@ -9,6 +9,7 @@ const server = await createServer({
 
 try {
   await server.ssrLoadModule("/src/content/index.ts");
+  await server.ssrLoadModule("/src/content/flow-example.ts");
   console.log("Content schema validation passed for all nine JSON files.");
 } catch (error) {
   console.error(error);

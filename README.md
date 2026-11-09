@@ -45,3 +45,9 @@ npm run capture:screenshots
 Every unconfirmed event-specific item is marked as a placeholder. Do not present example names, dates, costs, biographies, policies or destinations as verified information.
 
 Text has been populated from the three supplied PDFs: the MemDesAI-2027 poster, conference proposal and registration fee sheet. See [content sources and remaining confirmations](docs/07-content-sources.md) for the source mapping and provisional details. Registration now includes early bird and standard fee tables and all four sponsorship packages. Supplied institution logos are connected; portraits and hospitality images remain placeholders.
+
+## Design branches
+
+This is the interactive design. Its own Vercel project deploys from `codex/interactive-design`. The interactive home page supports light and dark themes and a pause control. `/countdown/` and the countdown-only build use the shared countdown.
+
+Update `src/content/about.json` and `src/content/themes.json` on both branches when conference copy changes.

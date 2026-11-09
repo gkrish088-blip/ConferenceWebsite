@@ -1,0 +1,68 @@
+{
+  "placeholder": true,
+  "inventory": [
+    {
+      "path": "/",
+      "label": "Interactive conference site",
+      "placeholder": false
+    },
+    {
+      "path": "/countdown/",
+      "label": "Conference countdown",
+      "placeholder": false
+    }
+  ],
+  "headline": ["A meeting of minds.", "A clearer future."],
+  "description": "Membranes, desalination and artificial intelligence — connected by the movement of water.",
+  "concept": "Interactive schematic · Species, distances and interactions are not to scale",
+  "follow": "Follow the flow",
+  "legendTitle": "Six forms. One flowing story.",
+  "legend": [
+    "Water molecule · H₂O",
+    "Hydrated sodium · Na⁺",
+    "Hydrated chloride · Cl⁻",
+    "Large organic solute",
+    "Suspended solid",
+    "Neutral polymer coil"
+  ],
+  "gates": [
+    "Microfiltration · ceramic membrane",
+    "Ultrafiltration · PVDF hollow fibre",
+    "Nanofiltration · polyamide composite",
+    "Reverse osmosis · polyamide composite",
+    "Second-pass RO · permeate polishing"
+  ],
+  "hint": "Opposite charges attract; like charges repel. Click to push nearby particles away.",
+  "pause": "Pause animation",
+  "resume": "Resume animation",
+  "footer": "Interactive filtration schematic for MemDesAI 2027.",
+  "sectionIds": ["about", "themes", "dates", "registration", "contact"],
+  "gateDetails": [
+    "Suspended solids retained; dissolved ions continue.",
+    "Representative macromolecules retained, depending on membrane cut-off.",
+    "Representative large organic solutes retained; monovalent ions continue in this schematic.",
+    "Both sodium and chloride are rejected into the upstream concentrate.",
+    "A second pressure-driven pass can further reduce residual salt."
+  ],
+  "scienceTitle": "About the chemistry",
+  "scienceNote": "This qualitative illustration enlarges hydrated ions, water and solutes. Electrostatic forces are screened and exaggerated for visibility; this is not a molecular dynamics simulation. MF and UF illustrate size separation; NF selectivity depends on solute and membrane properties. RO uses a dense selective layer under pressure, not visible honeycomb pores. Rejected glyphs recycle upstream; flow rates, concentration balance and residual salt are not quantified. The final vessel represents water-rich permeate, not a purity guarantee.",
+  "sources": [
+    {
+      "label": "Drinking Water Inspectorate · membrane processes",
+      "url": "https://www.dwi.gov.uk/private-water-supplies/pws-installations/treatment-guide-2/physical-removal-of-contaminants/"
+    },
+    {
+      "label": "OpenStax · hydrated ions in water",
+      "url": "https://openstax.org/books/chemistry/pages/11-2-electrolytes"
+    },
+    {
+      "label": "DuPont · polyamide NF membranes",
+      "url": "https://www.dupont.com/water/technologies/nanofiltration-nf.html"
+    }
+  ],
+  "lightTheme": "Switch to light theme",
+  "darkTheme": "Switch to dark theme",
+  "name": "MemDesAI 2027",
+  "register": "Register",
+  "countdown": "Conference countdown"
+}

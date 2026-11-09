@@ -84,6 +84,7 @@ export const institutionSchema = z
 
 export const aboutSchema = z
   .object({
+    title: z.string().min(1).optional(),
     description: richText.refine(
       (value) =>
         value.split(/\n\s*\n/).length >= 2 &&
@@ -102,6 +103,7 @@ export const aboutSchema = z
 
 export const themesSchema = z
   .object({
+    title: z.string().min(1).optional(),
     emptyText: z.string(),
     items: z
       .array(
@@ -109,7 +111,7 @@ export const themesSchema = z
           .object({ id: slug, title: z.string().min(1), summary: richText })
           .merge(placeholder),
       )
-      .max(8),
+      .max(10),
   })
   .merge(placeholder);
 

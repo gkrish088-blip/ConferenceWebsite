@@ -4,7 +4,8 @@ import { RichText } from "../components/RichText";
 import styles from "../styles/site.module.css";
 
 export function ThemesSection() {
-  const title = site.nav.find((item) => item.id === "themes")?.label ?? "";
+  const title =
+    themes.title ?? site.nav.find((item) => item.id === "themes")?.label ?? "";
 
   return (
     <Section id="themes" title={title} alternate>

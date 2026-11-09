@@ -6,7 +6,8 @@ import { InstitutionMark } from "../components/InstitutionMark";
 import styles from "../styles/site.module.css";
 
 export function AboutSection() {
-  const title = site.nav.find((item) => item.id === "about")?.label ?? "";
+  const title =
+    about.title ?? site.nav.find((item) => item.id === "about")?.label ?? "";
 
   return (
     <Section id="about" title={title}>

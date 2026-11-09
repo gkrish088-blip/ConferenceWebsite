@@ -1224,7 +1224,7 @@ async function verifyContentExtremes(browser) {
             hospitalityImages: 6,
           },
           many: {
-            themes: 8,
+            themes: 10,
             delegates: 6,
             listGroups: [5, 14],
             hospitalityImages: 18,

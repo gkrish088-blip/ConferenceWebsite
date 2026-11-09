@@ -1,53 +1,66 @@
 {
+  "title": "Conference Themes – MemDesAI 2027",
   "placeholder": false,
   "emptyText": "Themes to be announced.",
   "items": [
     {
       "id": "theme-1",
-      "title": "Membrane technology",
-      "summary": "Nanocomposite and thin-film composite membranes, membrane fabrication and characterization.",
+      "title": "Role of AI in Membrane Processes",
+      "summary": "Application of artificial intelligence and machine learning for membrane design, performance prediction, process optimization, and intelligent process control.",
       "placeholder": false
     },
     {
       "id": "theme-2",
-      "title": "Role of AI in membranes",
-      "summary": "AI-assisted fabrication, machine-learning-assisted design, fouling prediction, digital twins and process control.",
+      "title": "Desalination",
+      "summary": "Advancing membrane-based desalination technologies for energy-efficient production of freshwater from seawater and brackish water.",
       "placeholder": false
     },
     {
       "id": "theme-3",
-      "title": "Desalination",
-      "summary": "Seawater and brackish-water treatment, brine management and resource recovery.",
+      "title": "Critical Minerals Recovery and Brine Management",
+      "summary": "Innovative membrane processes for recovering valuable minerals and metals while minimizing brine discharge and promoting resource circularity.",
       "placeholder": false
     },
     {
       "id": "theme-4",
-      "title": "Water & wastewater treatment",
-      "summary": "Contaminant removal and treatment systems at process scale.",
+      "title": "Water and Wastewater Treatment",
+      "summary": "Development of advanced membrane technologies for water purification, emerging contaminant removal, wastewater recycling, and water reuse.",
       "placeholder": false
     },
     {
       "id": "theme-5",
-      "title": "Air purification & gas separation",
-      "summary": "Membrane-based air filtration and pollutant capture, CO₂ capture and industrial gas separation membranes.",
+      "title": "Climate Change and Water Security",
+      "summary": "Harnessing membrane technologies for climate-resilient water management, sustainable water supply, and adaptation to increasing water scarcity.",
       "placeholder": false
     },
     {
       "id": "theme-6",
-      "title": "Geomembranes",
-      "summary": "Containment, lining systems and civil and environmental applications.",
+      "title": "Air Purification",
+      "summary": "Development of advanced membrane-based solutions for air filtration, indoor air quality improvement, and removal of airborne pollutants.",
       "placeholder": false
     },
     {
       "id": "theme-7",
-      "title": "Fuel cells",
-      "summary": "Membrane materials for energy conversion and storage systems.",
+      "title": "Gas Separation",
+      "summary": "Advancing membrane materials and processes for selective gas separation, carbon capture, hydrogen purification, and clean energy applications.",
       "placeholder": false
     },
     {
       "id": "theme-8",
-      "title": "Biomedical & healthcare",
-      "summary": "Hemodialysis, drug delivery, blood purification, tissue engineering, biosensors and diagnostics.",
+      "title": "Geomembranes",
+      "summary": "Innovations in geomembrane materials and applications for environmental protection, containment systems, landfill management, and groundwater conservation.",
+      "placeholder": false
+    },
+    {
+      "id": "theme-9",
+      "title": "Fuel Cells",
+      "summary": "Development of advanced membrane materials for efficient proton and ion transport in fuel cells and emerging electrochemical energy technologies.",
+      "placeholder": false
+    },
+    {
+      "id": "theme-10",
+      "title": "Role of Membranes in Biomedical and Healthcare",
+      "summary": "Application of membrane technologies in medical filtration, haemodialysis, drug delivery, biosensing, and healthcare applications.",
       "placeholder": false
     }
   ]

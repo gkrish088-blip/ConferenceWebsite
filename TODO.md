@@ -10,7 +10,7 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 - [x] Connect the supplied IIT Roorkee, CSIR-IIP and HKUST logos throughout both site modes.
 - [x] Add verified official institution websites to the About links and every logo.
 - [ ] Confirm institution descriptions with the organizers.
-- [x] Populate all poster themes (air purification and gas separation grouped to retain the eight-item limit).
+- [x] Publish the supplied About copy and ten conference themes on both design branches.
 - [ ] Supply abstract and registration milestone dates; only the conference date is currently documented.
 
 ## Speakers and committee

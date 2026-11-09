@@ -274,7 +274,20 @@ export const hospitalitySchema = z
           id: slug,
           title: z.string().min(1),
           body: richText,
-          images: z.array(imageRef),
+          images: z.array(
+            imageRef.extend({
+              credit: z
+                .object({
+                  prefix: z.string().min(1),
+                  author: z.string().min(1),
+                  sourceUrl: z.url(),
+                  licence: z.string().min(1),
+                  licenceUrl: z.url(),
+                  changes: z.string().min(1),
+                })
+                .optional(),
+            }),
+          ),
           placeholder: z.boolean(),
         }),
       )

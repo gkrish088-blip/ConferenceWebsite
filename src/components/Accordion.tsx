@@ -91,13 +91,31 @@ export function HospitalityAccordion() {
                   <div className={styles.accordionBody}>
                     <RichText text={item.body} />
                     {item.images.map((image, index) => (
-                      <img
-                        className={styles.hospitalityImage}
-                        src={image.src}
-                        alt={image.alt}
-                        style={{ objectPosition: image.focus }}
+                      <figure
+                        className={styles.hospitalityFigure}
                         key={`${item.id}-${index}`}
-                      />
+                      >
+                        <img
+                          className={styles.hospitalityImage}
+                          src={image.src}
+                          alt={image.alt}
+                          style={{ objectPosition: image.focus }}
+                        />
+                        {image.credit && (
+                          <figcaption className={styles.hospitalityCredit}>
+                            {image.credit.prefix}{" "}
+                            <a href={image.credit.sourceUrl}>
+                              {image.credit.author}
+                            </a>
+                            {" · "}
+                            <a href={image.credit.licenceUrl}>
+                              {image.credit.licence}
+                            </a>
+                            {" · "}
+                            {image.credit.changes}
+                          </figcaption>
+                        )}
+                      </figure>
                     ))}
                   </div>
                 </div>

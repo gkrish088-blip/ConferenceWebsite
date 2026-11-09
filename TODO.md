@@ -35,12 +35,13 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 ## Hospitality
 
 - [x] Populate the three-night accommodation arrangement from the registration fee sheet.
-- [ ] Supply the hospitality introduction, accommodation booking details and the remaining hospitality text.
+- [x] Publish sourced travel and campus guidance with credited photographs.
+- [ ] Confirm conference transfers, campus reporting point, accommodation allocation and dates, accessibility, catering, and delegate access to Wi-Fi and facilities.
 - [ ] One approved image and useful alt text for each topic.
 - [ ] Confirm airport, travel, accommodation, campus, food and regional visitor guidance.
 
 ## Launch review
 
-- [ ] Replace placeholder portraits and hospitality images with approved assets.
+- [ ] Replace placeholder portraits with approved assets.
 - [ ] Run `npm run validate:content`, `npm run report:placeholders`, both builds and the verification checklist.
 - [ ] Run `npm run check:launch` after every placeholder has been replaced.

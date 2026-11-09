@@ -1738,6 +1738,16 @@
   display: grid;
   gap: 12px;
 }
+[data-interactive] .featuredCommitteeGroup::after,
+[data-interactive] .leadershipPair::before,
+[data-interactive] .pairMember::before {
+  content: none;
+}
+
+[data-interactive] .leadershipPair {
+  padding-top: 0;
+}
+
 [data-interactive] .siteFooter :is(p, a) {
   color: var(--ink);
 }

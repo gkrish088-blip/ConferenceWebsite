@@ -525,7 +525,7 @@ async function checkMainInteractions(browser) {
     "Each hospitality item should have one placeholder image",
   );
   expect(
-    (await page.locator("[data-identity-band] img").count()) === 3,
+    (await page.locator("[data-identity-band] a img").count()) === 3,
     "Identity band should display the three institution marks",
   );
   expect(

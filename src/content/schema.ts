@@ -29,6 +29,7 @@ export const siteSchema = z
   .object({
     name: z.string().min(1),
     shortName: z.string().min(1),
+    logo: imageRef.optional(),
     tagline: richText,
     datesText: z.string().min(1),
     venue: z.string().min(1),

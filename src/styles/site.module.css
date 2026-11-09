@@ -85,6 +85,13 @@
   object-position: center;
 }
 
+.conferenceLogo {
+  display: block;
+  width: min(100%, clamp(230px, 23vw, 320px));
+  height: auto;
+  border-radius: var(--radius);
+}
+
 .identityName {
   max-width: none;
   margin: 0;

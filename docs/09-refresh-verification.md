@@ -50,3 +50,7 @@ backgrounds at 1440px and 390px, with no overflow. Institution images are now
 430px/300px wide with the unused surrounding paper trimmed from its viewBox.
 Both themes retain readable brand bands, and countdowns fit at 390 by 844.
 Both launch builds, content validation, static HTML checks and formatting pass.
+
+The subsequent sizing revision verifies exact two-thirds header image dimensions
+at 1440px and 390px, with no overflow or browser errors and working keyboard
+menu controls. Both launch builds and static HTML checks pass.

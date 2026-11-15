@@ -123,3 +123,7 @@ Identity and footer brand bands retain a light surface in both themes so the
 original dark-blue logo lettering stays readable without recolouring the marks.
 Countdown institution marks share one light identity band instead of individual
 white image tiles.
+
+Header logo sizing was subsequently reduced to two-thirds of the enlarged
+presentation, on desktop and phones. Transparent surrounds remain unchanged;
+caption text stays readable at its existing size.

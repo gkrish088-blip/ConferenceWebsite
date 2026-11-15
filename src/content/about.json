@@ -6,7 +6,7 @@
       "id": "iitr",
       "name": "IIT Roorkee",
       "logo": {
-        "src": "/assets/approved/logos/iitr.webp",
+        "src": "/assets/approved/logos/iitr-clear.svg",
         "alt": "IIT Roorkee logo",
         "focus": "center"
       },
@@ -19,7 +19,7 @@
       "id": "csir-iip",
       "name": "CSIR-IIP",
       "logo": {
-        "src": "/assets/approved/logos/csir-iip.webp",
+        "src": "/assets/approved/logos/csir-iip-clear.svg",
         "alt": "CSIR–Indian Institute of Petroleum logo",
         "focus": "center"
       },
@@ -32,7 +32,7 @@
       "id": "hkust",
       "name": "HKUST",
       "logo": {
-        "src": "/assets/approved/logos/hkust.webp",
+        "src": "/assets/approved/logos/hkust-clear.svg",
         "alt": "Hong Kong University of Science and Technology logo",
         "focus": "center"
       },
@@ -41,7 +41,7 @@
       "linkLabel": "Visit HKUST website",
       "placeholder": false,
       "secondaryLogo": {
-        "src": "/assets/approved/logos/hkust-cbe.webp",
+        "src": "/assets/approved/logos/hkust-cbe-clear.svg",
         "alt": "Department of Chemical and Biological Engineering, HKUST logo",
         "focus": "center"
       }

@@ -40,3 +40,13 @@ Supplementary checks passed for all three landing-only builds at all four widths
 final full-build focus and genuine 404 responses, and automatic gallery advancement
 with manual pause. Key body/link contrast pairs range from 4.86:1 to 14.91:1.
 See `proof/design-refresh/supplementary-report.json`.
+
+## Logo presentation refinement
+
+The original artwork bytes in all five transparent SVG presentations were
+verified against their approved sources. Header logos load without CSS white
+backgrounds at 1440px and 390px, with no overflow. Institution images are now
+108 by 84 CSS pixels on desktop and 88 by 68 on phones; the conference mark is
+430px/300px wide with the unused surrounding paper trimmed from its viewBox.
+Both themes retain readable brand bands, and countdowns fit at 390 by 844.
+Both launch builds, content validation, static HTML checks and formatting pass.

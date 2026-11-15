@@ -1915,3 +1915,112 @@
 .committeePortrait {
   height: auto;
 }
+
+/* Transparent, tightly framed institution marks rather than white photo tiles. */
+.logoImage,
+.departmentLogo,
+.conferenceLogo,
+[data-interactive]
+  :is(.identityBand, .institutionBlock, .siteFooter)
+  .logoImage {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+.conferenceLogo {
+  width: min(100%, clamp(300px, 31vw, 430px));
+  max-width: 430px;
+  height: auto;
+}
+.identityBand > .container {
+  gap: 32px;
+  padding-block: 18px;
+}
+.identityMarks {
+  gap: clamp(26px, 3vw, 48px);
+}
+.identityMarks .compactMark {
+  gap: 9px;
+}
+.identityMarks .compactMark .logoImage {
+  width: 108px;
+  height: 84px;
+}
+.identityMarks .compactMark > span {
+  font-size: 12px;
+}
+.institutionBlock .logoImage {
+  width: 184px;
+  height: 104px;
+  object-position: left center;
+}
+.departmentLogo {
+  width: 260px;
+  height: auto;
+  max-height: 58px;
+}
+.siteFooter .compactMark .logoImage {
+  width: 102px;
+  height: 74px;
+}
+.siteFooter .logoImage,
+[data-theme="dark"] .logoImage,
+[data-theme="dark"] .conferenceLogo,
+[data-theme="dark"] .departmentLogo {
+  filter: drop-shadow(0 0 0.65px rgba(255, 255, 255, 0.85));
+}
+[data-theme="light"] .siteFooter .logoImage {
+  filter: none;
+}
+@media (max-width: 899px) {
+  .identityBand > .container {
+    gap: 18px 32px;
+  }
+  .conferenceLogo {
+    width: min(100%, 370px);
+  }
+}
+@media (max-width: 600px) {
+  .identityBand > .container {
+    padding-block: 16px;
+    gap: 18px;
+  }
+  .conferenceLogo {
+    width: min(100%, 300px);
+    max-width: 300px;
+  }
+  .identityMarks {
+    gap: 16px;
+    justify-content: space-around;
+  }
+  .identityMarks .compactMark .logoImage {
+    width: 88px;
+    height: 68px;
+  }
+  .identityMarks .compactMark > span {
+    font-size: 12px;
+  }
+  .siteFooter .compactMark .logoImage {
+    width: 96px;
+    height: 68px;
+  }
+}
+
+/* Keep brand marks legible in the optional dark presentation without recolouring them. */
+[data-theme="dark"] .identityBand,
+.siteFooter,
+[data-interactive] .siteFooter {
+  background: #edf3f6;
+  color: #19372f;
+}
+[data-theme="dark"] .identityBand .institutionMark > span,
+.siteFooter :is(p, a),
+[data-interactive] .siteFooter :is(p, a) {
+  color: #19372f;
+}
+[data-theme="dark"] .identityBand .logoImage,
+[data-theme="dark"] .conferenceLogo,
+.siteFooter .logoImage,
+[data-theme="dark"] .siteFooter .logoImage {
+  filter: none;
+}

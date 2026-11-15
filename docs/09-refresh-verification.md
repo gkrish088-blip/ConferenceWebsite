@@ -63,3 +63,12 @@ errors or failed asset requests. A dark-theme audit covers all eight sections
 at 1440px and 390px, verifies dark header/footer backgrounds, dark logo sources,
 readable main/muted text, removal of darker inset rich-text blocks, no overflow,
 and returning to the original light logo sources. See dark-mode-report.json.
+
+## Fully open multipage Hospitality
+
+All six topics render as normal labelled sections, with body text, source credits
+and supplied images immediately visible. No details, summary or toggle controls
+remain on this page. Both launch builds, content/HTML checks and formatting pass.
+The updated browser suite passes at 1440/1024/768/390px with no errors, failed
+assets or external requests. All topics remain visible without JavaScript, and
+keyboard activation of the accommodation intro link preserves its deep-link URL.

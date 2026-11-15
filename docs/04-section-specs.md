@@ -78,3 +78,6 @@ portraits in Committee, including both leadership members and all four conveners
 Hospitality uses native `details`/`summary`, independent toggling and hash opening.
 Uttarakhand contains the five supplied tourism photos. Both launch modes must
 produce populated HTML. All eight section destinations have separate static HTML routes on this branch.
+
+
+Hospitality on the dedicated multipage page now displays all six topics, full body copy, credits and images immediately. There are no disclosure controls; existing deep-link IDs and intro links remain valid.

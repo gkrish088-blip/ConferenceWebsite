@@ -55,8 +55,8 @@ Other unknown records retain `placeholder: true`.
 
 `scripts/prerender.mjs` renders the actual React components into every page at
 build time. `hydrateRoot` attaches browser interactions to that same markup.
-Clock snapshots keep countdown/date hydration consistent. Native hospitality
-disclosures and real navigation links remain usable without JavaScript.
+Clock snapshots keep countdown/date hydration consistent. All Hospitality topics
+and real navigation links remain available without JavaScript.
 The live countdown updates after hydration; without JavaScript its digits are
 a build-time snapshot and the event date remains visible.
 
@@ -85,7 +85,7 @@ node scripts/verify-design.mjs
 
 The browser check expects a static server on 5281 (static), 5282 (interactive),
 or 5283 (multipage), or `CONFERENCE_ORIGIN`. It covers 1440/1024/768/390px,
-images, gallery controls, reduced motion, keyboard disclosures, deep links,
+images, gallery controls, reduced motion, keyboard navigation, full Hospitality content, deep links,
 mobile menus, theme persistence, direct routes without JavaScript, browser
 errors, hydration and same-origin asset requests. Proof is saved under
 `proof/design-refresh/`. `npm run check:launch` still rejects unknown content;
@@ -98,3 +98,6 @@ The shared theme context selects dark-compatible logo presentations in the
 identity band, About and footer. The dark page/background palette is shared
 across sections and reading surfaces; original light artwork remains unchanged.
 See `proof/design-refresh/dark-mode-report.json` for the dark-theme audit.
+
+
+The multipage Hospitality page displays all six topics in full. Existing intro anchors and topic URLs continue to work, with content visible before JavaScript runs.

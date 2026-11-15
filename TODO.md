@@ -59,3 +59,6 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 - [ ] Deploy the refreshed builds to the chosen hosting targets.
 
 - [x] Correct interactive dark identity/footer bands, logo readability and inconsistent reading/card backgrounds; preserve the two-thirds logo sizing.
+
+
+- [x] Present all multipage Hospitality topics fully open as normal sections, retaining images, source credits and direct topic links.

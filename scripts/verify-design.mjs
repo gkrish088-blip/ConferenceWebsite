@@ -92,24 +92,55 @@ try {
     else await goto(page, "/#hospitality-uttarakhand");
     const tourism = page.locator("#hospitality-uttarakhand");
     await tourism.waitFor({ state: "visible" });
-    assert(await tourism.evaluate((el) => el.open));
+    if (kind === "multipage") {
+      assert.equal(
+        await page
+          .locator("#hospitality details, #hospitality summary")
+          .count(),
+        0,
+      );
+      assert.equal(
+        await page.locator("#hospitality section[aria-labelledby]").count(),
+        6,
+      );
+      for (const topic of await page
+        .locator("#hospitality section[aria-labelledby]")
+        .all()) {
+        assert(await topic.locator("h3").isVisible());
+        assert(await topic.locator("h3 + div").isVisible());
+      }
+    } else assert(await tourism.evaluate((el) => el.open));
     assert.equal(
       await tourism.locator('img[src*="/approved/tourism/"]').count(),
       5,
     );
     await overflow(page);
     await tourism.screenshot({ path: `${out}/tourism-${width}.png` });
-    await tourism.locator("summary").focus();
-    await page.keyboard.press("Enter");
-    assert.equal(await tourism.evaluate((el) => el.open), false);
-    await page.keyboard.press("Space");
-    assert.equal(await tourism.evaluate((el) => el.open), true);
-    assert.notEqual(
-      await tourism
-        .locator("summary")
-        .evaluate((el) => getComputedStyle(el).outlineStyle),
-      "none",
-    );
+    if (kind !== "multipage") {
+      await tourism.locator("summary").focus();
+      await page.keyboard.press("Enter");
+      assert.equal(await tourism.evaluate((el) => el.open), false);
+      await page.keyboard.press("Space");
+      assert.equal(await tourism.evaluate((el) => el.open), true);
+      assert.notEqual(
+        await tourism
+          .locator("summary")
+          .evaluate((el) => getComputedStyle(el).outlineStyle),
+        "none",
+      );
+    } else {
+      const introLink = page
+        .locator('#hospitality a[href="#hospitality-accommodation"]')
+        .first();
+      await page.keyboard.press("Tab");
+      await introLink.focus();
+      assert.notEqual(
+        await introLink.evaluate((el) => getComputedStyle(el).outlineStyle),
+        "none",
+      );
+      await page.keyboard.press("Enter");
+      await page.waitForURL("**/#hospitality-accommodation");
+    }
     await goto(page, "/");
     if (width < 900) {
       const menu = page.locator(
@@ -147,7 +178,7 @@ try {
       [],
     );
     checks.push(
-      `${width}px: home/about/committee/tourism/countdown, galleries, native accordions, focus, no overflow`,
+      `${width}px: home/about/committee/tourism/countdown, galleries, hospitality visibility, focus, no overflow`,
     );
     await context.close();
   }
@@ -164,8 +195,18 @@ try {
     assert(await page.locator("h1").textContent());
     if (route === "/hospitality/" || (route === "/" && kind !== "multipage")) {
       const details = page.locator("#hospitality-uttarakhand");
-      await details.locator("summary").click();
-      assert(await details.evaluate((el) => el.open));
+      if (kind === "multipage") {
+        assert(await details.locator("p").first().isVisible());
+        assert.equal(
+          await page
+            .locator("#hospitality details, #hospitality summary")
+            .count(),
+          0,
+        );
+      } else {
+        await details.locator("summary").click();
+        assert(await details.evaluate((el) => el.open));
+      }
     }
     if (route !== "/countdown/")
       assert(
@@ -176,7 +217,7 @@ try {
       );
   }
   checks.push(
-    "All published routes contain readable HTML without JavaScript; mobile navigation and disclosures remain usable",
+    "All published routes contain readable HTML without JavaScript; mobile navigation and hospitality content remain usable",
   );
   await context.close();
   // Motion and theme preferences, history and client navigation after hydration.

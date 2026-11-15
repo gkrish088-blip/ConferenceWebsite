@@ -47,3 +47,6 @@ remain usable without JavaScript.
 For this branch only, the user-requested supplied multipage design supersedes
 the one-page rule. Page inventory is validated in `src/content/pages.json`.
 The other two designs retain their one-page section navigation.
+
+
+The latest user request replaces Hospitality accordions on this multipage branch with six always-visible topic sections. The other design branches keep their existing accordions.

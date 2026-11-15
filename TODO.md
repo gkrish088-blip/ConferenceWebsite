@@ -65,3 +65,5 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 
 
 - [x] Move the multipage About photos into its background, remove the visible counter/caption and low-quality third slide, and slow automatic changes to 10 seconds.
+
+- [x] Replace multipage fonts with self-hosted Source Serif 4, Inter and IBM Plex Mono; retain light/dark parity, check contrast, font loading and the requested page sizes.

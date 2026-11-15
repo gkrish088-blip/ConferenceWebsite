@@ -1,0 +1,3742 @@
+[
+  {
+    "width": 1366,
+    "theme": "light",
+    "path": "/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34.15px",
+        "spacing": "normal",
+        "line": "39.2725px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "About the conference",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "57.372px",
+        "spacing": "normal",
+        "line": "65.9778px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "HKUST",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(16, 38, 63)",
+        "background": "rgb(251, 252, 253)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(232, 240, 237)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "←",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "20px",
+        "spacing": "normal",
+        "line": "33px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=register]",
+        "text": "Register",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(141, 80, 53)"
+      },
+      {
+        "selector": "[class*=heroDetails] p",
+        "text": "6 to 8 December 2027 (IST). Start time to be confirmed.",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "23.1px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=heroDetails] p",
+        "text": "IIT Roorkee, Uttarakhand, India",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "23.1px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=wordmark]",
+        "text": "MemDesAI 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "95.62px",
+        "spacing": "-4.3029px",
+        "line": "89.8828px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 1366,
+    "theme": "light",
+    "path": "/themes/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Conference Themes – MemDesAI 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "57.372px",
+        "spacing": "normal",
+        "line": "65.9778px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Role of AI in Membrane Processes",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Desalination",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Critical Minerals Recovery and Brine Management",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Water and Wastewater Treatment",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(16, 38, 63)",
+        "background": "rgb(251, 252, 253)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(232, 240, 237)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 1366,
+    "theme": "light",
+    "path": "/dates/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Dates",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "57.372px",
+        "spacing": "normal",
+        "line": "65.9778px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Conference: 6–8 December 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "22.1px",
+        "color": "rgb(40, 105, 84)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Conference: 6–8 December 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "19.89px",
+        "spacing": "normal",
+        "line": "22.2768px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(16, 38, 63)",
+        "background": "rgb(251, 252, 253)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(232, 240, 237)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "time",
+        "text": "6 December 2027",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "15px",
+        "spacing": "normal",
+        "line": "21.75px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "time",
+        "text": "6 December 2027",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=milestone] p",
+        "text": "Conference dates are supplied in the poster. Exact start time, abstract deadlines and",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "15px",
+        "spacing": "normal",
+        "line": "21.75px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 1366,
+    "theme": "light",
+    "path": "/registration/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Registration",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "57.372px",
+        "spacing": "normal",
+        "line": "65.9778px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Sponsorship",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Platinum Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Gold Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Silver Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(16, 38, 63)",
+        "background": "rgb(251, 252, 253)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(232, 240, 237)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "path": "/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34.15px",
+        "spacing": "normal",
+        "line": "39.2725px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "About the conference",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "57.372px",
+        "spacing": "normal",
+        "line": "65.9778px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "HKUST",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(32, 51, 44)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "←",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "20px",
+        "spacing": "normal",
+        "line": "33px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=register]",
+        "text": "Register",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(22, 38, 32)",
+        "background": "rgb(214, 161, 127)"
+      },
+      {
+        "selector": "[class*=heroDetails] p",
+        "text": "6 to 8 December 2027 (IST). Start time to be confirmed.",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "23.1px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=heroDetails] p",
+        "text": "IIT Roorkee, Uttarakhand, India",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "23.1px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=wordmark]",
+        "text": "MemDesAI 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "95.62px",
+        "spacing": "-4.3029px",
+        "line": "89.8828px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "path": "/themes/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Conference Themes – MemDesAI 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "57.372px",
+        "spacing": "normal",
+        "line": "65.9778px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Role of AI in Membrane Processes",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Desalination",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Critical Minerals Recovery and Brine Management",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Water and Wastewater Treatment",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(32, 51, 44)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "path": "/dates/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Dates",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "57.372px",
+        "spacing": "normal",
+        "line": "65.9778px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Conference: 6–8 December 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "22.1px",
+        "color": "rgb(157, 201, 181)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Conference: 6–8 December 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "19.89px",
+        "spacing": "normal",
+        "line": "22.2768px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(32, 51, 44)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "time",
+        "text": "6 December 2027",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "15px",
+        "spacing": "normal",
+        "line": "21.75px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "time",
+        "text": "6 December 2027",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=milestone] p",
+        "text": "Conference dates are supplied in the poster. Exact start time, abstract deadlines and",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "15px",
+        "spacing": "normal",
+        "line": "21.75px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 1366,
+    "theme": "dark",
+    "path": "/registration/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Registration",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "57.372px",
+        "spacing": "normal",
+        "line": "65.9778px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Sponsorship",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "30px",
+        "spacing": "normal",
+        "line": "33.6px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Platinum Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Gold Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Silver Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(32, 51, 44)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "path": "/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "27.6px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "About the conference",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "39.1px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "HKUST",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(16, 38, 63)",
+        "background": "rgb(251, 252, 253)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(232, 240, 237)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "←",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "20px",
+        "spacing": "normal",
+        "line": "33px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=register]",
+        "text": "Register",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(141, 80, 53)"
+      },
+      {
+        "selector": "[class*=heroDetails] p",
+        "text": "6 to 8 December 2027 (IST). Start time to be confirmed.",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "23.1px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=heroDetails] p",
+        "text": "IIT Roorkee, Uttarakhand, India",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "23.1px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=wordmark]",
+        "text": "MemDesAI 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "64px",
+        "spacing": "-2.88px",
+        "line": "60.16px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "path": "/themes/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Conference Themes – MemDesAI 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "39.1px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Role of AI in Membrane Processes",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Desalination",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Critical Minerals Recovery and Brine Management",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Water and Wastewater Treatment",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(16, 38, 63)",
+        "background": "rgb(251, 252, 253)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(232, 240, 237)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "path": "/dates/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Dates",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "39.1px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Conference: 6–8 December 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "22.1px",
+        "color": "rgb(40, 105, 84)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Conference: 6–8 December 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "19px",
+        "spacing": "normal",
+        "line": "21.28px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(16, 38, 63)",
+        "background": "rgb(251, 252, 253)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(232, 240, 237)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "time",
+        "text": "6 December 2027",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "15px",
+        "spacing": "normal",
+        "line": "21.75px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "time",
+        "text": "6 December 2027",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "20.3px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=milestone] p",
+        "text": "Conference dates are supplied in the poster. Exact start time, abstract deadlines and",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "15px",
+        "spacing": "normal",
+        "line": "21.75px",
+        "color": "rgb(72, 97, 88)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "path": "/registration/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Registration",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "39.1px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Sponsorship",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Platinum Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Gold Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Silver Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(16, 38, 63)",
+        "background": "rgb(251, 252, 253)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(232, 240, 237)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgb(245, 248, 247)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(25, 55, 47)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "path": "/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "27.6px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "About the conference",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "39.1px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "HKUST",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "22px",
+        "spacing": "normal",
+        "line": "24.64px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(32, 51, 44)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "←",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "20px",
+        "spacing": "normal",
+        "line": "33px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=register]",
+        "text": "Register",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(22, 38, 32)",
+        "background": "rgb(214, 161, 127)"
+      },
+      {
+        "selector": "[class*=heroDetails] p",
+        "text": "6 to 8 December 2027 (IST). Start time to be confirmed.",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "23.1px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=heroDetails] p",
+        "text": "IIT Roorkee, Uttarakhand, India",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "23.1px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=wordmark]",
+        "text": "MemDesAI 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "64px",
+        "spacing": "-2.88px",
+        "line": "60.16px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "path": "/themes/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Conference Themes – MemDesAI 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "39.1px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Role of AI in Membrane Processes",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Desalination",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Critical Minerals Recovery and Brine Management",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Water and Wastewater Treatment",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(32, 51, 44)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "path": "/dates/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Dates",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "39.1px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Conference: 6–8 December 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "22.1px",
+        "color": "rgb(157, 201, 181)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Conference: 6–8 December 2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "19px",
+        "spacing": "normal",
+        "line": "21.28px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(32, 51, 44)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "time",
+        "text": "6 December 2027",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "15px",
+        "spacing": "normal",
+        "line": "21.75px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "time",
+        "text": "6 December 2027",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "20.3px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=milestone] p",
+        "text": "Conference dates are supplied in the poster. Exact start time, abstract deadlines and",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "15px",
+        "spacing": "normal",
+        "line": "21.75px",
+        "color": "rgb(182, 199, 188)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "path": "/registration/",
+    "styles": [
+      {
+        "selector": "h1",
+        "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligenc",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "38.08px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h2",
+        "text": "Registration",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "34px",
+        "spacing": "normal",
+        "line": "39.1px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Sponsorship",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "23px",
+        "spacing": "normal",
+        "line": "25.76px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Platinum Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Gold Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "h3",
+        "text": "Silver Sponsor",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "24px",
+        "spacing": "normal",
+        "line": "26.88px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "body",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Public Sans\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[data-theme]",
+        "text": "Skip to contentIIT RoorkeeCSIR-IIPHKUSTMemDesAI-2027AboutThemesDatesSpeakersCommittee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "nav a",
+        "text": "MemDesAI-2027",
+        "family": "\"Flow Bodoni\", Georgia, serif",
+        "weight": "400",
+        "size": "21px",
+        "spacing": "normal",
+        "line": "26.25px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "About",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Themes",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "nav a",
+        "text": "Dates",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(32, 51, 44)"
+      },
+      {
+        "selector": "button",
+        "text": "",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "button",
+        "text": "Ⅱ",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "17px",
+        "spacing": "normal",
+        "line": "28.05px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgb(22, 38, 32)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "CSIR-IIP",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "HKUST",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "12px",
+        "spacing": "normal",
+        "line": "16.2px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": "[class*=compactMark] > span",
+        "text": "IIT Roorkee",
+        "family": "\"Flow Jost\", Arial, sans-serif",
+        "weight": "400",
+        "size": "14px",
+        "spacing": "normal",
+        "line": "18.9px",
+        "color": "rgb(237, 243, 238)",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "fonts": [
+      "http://127.0.0.1:5283/assets/fonts/jost.ttf",
+      "http://127.0.0.1:5283/assets/fonts/bodonimoda.ttf"
+    ]
+  }
+]

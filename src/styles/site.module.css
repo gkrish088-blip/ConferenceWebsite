@@ -289,7 +289,7 @@
   color: var(--paper);
   background: var(--river);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.35;
   text-decoration: none;
   transition: background 120ms ease-out;
@@ -870,7 +870,7 @@
   margin: 0 0 18px;
   color: var(--river);
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .sponsorshipTier ul {
@@ -920,7 +920,7 @@
   color: var(--river);
   background: transparent;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.35;
   text-decoration: none;
 }
@@ -2081,6 +2081,55 @@
   margin: 0 0 22px;
   font-size: clamp(25px, 3vw, 38px);
   line-height: 1.2;
+}
+
+/* Shared typography applies equally to both themes without changing surfaces. */
+[data-interactive] h2 {
+  font-size: var(--heading-2-size);
+  line-height: 1.25;
+}
+
+[data-interactive] h3 {
+  line-height: 1.25;
+}
+
+.navBrand,
+.navLink,
+.primaryButton,
+.secondaryButton,
+.feeTable caption {
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.richText p {
+  max-width: 68ch;
+}
+
+.featuredSpeakerCopy .richText p,
+.featuredSpeakerCopy > p {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.milestoneLabel time,
+.mobileMilestone time,
+.milestoneLabel > p,
+.mobileMilestone p,
+.identityMarks .compactMark > span,
+.institutionMark > span,
+.footerCopyright,
+.personDetails p,
+.delegateCard > p,
+.imageCredit,
+.hospitalityCredit {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.65;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 @media (max-width: 600px) {
   .hospitalityTopic {

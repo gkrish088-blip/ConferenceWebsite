@@ -1,0 +1,3237 @@
+{
+  "origin": "http://127.0.0.1:5283",
+  "pages": [
+    {
+      "route": "/",
+      "width": 1366,
+      "theme": "light",
+      "screenshot": "home-light-1366.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#f5f8f7",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "34.15px",
+          "spacing": "-0.3415px",
+          "lineHeight": "39.2725px"
+        },
+        {
+          "text": "About the conference",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "33.992px",
+          "spacing": "-0.33992px",
+          "lineHeight": "42.49px"
+        },
+        {
+          "text": "IIT Roorkee",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        },
+        {
+          "text": "CSIR-IIP",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        },
+        {
+          "text": "HKUST",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        }
+      ],
+      "titleLines": 2.999474823349672,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "←",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "20px",
+          "spacing": "normal",
+          "lineHeight": "33px"
+        },
+        {
+          "text": "→",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "20px",
+          "spacing": "normal",
+          "lineHeight": "33px"
+        },
+        {
+          "text": "Next page →Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/themes/",
+      "width": 1366,
+      "theme": "light",
+      "screenshot": "themes-light-1366.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#f5f8f7",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "54.716px",
+          "spacing": "-0.54716px",
+          "lineHeight": "62.9234px"
+        },
+        {
+          "text": "Conference Themes – MemDesAI 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "33.992px",
+          "spacing": "-0.33992px",
+          "lineHeight": "42.49px"
+        },
+        {
+          "text": "Role of AI in Membrane Processes",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Desalination",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Critical Minerals Recovery and Brine Management",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Water and Wastewater Treatment",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Climate Change and Water Security",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Air Purification",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Gas Separation",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Geomembranes",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Fuel Cells",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Role of Membranes in Biomedical and Healthcare",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "← Previous pageAbout",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/dates/",
+      "width": 1366,
+      "theme": "light",
+      "screenshot": "dates-light-1366.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#f5f8f7",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "54.716px",
+          "spacing": "-0.54716px",
+          "lineHeight": "62.9234px"
+        },
+        {
+          "text": "Dates",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "33.992px",
+          "spacing": "-0.33992px",
+          "lineHeight": "42.49px"
+        },
+        {
+          "text": "Conference: 6–8 December 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "17px",
+          "spacing": "-0.17px",
+          "lineHeight": "21.25px"
+        },
+        {
+          "text": "Conference: 6–8 December 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "19.89px",
+          "spacing": "-0.1989px",
+          "lineHeight": "24.8625px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "6 December 2027",
+          "family": "\"IBM Plex Mono\", \"Courier New\", monospace",
+          "weight": "500",
+          "size": "12px",
+          "spacing": "0.72px",
+          "lineHeight": "19.8px"
+        },
+        {
+          "text": "6 December 2027",
+          "family": "\"IBM Plex Mono\", \"Courier New\", monospace",
+          "weight": "500",
+          "size": "12px",
+          "spacing": "0.72px",
+          "lineHeight": "19.8px"
+        },
+        {
+          "text": "← Previous pageThemes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/registration/",
+      "width": 1366,
+      "theme": "light",
+      "screenshot": "registration-light-1366.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2",
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#f5f8f7",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "54.716px",
+          "spacing": "-0.54716px",
+          "lineHeight": "62.9234px"
+        },
+        {
+          "text": "Registration",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "33.992px",
+          "spacing": "-0.33992px",
+          "lineHeight": "42.49px"
+        },
+        {
+          "text": "Sponsorship",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Platinum Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Gold Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Silver Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Supporting Partner",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "← Previous pageCommittee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1366,
+      "theme": "dark",
+      "screenshot": "home-dark-1366.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#162620",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "34.15px",
+          "spacing": "-0.3415px",
+          "lineHeight": "39.2725px"
+        },
+        {
+          "text": "About the conference",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "33.992px",
+          "spacing": "-0.33992px",
+          "lineHeight": "42.49px"
+        },
+        {
+          "text": "IIT Roorkee",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        },
+        {
+          "text": "CSIR-IIP",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        },
+        {
+          "text": "HKUST",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        }
+      ],
+      "titleLines": 2.999474823349672,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "←",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "20px",
+          "spacing": "normal",
+          "lineHeight": "33px"
+        },
+        {
+          "text": "→",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "20px",
+          "spacing": "normal",
+          "lineHeight": "33px"
+        },
+        {
+          "text": "Next page →Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/themes/",
+      "width": 1366,
+      "theme": "dark",
+      "screenshot": "themes-dark-1366.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#162620",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "54.716px",
+          "spacing": "-0.54716px",
+          "lineHeight": "62.9234px"
+        },
+        {
+          "text": "Conference Themes – MemDesAI 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "33.992px",
+          "spacing": "-0.33992px",
+          "lineHeight": "42.49px"
+        },
+        {
+          "text": "Role of AI in Membrane Processes",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Desalination",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Critical Minerals Recovery and Brine Management",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Water and Wastewater Treatment",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Climate Change and Water Security",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Air Purification",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Gas Separation",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Geomembranes",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Fuel Cells",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Role of Membranes in Biomedical and Healthcare",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "← Previous pageAbout",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/dates/",
+      "width": 1366,
+      "theme": "dark",
+      "screenshot": "dates-dark-1366.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#162620",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "54.716px",
+          "spacing": "-0.54716px",
+          "lineHeight": "62.9234px"
+        },
+        {
+          "text": "Dates",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "33.992px",
+          "spacing": "-0.33992px",
+          "lineHeight": "42.49px"
+        },
+        {
+          "text": "Conference: 6–8 December 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "17px",
+          "spacing": "-0.17px",
+          "lineHeight": "21.25px"
+        },
+        {
+          "text": "Conference: 6–8 December 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "19.89px",
+          "spacing": "-0.1989px",
+          "lineHeight": "24.8625px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "6 December 2027",
+          "family": "\"IBM Plex Mono\", \"Courier New\", monospace",
+          "weight": "500",
+          "size": "12px",
+          "spacing": "0.72px",
+          "lineHeight": "19.8px"
+        },
+        {
+          "text": "6 December 2027",
+          "family": "\"IBM Plex Mono\", \"Courier New\", monospace",
+          "weight": "500",
+          "size": "12px",
+          "spacing": "0.72px",
+          "lineHeight": "19.8px"
+        },
+        {
+          "text": "← Previous pageThemes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/registration/",
+      "width": 1366,
+      "theme": "dark",
+      "screenshot": "registration-dark-1366.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#162620",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "54.716px",
+          "spacing": "-0.54716px",
+          "lineHeight": "62.9234px"
+        },
+        {
+          "text": "Registration",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "33.992px",
+          "spacing": "-0.33992px",
+          "lineHeight": "42.49px"
+        },
+        {
+          "text": "Sponsorship",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "30px",
+          "spacing": "-0.3px",
+          "lineHeight": "37.5px"
+        },
+        {
+          "text": "Platinum Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Gold Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Silver Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Supporting Partner",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "← Previous pageCommittee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "home-light-390.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#f5f8f7",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "32px",
+          "spacing": "-0.32px",
+          "lineHeight": "36.8px"
+        },
+        {
+          "text": "About the conference",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "IIT Roorkee",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        },
+        {
+          "text": "CSIR-IIP",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        },
+        {
+          "text": "HKUST",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        }
+      ],
+      "titleLines": 7.999320652173914,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "←",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "20px",
+          "spacing": "normal",
+          "lineHeight": "33px"
+        },
+        {
+          "text": "→",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "20px",
+          "spacing": "normal",
+          "lineHeight": "33px"
+        },
+        {
+          "text": "Next page →Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/themes/",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "themes-light-390.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#f5f8f7",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "32px",
+          "spacing": "-0.32px",
+          "lineHeight": "36.8px"
+        },
+        {
+          "text": "Conference Themes – MemDesAI 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Role of AI in Membrane Processes",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Desalination",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Critical Minerals Recovery and Brine Management",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Water and Wastewater Treatment",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Climate Change and Water Security",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Air Purification",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Gas Separation",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Geomembranes",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Fuel Cells",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Role of Membranes in Biomedical and Healthcare",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "← Previous pageAbout",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/dates/",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "dates-light-390.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#f5f8f7",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "32px",
+          "spacing": "-0.32px",
+          "lineHeight": "36.8px"
+        },
+        {
+          "text": "Dates",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Conference: 6–8 December 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "17px",
+          "spacing": "-0.17px",
+          "lineHeight": "21.25px"
+        },
+        {
+          "text": "Conference: 6–8 December 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "19px",
+          "spacing": "-0.19px",
+          "lineHeight": "23.75px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "6 December 2027",
+          "family": "\"IBM Plex Mono\", \"Courier New\", monospace",
+          "weight": "500",
+          "size": "12px",
+          "spacing": "0.72px",
+          "lineHeight": "19.8px"
+        },
+        {
+          "text": "6 December 2027",
+          "family": "\"IBM Plex Mono\", \"Courier New\", monospace",
+          "weight": "500",
+          "size": "12px",
+          "spacing": "0.72px",
+          "lineHeight": "19.8px"
+        },
+        {
+          "text": "← Previous pageThemes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/registration/",
+      "width": 390,
+      "theme": "light",
+      "screenshot": "registration-light-390.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#f5f8f7",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "32px",
+          "spacing": "-0.32px",
+          "lineHeight": "36.8px"
+        },
+        {
+          "text": "Registration",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Sponsorship",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Platinum Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Gold Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Silver Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Supporting Partner",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "← Previous pageCommittee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "home-dark-390.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#162620",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "32px",
+          "spacing": "-0.32px",
+          "lineHeight": "36.8px"
+        },
+        {
+          "text": "About the conference",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "IIT Roorkee",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        },
+        {
+          "text": "CSIR-IIP",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        },
+        {
+          "text": "HKUST",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "22px",
+          "spacing": "-0.22px",
+          "lineHeight": "27.5px"
+        }
+      ],
+      "titleLines": 7.999320652173914,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "←",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "20px",
+          "spacing": "normal",
+          "lineHeight": "33px"
+        },
+        {
+          "text": "→",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "20px",
+          "spacing": "normal",
+          "lineHeight": "33px"
+        },
+        {
+          "text": "Next page →Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/themes/",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "themes-dark-390.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#162620",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "32px",
+          "spacing": "-0.32px",
+          "lineHeight": "36.8px"
+        },
+        {
+          "text": "Conference Themes – MemDesAI 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Role of AI in Membrane Processes",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Desalination",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Critical Minerals Recovery and Brine Management",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Water and Wastewater Treatment",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Climate Change and Water Security",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Air Purification",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Gas Separation",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Geomembranes",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Fuel Cells",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Role of Membranes in Biomedical and Healthcare",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "← Previous pageAbout",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/dates/",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "dates-dark-390.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#162620",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "32px",
+          "spacing": "-0.32px",
+          "lineHeight": "36.8px"
+        },
+        {
+          "text": "Dates",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Conference: 6–8 December 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "17px",
+          "spacing": "-0.17px",
+          "lineHeight": "21.25px"
+        },
+        {
+          "text": "Conference: 6–8 December 2027",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "19px",
+          "spacing": "-0.19px",
+          "lineHeight": "23.75px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "6 December 2027",
+          "family": "\"IBM Plex Mono\", \"Courier New\", monospace",
+          "weight": "500",
+          "size": "12px",
+          "spacing": "0.72px",
+          "lineHeight": "19.8px"
+        },
+        {
+          "text": "6 December 2027",
+          "family": "\"IBM Plex Mono\", \"Courier New\", monospace",
+          "weight": "500",
+          "size": "12px",
+          "spacing": "0.72px",
+          "lineHeight": "19.8px"
+        },
+        {
+          "text": "← Previous pageThemes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    },
+    {
+      "route": "/registration/",
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "registration-dark-390.png",
+      "fonts": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2",
+        "http://127.0.0.1:5283/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2"
+      ],
+      "themeColor": "#162620",
+      "overflow": false,
+      "headings": [
+        {
+          "text": "International Conference on Membrane Technology, Desalination, Artificial Intelligence and Environme",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "32px",
+          "spacing": "-0.32px",
+          "lineHeight": "36.8px"
+        },
+        {
+          "text": "Registration",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Sponsorship",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "23px",
+          "spacing": "-0.23px",
+          "lineHeight": "28.75px"
+        },
+        {
+          "text": "Platinum Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Gold Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Silver Sponsor",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        },
+        {
+          "text": "Supporting Partner",
+          "family": "\"Source Serif 4\", Georgia, serif",
+          "weight": "600",
+          "size": "24px",
+          "spacing": "-0.24px",
+          "lineHeight": "30px"
+        }
+      ],
+      "titleLines": null,
+      "cls": 0,
+      "preloads": [
+        "http://127.0.0.1:5283/assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-400-normal-C38fXH4l.woff2",
+        "http://127.0.0.1:5283/assets/inter-latin-500-normal-Cerq10X2.woff2"
+      ],
+      "ui": [
+        {
+          "text": "MemDesAI-2027",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "21px",
+          "spacing": "normal",
+          "lineHeight": "34.65px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "About",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Themes",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Dates",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Speakers",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Committee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Registration",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "Contact",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "14px",
+          "spacing": "normal",
+          "lineHeight": "23.1px"
+        },
+        {
+          "text": "",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Ⅱ",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "500",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "← Previous pageCommittee",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        },
+        {
+          "text": "Next page →Hospitality",
+          "family": "Inter, Arial, sans-serif",
+          "weight": "400",
+          "size": "17px",
+          "spacing": "normal",
+          "lineHeight": "28.05px"
+        }
+      ]
+    }
+  ],
+  "fontLoading": [
+    {
+      "width": 1366,
+      "delayMs": 800,
+      "cls": 0.005228762409337507,
+      "shifts": [
+        {
+          "value": 0.005228762409337507,
+          "sources": [
+            "_wordmark_3t4yi_285",
+            "#text",
+            "#text",
+            "_controls_3t4yi_181",
+            "_navLink_6lnky_269 _registrationNavLink_6lnky_347"
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "delayMs": 800,
+      "cls": 0.011909081196581196,
+      "shifts": [
+        {
+          "value": 0.011909081196581196,
+          "sources": [
+            "#text",
+            "#text",
+            "#text"
+          ]
+        }
+      ]
+    }
+  ],
+  "glyph": {
+    "fonts": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 1
+      }
+    ]
+  }
+}

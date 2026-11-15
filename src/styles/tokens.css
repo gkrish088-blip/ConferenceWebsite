@@ -10,12 +10,16 @@
   --radius: 4px;
   --container: 1120px;
   --gutter: 24px;
-  --body-font: "Public Sans", Arial, sans-serif;
-  --heading-font: "Newsreader", Georgia, serif;
+  --font-heading: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+  --heading-weight: 600;
+  --body-font: var(--font-body);
+  --heading-font: var(--font-heading);
   --body-size: 17px;
   --small-size: 14px;
   --heading-3-size: 22px;
-  --heading-2-size: 34px;
+  --heading-2-size: clamp(1.5rem, 1.1rem + 1.2vw, 2.25rem);
   --heading-1-size: 52px;
   --section-space: 96px;
 }

@@ -52,6 +52,11 @@ try {
     );
     if (html === pageTemplate)
       throw new Error(`Prerender did not insert content for ${pathname}`);
+    if (countdown)
+      html = html.replace(
+        /(<meta name="theme-color" content=")[^"]+/,
+        "$1#10263f",
+      );
     html = html.replace(
       /<title>.*?<\/title>/s,
       `<title>${escape(title)}</title>`,

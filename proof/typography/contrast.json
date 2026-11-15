@@ -1,0 +1,838 @@
+[
+  {
+    "width": 1366,
+    "route": "/",
+    "pairs": [
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "Visit IIT Roorkee websiteopens in a new tab"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "6 to 8 December 2027 (IST). Start time to be confirmed."
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Registration"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "route": "/themes/",
+    "pairs": [
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "Membrane filtration equipment in an industrial facility"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Registration"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "route": "/dates/",
+    "pairs": [
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "Conference: 6–8 December 2027"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "6 December 2027"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Registration"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "route": "/speakers/",
+    "pairs": [
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 5.795305982613758,
+        "example": "Placeholder: Add one approved sentence about the Guest of Honor."
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "← Previous page"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Registration"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "route": "/committee/",
+    "pairs": [
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 5.795305982613758,
+        "example": "Director, IIT Roorkee"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "Proposed international advisory committee member"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Registration"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "route": "/registration/",
+    "pairs": [
+      {
+        "color": "rgb(232, 240, 237)",
+        "background": [
+          40,
+          105,
+          84
+        ],
+        "ratio": 5.59394787258667,
+        "example": "Register"
+      },
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 5.59394787258667,
+        "example": "₹ 3,00,000"
+      },
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "Submit an abstract"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "← Previous page"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Registration"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "route": "/hospitality/",
+    "pairs": [
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "arrival information"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "Photo by Bharatahs · CC BY-SA 4.0 · Cropped, resized and converted to WebP"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Registration"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "route": "/contact/",
+    "pairs": [
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "contact-a@example.org"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "← Previous page"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Registration"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "pairs": [
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "Visit IIT Roorkee websiteopens in a new tab"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "6 to 8 December 2027 (IST). Start time to be confirmed."
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          141,
+          80,
+          53
+        ],
+        "ratio": 6.303624634443545,
+        "example": "Register"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/themes/",
+    "pairs": [
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "Membrane filtration equipment in an industrial facility"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/dates/",
+    "pairs": [
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "6 December 2027"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/speakers/",
+    "pairs": [
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 5.795305982613758,
+        "example": "Placeholder: Add one approved sentence about the Guest of Honor."
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "← Previous page"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/committee/",
+    "pairs": [
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 5.795305982613758,
+        "example": "Director, IIT Roorkee"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "Proposed international advisory committee member"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/registration/",
+    "pairs": [
+      {
+        "color": "rgb(232, 240, 237)",
+        "background": [
+          40,
+          105,
+          84
+        ],
+        "ratio": 5.59394787258667,
+        "example": "Register"
+      },
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 5.59394787258667,
+        "example": "₹ 3,00,000"
+      },
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "Submit an abstract"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "← Previous page"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/hospitality/",
+    "pairs": [
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "arrival information"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "Photo by Bharatahs · CC BY-SA 4.0 · Cropped, resized and converted to WebP"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/contact/",
+    "pairs": [
+      {
+        "color": "rgb(40, 105, 84)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.067710028256108,
+        "example": "contact-a@example.org"
+      },
+      {
+        "color": "rgb(72, 97, 88)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 6.286121542147656,
+        "example": "← Previous page"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          232,
+          240,
+          237
+        ],
+        "ratio": 11.123186116621246,
+        "example": "Skip to content"
+      },
+      {
+        "color": "rgb(25, 55, 47)",
+        "background": [
+          245,
+          248,
+          247
+        ],
+        "ratio": 12.065230045623053,
+        "example": "IIT Roorkee"
+      }
+    ]
+  }
+]

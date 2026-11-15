@@ -50,3 +50,11 @@ The other two designs retain their one-page section navigation.
 
 
 The latest user request replaces Hospitality accordions on this multipage branch with six always-visible topic sections. The other design branches keep their existing accordions.
+
+## 15 November 2026: approved multipage typography
+
+The user explicitly approves replacing the old font dependencies with Fontsource
+Source Serif 4 (600), Inter (400/500), and IBM Plex Mono (500). Only normal Latin
+WOFF2 files are shipped, self-hosted with swap. Heading and body files are
+preloaded; mono is not. This request supersedes earlier typography choices for
+this branch. Existing copy, routes, layout structure and palette are preserved.

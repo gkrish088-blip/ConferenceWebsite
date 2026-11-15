@@ -7,3 +7,4 @@ dist/
 # Locally generated design review captures (report.json remains tracked).
 proof/design-refresh/*.png
 proof/design-refresh/*.log
+proof/typography/*.png

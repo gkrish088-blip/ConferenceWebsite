@@ -1,8 +1,4 @@
-@import "@fontsource/newsreader/500.css";
-@import "@fontsource/newsreader/600.css";
-@import "@fontsource/public-sans/400.css";
-@import "@fontsource/public-sans/500.css";
-@import "@fontsource/public-sans/600.css";
+@import "./fonts.css";
 @import "./tokens.css";
 
 * {
@@ -38,6 +34,9 @@ a {
 
 button {
   cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.65;
 }
 
 img,
@@ -48,19 +47,42 @@ svg {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   margin-top: 0;
   color: var(--ink);
-  font-family: var(--heading-font);
-  font-weight: 500;
-  line-height: 1.12;
+  font-family: var(--font-heading);
+  font-weight: var(--heading-weight);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
   text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2rem, 1.2rem + 2.6vw, 3.5rem);
+  line-height: 1.15;
+  max-width: 24ch;
+}
+
+h2 {
+  font-size: var(--heading-2-size);
+}
+
+h4,
+strong,
+b,
+th {
+  font-family: var(--font-body);
+  font-weight: 500;
 }
 
 p,
 figure {
   margin-top: 0;
+}
+
+p {
+  max-width: 68ch;
+  text-wrap: pretty;
 }
 
 :focus-visible {

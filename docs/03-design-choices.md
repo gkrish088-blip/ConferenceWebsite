@@ -31,12 +31,14 @@ This palette is deliberately institutional (navy, river blue, one warm marker). 
 
 ## Type
 
-- Headings: **Newsreader**, weights 500 and 600. Serif gives the academic tone and holds up at large sizes.
-- Body and UI: **Public Sans**, weights 400, 500, 600. Plain, readable, built for institutional use.
-- Self-host through `@fontsource/newsreader` and `@fontsource/public-sans`. Latin subset only.
-- Scale (ratio about 1.25, laptop reading): body 17px/1.65, small 14px, h3 22px, h2 34px, h1 52px (hero) down to 36px on mobile. Use `clamp()`.
-- Line length under 72 characters for body text.
-- Sentence case for headings and buttons. No all-caps labels, no small labels above headings, no middle-dot strings, no arrows appended to links. Numbers appear only where the content is a sequence (the dates pipeline).
+- Multipage headings: **Source Serif 4**, normal 600 in both themes, tracking -0.01em; h1 line-height 1.15, h2/h3 1.25.
+- Body and UI: **Inter**, normal 400/500, 17px body at line-height 1.65. Cards retain serif h3 headings; h4 names and UI use Inter 500.
+- Metadata, dates, labels and countdown digits: **IBM Plex Mono**, normal 500, tracking 0.06em. Small metadata is 12px and uppercase. Countdown digits retain their existing display scale and grid.
+- Self-host the four normal Latin WOFF2 files through the approved Fontsource packages. Use swap; preload Source Serif 4 600 and Inter 400/500 only.
+- h2: `clamp(1.5rem, 1.1rem + 1.2vw, 2.25rem)`. General h1 uses `clamp(2rem, 1.2rem + 2.6vw, 3.5rem)` at up to 24ch with balanced wrapping.
+- Approved long-title exception: keep the existing 820px hero and 900px countdown title areas and use `clamp(2rem, 2.5vw, 2.2rem)`. The user chose fitting the full title within three laptop lines over the conflicting exact size/24ch requirement.
+- Paragraphs use a maximum of 68ch and pretty wrapping where supported.
+- Sentence case for headings and buttons; uppercase is reserved for metadata and labels.
 - Tabular numerals for countdown digits and dates.
 
 ## Layout

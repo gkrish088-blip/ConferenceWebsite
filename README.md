@@ -104,3 +104,17 @@ The multipage Hospitality page displays all six topics in full. Existing intro a
 
 
 The multipage About introduction now uses a background slideshow of the first two supplied campus photos. No visible photo caption or counter is shown. `media.json` sets its interval with `galleryIntervalMs` (10 seconds); reduced motion keeps manual navigation available and disables automatic changes.
+
+## Multipage typography
+
+The multipage branch uses Source Serif 4 600, Inter 400/500 and IBM Plex Mono 500.
+Fontsource packages supply four self-hosted Latin WOFF2 files; `fonts.css` defines
+swap and the entry HTML preloads only heading/body weights. Tokens own font stacks.
+The long title uses an approved smaller size to retain three laptop lines.
+No event copy, routes or image ownership changed.
+
+After the full build, run `node scripts/verify-typography.mjs` and
+`node scripts/check-typography-contrast.mjs` with the static preview on port 5283.
+The former accepts `CONFERENCE_ORIGIN` for live verification. Screenshots and
+reports are in `proof/typography/`; the audit and file inventory are in
+`docs/typography-review.md`.

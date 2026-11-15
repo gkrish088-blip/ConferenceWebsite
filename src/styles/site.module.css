@@ -1966,23 +1966,23 @@
   padding: 0;
 }
 .conferenceLogo {
-  width: min(100%, clamp(300px, 31vw, 430px));
-  max-width: 430px;
+  width: min(100%, clamp(200px, 20.666667vw, 286.666667px));
+  max-width: 286.666667px;
   height: auto;
 }
 .identityBand > .container {
   gap: 32px;
-  padding-block: 18px;
+  padding-block: 12px;
 }
 .identityMarks {
-  gap: clamp(26px, 3vw, 48px);
+  gap: clamp(17.333333px, 2vw, 32px);
 }
 .identityMarks .compactMark {
   gap: 9px;
 }
 .identityMarks .compactMark .logoImage {
-  width: 108px;
-  height: 84px;
+  width: 72px;
+  height: 56px;
 }
 .identityMarks .compactMark > span {
   font-size: 12px;
@@ -2015,25 +2015,25 @@
     gap: 18px 32px;
   }
   .conferenceLogo {
-    width: min(100%, 370px);
+    width: min(100%, 246.666667px);
   }
 }
 @media (max-width: 600px) {
   .identityBand > .container {
-    padding-block: 16px;
+    padding-block: 10.666667px;
     gap: 18px;
   }
   .conferenceLogo {
-    width: min(100%, 300px);
-    max-width: 300px;
+    width: min(100%, 200px);
+    max-width: 200px;
   }
   .identityMarks {
     gap: 16px;
     justify-content: space-around;
   }
   .identityMarks .compactMark .logoImage {
-    width: 88px;
-    height: 68px;
+    width: 58.666667px;
+    height: 45.333333px;
   }
   .identityMarks .compactMark > span {
     font-size: 12px;

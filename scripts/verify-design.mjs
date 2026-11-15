@@ -112,7 +112,9 @@ try {
     );
     await goto(page, "/");
     if (width < 900) {
-      const menu = page.getByRole("button", { name: "Open menu" });
+      const menu = page.locator(
+        'button[aria-controls="site-navigation-links"]',
+      );
       if (await menu.count()) {
         await menu.click();
         assert.equal(await menu.getAttribute("aria-expanded"), "true");

@@ -11,8 +11,8 @@ export function IdentityBand() {
             className={styles.conferenceLogo}
             src={site.logo.src}
             alt={site.logo.alt}
-            width={1600}
-            height={682}
+            width={1468}
+            height={482}
           />
         ) : (
           <p className={styles.identityName}>{site.shortName}</p>

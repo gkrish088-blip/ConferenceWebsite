@@ -424,6 +424,30 @@
   border-top: 1px solid var(--hairline);
 }
 
+.themesSection {
+  position: relative;
+  isolation: isolate;
+}
+
+.themesBackdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.themesSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: color-mix(in srgb, var(--page-background) 75%, transparent);
+  pointer-events: none;
+}
+
 .themeItem {
   min-width: 0;
   padding: 21px 0 22px;

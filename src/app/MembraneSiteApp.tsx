@@ -5,7 +5,6 @@ import { membranes } from "../content/membranes";
 import { ContentLink } from "../components/ContentLink";
 import { IdentityBand } from "../components/IdentityBand";
 import { MembraneBackground } from "../components/MembraneBackground";
-import { MembraneCaption } from "../components/MembraneCaption";
 import { PageNavigation } from "../components/PageNavigation";
 import { Pager } from "../components/Pager";
 import { SiteFooter } from "../components/SiteFooter";
@@ -152,9 +151,6 @@ export function MembraneSiteApp({
             <div className={styles.stage} data-stage />
           </>
         )}
-        <div className={styles.captionRow}>
-          <MembraneCaption page={entry} />
-        </div>
         <div className={styles.panel} key={page} data-panel>
           <Section />
         </div>

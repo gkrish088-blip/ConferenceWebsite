@@ -62,3 +62,6 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 
 
 - [x] Present all multipage Hospitality topics fully open as normal sections, retaining images, source credits and direct topic links.
+
+
+- [x] Move the multipage About photos into its background, remove the visible counter/caption and low-quality third slide, and slow automatic changes to 10 seconds.

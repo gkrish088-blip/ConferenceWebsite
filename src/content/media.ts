@@ -15,6 +15,7 @@ export const mediaSchema = z.object({
   campusTitle: text,
   scienceTitle: text,
   gallery: z.array(image).min(2),
+  galleryIntervalMs: z.number().int().min(5000).max(30000),
   science: z.array(image).min(1),
   ui: z.object({
     previous: text,

@@ -81,3 +81,6 @@ produce populated HTML. All eight section destinations have separate static HTML
 
 
 Hospitality on the dedicated multipage page now displays all six topics, full body copy, credits and images immediately. There are no disclosure controls; existing deep-link IDs and intro links remain valid.
+
+
+The multipage About introduction now has two background campus photographs. The panorama previously used as slide 3 is excluded. No visible photograph count or caption remains. Interval is 10 seconds, with pause/manual controls, offscreen suspension and reduced-motion support.

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export function useSlideshow(count: number) {
+export function useSlideshow(count: number, intervalMs = 7000) {
   const ref = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
@@ -29,9 +29,9 @@ export function useSlideshow(count: number) {
     if (!playing || engaged || !visible || reduced) return;
     const tick = window.setInterval(() => {
       if (!document.hidden) setIndex((i) => (i + 1) % count);
-    }, 7000);
+    }, intervalMs);
     return () => clearInterval(tick);
-  }, [count, playing, engaged, visible, reduced]);
+  }, [count, intervalMs, playing, engaged, visible, reduced]);
   const step = (delta: number) => {
     setPlaying(false);
     setIndex((i) => (i + delta + count) % count);

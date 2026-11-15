@@ -2087,3 +2087,40 @@
     padding-top: 28px;
   }
 }
+
+/* Campus photographs sit behind the introduction, without a separate photo card. */
+[data-interactive] .section.aboutSection {
+  padding: 0;
+}
+.aboutIntro {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(32px, 5vw, 64px) 0 104px;
+}
+.aboutReading {
+  position: relative;
+  z-index: 1;
+}
+.aboutReading > .sectionHeading {
+  max-width: 900px;
+}
+.aboutReading > .richText {
+  max-width: 760px;
+  background: transparent;
+}
+.aboutInstitutions {
+  padding-block: 36px 48px;
+}
+.aboutInstitutions .institutionGrid {
+  margin-top: 0;
+  border-top: 0;
+}
+@media (max-width: 600px) {
+  .aboutIntro {
+    padding-bottom: 88px;
+  }
+  .aboutInstitutions {
+    padding-block: 28px 36px;
+  }
+}

@@ -72,3 +72,13 @@ remain on this page. Both launch builds, content/HTML checks and formatting pass
 The updated browser suite passes at 1440/1024/768/390px with no errors, failed
 assets or external requests. All topics remain visible without JavaScript, and
 keyboard activation of the accommodation intro link preserves its deep-link URL.
+
+## Multipage About background slideshow
+
+Both launch builds, schemas, static HTML checks and formatting pass. The regular
+four-width browser suite passes without browser errors, failed assets or external
+requests. Targeted light/dark checks at 1440px and 390px verify two background
+photos, no visible caption/counter, exclusion of the low-quality panorama, working
+keyboard/manual controls, no overflow and disabled automatic motion when reduced
+motion is requested. A real-time check verifies no advance at 7.6 seconds and an
+advance after 10 seconds, plus the pause control.

@@ -2,7 +2,6 @@ import { BrandImage } from "../components/BrandImage";
 import { PhotoGallery } from "../components/PhotoGallery";
 import { about, site } from "../content";
 import { ContentLink } from "../components/ContentLink";
-import { Section } from "../components/Section";
 import { RichText } from "../components/RichText";
 import { InstitutionMark } from "../components/InstitutionMark";
 import styles from "../styles/site.module.css";
@@ -12,15 +11,25 @@ export function AboutSection() {
     about.title ?? site.nav.find((item) => item.id === "about")?.label ?? "";
 
   return (
-    <Section id="about" title={title}>
-      <div className={styles.aboutEditorial}>
-        <RichText text={about.description} />
-        <aside className={styles.aboutGallery}>
-          <PhotoGallery />
-        </aside>
+    <section
+      id="about"
+      data-section
+      className={`${styles.section} ${styles.aboutSection}`}
+      aria-labelledby="about-heading"
+    >
+      <div className={styles.aboutIntro}>
+        <PhotoGallery />
+        <div className={`${styles.container} ${styles.aboutReading}`}>
+          <h2 id="about-heading" className={styles.sectionHeading}>
+            {title}
+          </h2>
+          <RichText text={about.description} />
+        </div>
       </div>
-      <AboutInstitutions />
-    </Section>
+      <div className={`${styles.container} ${styles.aboutInstitutions}`}>
+        <AboutInstitutions />
+      </div>
+    </section>
   );
 }
 

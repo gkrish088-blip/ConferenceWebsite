@@ -143,3 +143,6 @@ Original approved assets and light-mode presentations remain available. IITR
 and CSIR-IIP retain their supplied marks. Theme context selects these variants
 for identity, About and footer without glow filters or a light background band.
 The user-approved two-thirds header logo sizing is preserved.
+
+
+Multipage About update: replace the separate photograph card with campus backgrounds behind the introduction. A theme-aware reading scrim protects the body text. Keep institution details below the photo area on the normal page surface. Remove visible caption/count labels; retain a screen-reader-only status and accessible pause/previous/next controls. Use the first two supplied photographs and 10-second intervals with 1.4-second crossfades.

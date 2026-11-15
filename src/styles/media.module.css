@@ -185,3 +185,67 @@
     transition: none;
   }
 }
+
+.aboutBackdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.aboutBackdropFrames,
+.aboutBackdropFrame,
+.aboutBackdropScrim {
+  position: absolute;
+  inset: 0;
+}
+.aboutBackdropFrame {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 1400ms ease,
+    visibility 1400ms;
+}
+.aboutBackdropFrame.active {
+  opacity: 1;
+  visibility: visible;
+}
+.aboutBackdropFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutBackdropScrim {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--page-background) 97%, transparent) 0%,
+    color-mix(in srgb, var(--page-background) 94%, transparent) 48%,
+    color-mix(in srgb, var(--page-background) 78%, transparent) 70%,
+    color-mix(in srgb, var(--page-background) 35%, transparent) 100%
+  );
+}
+.aboutBackdropControls {
+  position: absolute;
+  right: max(24px, calc((100% - var(--container)) / 2));
+  bottom: 24px;
+  z-index: 2;
+  gap: 8px;
+  padding: 6px;
+  border: 1px solid var(--hairline);
+  border-radius: 40px;
+  background: var(--page-background);
+  color: var(--ink);
+  pointer-events: auto;
+}
+@media (max-width: 700px) {
+  .aboutBackdropScrim {
+    background: color-mix(in srgb, var(--page-background) 92%, transparent);
+  }
+  .aboutBackdropControls {
+    right: 18px;
+    bottom: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aboutBackdropFrame {
+    transition: none;
+  }
+}

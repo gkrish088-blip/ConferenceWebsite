@@ -101,3 +101,6 @@ See `proof/design-refresh/dark-mode-report.json` for the dark-theme audit.
 
 
 The multipage Hospitality page displays all six topics in full. Existing intro anchors and topic URLs continue to work, with content visible before JavaScript runs.
+
+
+The multipage About introduction now uses a background slideshow of the first two supplied campus photos. No visible photo caption or counter is shown. `media.json` sets its interval with `galleryIntervalMs` (10 seconds); reduced motion keeps manual navigation available and disables automatic changes.

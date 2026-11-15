@@ -9,16 +9,18 @@
   font-display: swap;
 }
 :global(html[data-flow-theme="dark"]) {
-  background: #101a17;
+  color-scheme: dark;
+  background: #162620;
 }
 :global(html[data-flow-theme="light"]) {
+  color-scheme: light;
   background: #f5f8f7;
 }
 
 .page {
   isolation: isolate;
   color-scheme: dark;
-  --page-background: #101a17;
+  --page-background: #162620;
   --surface: #1b2b26;
   --ink: #ede8dd;
   --silt: #a5b0aa;
@@ -217,4 +219,20 @@
   .wordmark {
     font-size: 64px;
   }
+}
+
+/* A shared dark palette keeps page, navigation and reading surfaces coherent. */
+.page[data-theme="dark"] {
+  --page-background: #162620;
+  --surface: #20332c;
+  --ink: #edf3ee;
+  --silt: #b6c7bc;
+  --river: #9dc9b5;
+  --marigold: #d6a17f;
+  --accent-text: #162620;
+}
+
+:global(html[data-flow-theme="dark"] body) {
+  background: #162620;
+  color: #edf3ee;
 }

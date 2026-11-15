@@ -54,3 +54,12 @@ Both launch builds, content validation, static HTML checks and formatting pass.
 The subsequent sizing revision verifies exact two-thirds header image dimensions
 at 1440px and 390px, with no overflow or browser errors and working keyboard
 menu controls. Both launch builds and static HTML checks pass.
+
+## Interactive dark-mode verification
+
+Both launch builds, type checks, schema validation, unit tests and formatting
+pass. The regular four-width browser suite passes with no browser/hydration
+errors or failed asset requests. A dark-theme audit covers all eight sections
+at 1440px and 390px, verifies dark header/footer backgrounds, dark logo sources,
+readable main/muted text, removal of darker inset rich-text blocks, no overflow,
+and returning to the original light logo sources. See dark-mode-report.json.

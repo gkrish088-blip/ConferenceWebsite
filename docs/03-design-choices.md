@@ -127,3 +127,19 @@ white image tiles.
 Header logo sizing was subsequently reduced to two-thirds of the enlarged
 presentation, on desktop and phones. Transparent surrounds remain unchanged;
 caption text stays readable at its existing size.
+
+
+## Interactive dark-mode correction
+
+The latest request supersedes the forced light identity/footer bands. Both now
+follow the active theme. The shared dark palette is page #162620, raised surface
+#20332C, text #EDF3EE, muted #B6C7BC, links #9DC9B5 and accent #D6A17F. Large
+reading surfaces stay on the page tone; cards are gently raised rather than
+containing darker rich-text rectangles.
+
+Conference, HKUST and department marks have dark-specific SVG presentations
+that retain the source lettering silhouettes and render navy ink in pale sage.
+Original approved assets and light-mode presentations remain available. IITR
+and CSIR-IIP retain their supplied marks. Theme context selects these variants
+for identity, About and footer without glow filters or a light background band.
+The user-approved two-thirds header logo sizing is preserved.

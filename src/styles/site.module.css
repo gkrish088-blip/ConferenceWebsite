@@ -2044,21 +2044,26 @@
   }
 }
 
-/* Keep brand marks legible in the optional dark presentation without recolouring them. */
-[data-theme="dark"] .identityBand,
-.siteFooter,
-[data-interactive] .siteFooter {
-  background: #edf3f6;
-  color: #19372f;
+/* The identity band and footer follow the selected interactive theme. */
+[data-interactive] :is(.identityBand, .siteFooter) {
+  background: var(--page-background);
+  color: var(--ink);
 }
-[data-theme="dark"] .identityBand .institutionMark > span,
-.siteFooter :is(p, a),
+[data-interactive] :is(.identityBand, .siteFooter) .institutionMark > span,
 [data-interactive] .siteFooter :is(p, a) {
-  color: #19372f;
+  color: var(--ink);
 }
-[data-theme="dark"] .identityBand .logoImage,
-[data-theme="dark"] .conferenceLogo,
-.siteFooter .logoImage,
-[data-theme="dark"] .siteFooter .logoImage {
+[data-interactive] :is(.logoImage, .conferenceLogo, .departmentLogo) {
   filter: none;
+}
+[data-interactive] .richText {
+  background: transparent;
+}
+[data-interactive] .aboutEditorial > .richText,
+[data-interactive] .hospitalityContent > .richText,
+[data-interactive] .hospitalityIntro {
+  background: color-mix(in srgb, var(--page-background) 96%, transparent);
+}
+[data-interactive] .themeItem {
+  background: var(--surface);
 }

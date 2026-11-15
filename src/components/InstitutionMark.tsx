@@ -1,3 +1,4 @@
+import { BrandImage } from "./BrandImage";
 import type { z } from "zod";
 import type { institutionSchema } from "../content/schema";
 import { site } from "../content/landing";
@@ -22,11 +23,7 @@ export function InstitutionMark({
       rel="noopener noreferrer"
       aria-label={`${institution.name} (${site.accessibility.externalLinkText})`}
     >
-      <img
-        className={styles.logoImage}
-        src={institution.logo.src}
-        alt={institution.logo.alt}
-      />
+      <BrandImage className={styles.logoImage} image={institution.logo} />
       {showName && <span>{institution.name}</span>}
     </a>
   );

@@ -47,22 +47,22 @@ export function FlowPipeline({ paused }: { paused: boolean }) {
     let sea = "#8fb5a8",
       copper = "#c98d6b",
       pearl = "#ede8dd",
-      ink = "#101a17";
-    let tankFill = "#14251e",
-      pipeOuter = "#152820",
-      pipeMid = "#1b3128",
-      pipeInner = "#172a23";
+      ink = "#162620";
+    let tankFill = "#1b3027",
+      pipeOuter = "#2a4437",
+      pipeMid = "#253d31",
+      pipeInner = "#20352b";
     function readColors() {
       const light =
         canvas.closest("[data-theme]")?.getAttribute("data-theme") === "light";
       sea = light ? "#527d6d" : "#8fb5a8";
       copper = light ? "#a8694a" : "#c98d6b";
       pearl = light ? "#1b2421" : "#ede8dd";
-      ink = light ? "#f2f0ea" : "#101a17";
-      tankFill = light ? "#e9ece3" : "#14251e";
-      pipeOuter = light ? "#d3e0d6" : "#152820";
-      pipeMid = light ? "#e3ebe1" : "#1b3128";
-      pipeInner = light ? "#dce6dc" : "#172a23";
+      ink = light ? "#f2f0ea" : "#162620";
+      tankFill = light ? "#e9ece3" : "#1b3027";
+      pipeOuter = light ? "#d3e0d6" : "#2a4437";
+      pipeMid = light ? "#e3ebe1" : "#253d31";
+      pipeInner = light ? "#dce6dc" : "#20352b";
     }
     let points: Point[] = [],
       gates: Point[] = [],

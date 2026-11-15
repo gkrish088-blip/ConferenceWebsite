@@ -83,3 +83,11 @@ mobile menus, theme persistence, direct routes without JavaScript, browser
 errors, hydration and same-origin asset requests. Proof is saved under
 `proof/design-refresh/`. `npm run check:launch` still rejects unknown content;
 this design refresh does not approve remaining event details for launch.
+
+## Interactive theme assets
+
+Institution and conference image records may provide `darkSrc` alongside `src`.
+The shared theme context selects dark-compatible logo presentations in the
+identity band, About and footer. The dark page/background palette is shared
+across sections and reading surfaces; original light artwork remains unchanged.
+See `proof/design-refresh/dark-mode-report.json` for the dark-theme audit.

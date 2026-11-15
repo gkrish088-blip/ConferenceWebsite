@@ -4,7 +4,8 @@
   "logo": {
     "src": "/assets/approved/logos/memdesai-clear.svg",
     "alt": "MemDesAI 2027 conference logo",
-    "focus": "center"
+    "focus": "center",
+    "darkSrc": "/assets/approved/logos/memdesai-dark.svg"
   },
   "tagline": "Connecting membrane science, desalination, artificial intelligence and environmental sustainability.",
   "datesText": "6 to 8 December 2027 (IST). Start time to be confirmed.",

@@ -34,7 +34,8 @@
       "logo": {
         "src": "/assets/approved/logos/hkust-clear.svg",
         "alt": "Hong Kong University of Science and Technology logo",
-        "focus": "center"
+        "focus": "center",
+        "darkSrc": "/assets/approved/logos/hkust-dark.svg"
       },
       "description": "The Department of Chemical and Biological Engineering at the Hong Kong University of Science and Technology collaborates on MemDesAI-2027. Prof. Alicia Kyoung Jin An is listed in the proposal’s International Advisory Committee.",
       "url": "https://hkust.edu.hk/",
@@ -43,7 +44,8 @@
       "secondaryLogo": {
         "src": "/assets/approved/logos/hkust-cbe-clear.svg",
         "alt": "Department of Chemical and Biological Engineering, HKUST logo",
-        "focus": "center"
+        "focus": "center",
+        "darkSrc": "/assets/approved/logos/hkust-cbe-dark.svg"
       }
     }
   ],

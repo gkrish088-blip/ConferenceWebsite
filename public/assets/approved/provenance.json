@@ -113,5 +113,6 @@
       "alt": "Department of Chemical and Biological Engineering, HKUST logo"
     }
   ],
-  "logoPresentation": "*-clear.svg embeds the approved source bytes unchanged, with a vector mask for the near-white exterior and a tightly framed viewBox; original marks and enclosed white details are retained."
+  "logoPresentation": "*-clear.svg embeds the approved source bytes unchanged, with a vector mask for the near-white exterior and a tightly framed viewBox; original marks and enclosed white details are retained.",
+  "darkLogoPresentation": "memdesai-dark.svg, hkust-dark.svg and hkust-cbe-dark.svg use the source image bytes and pixel silhouettes; navy lettering is rendered in pale sage over transparent paper for the user-requested dark-mode correction. Original light presentations remain unchanged."
 }

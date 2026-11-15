@@ -31,3 +31,15 @@ Status: **locked** unless marked open. If you change one, edit it here first.
 ## Added dependencies (agents append here)
 
 Planned: `react`, `react-dom`, `vite`, `typescript`, `zod`, `@fontsource/newsreader`, `@fontsource/public-sans`, `vitest`, `eslint`, `prettier`. Optional for screenshots: `@playwright/test`.
+
+
+## 15 November 2026: supplied photography and readable HTML
+
+The user explicitly authorizes the supplied campus, membrane and Uttarakhand
+photographs and the ODT portraits/logos. ODT identity assets take priority over
+the earlier logos folder. No external imagery or dependencies were introduced.
+Build-time prerendering uses existing Vite and React DOM; hosting remains static.
+All routes emit real HTML before hydration; no runtime server is required.
+Light is the default theme. Interactive variants retain an optional saved dark
+theme and their existing membrane simulations. Native hospitality disclosures
+remain usable without JavaScript.

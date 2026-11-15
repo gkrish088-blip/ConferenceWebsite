@@ -1705,3 +1705,213 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Supplied conference photography and ODT identity assets, November 2026. */
+.aboutEditorial {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+}
+.aboutGallery {
+  position: sticky;
+  top: 100px;
+  min-width: 0;
+}
+.imageCredit {
+  margin: 10px 0 0;
+  color: var(--silt);
+  font-size: 12px;
+}
+.departmentLogo {
+  width: 210px;
+  height: 42px;
+  padding: 4px;
+  margin-top: 12px;
+  object-fit: contain;
+  object-position: left center;
+  background: #fff;
+}
+.logoImage {
+  object-position: center;
+  padding: 5px;
+  border-radius: 3px;
+}
+.compactMark .logoImage {
+  width: 86px;
+  height: 56px;
+}
+.identityMarks {
+  gap: 22px;
+}
+.identityMarks .compactMark {
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+.identityMarks .compactMark > span {
+  font-size: 11px;
+}
+.identityBand > .container {
+  padding-block: 16px;
+}
+.pairMember {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+}
+.pairMember .committeePortrait {
+  border-radius: 3px;
+}
+.committeeGridMember .committeePortrait {
+  width: 100%;
+  max-width: 190px;
+  margin: 0 auto 18px;
+  border-radius: 3px;
+}
+.committeeGridMember {
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 22px;
+  background: var(--paper);
+}
+.nativeAccordion {
+  border-bottom: 1px solid var(--hairline);
+  scroll-margin-top: 88px;
+}
+.nativeAccordion > summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--ink);
+}
+.nativeAccordion > summary::-webkit-details-marker {
+  display: none;
+}
+.nativeAccordion[open] .accordionIcon::after {
+  opacity: 0;
+}
+.hospitalityContent {
+  padding: 4px 0 28px;
+}
+.nativeAccordion[open] .hospitalityContent {
+  animation: disclosure-in 240ms ease-out;
+}
+.hospitalityGallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+.hospitalityGallery .hospitalityFigure {
+  margin: 0;
+}
+.hospitalityGallery .hospitalityImage {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.hospitalityGallery:has(figure:only-child) {
+  grid-template-columns: minmax(0, 680px);
+}
+@keyframes disclosure-in {
+  from {
+    opacity: 0.3;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 950px) {
+  .aboutEditorial {
+    grid-template-columns: 1fr;
+  }
+  .aboutGallery {
+    position: static;
+    max-width: 700px;
+  }
+  .pairMember {
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .identityMarks {
+    gap: 8px;
+  }
+  .identityBand > .container {
+    gap: 12px;
+  }
+  .identityMarks .compactMark .logoImage {
+    width: 65px;
+    height: 48px;
+  }
+  .conferenceLogo {
+    max-width: 220px;
+  }
+  .pairMember {
+    grid-template-columns: 84px minmax(0, 1fr);
+  }
+  .committeeGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .committeeGridMember {
+    padding: 14px;
+  }
+  .committeeGridMember .personDetails h4 {
+    font-size: 18px;
+  }
+  .hospitalityGallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero {
+  color: var(--ink);
+  background: #e6eff4;
+  min-height: 620px;
+}
+.heroInner {
+  pointer-events: none;
+  padding-block: 70px 110px;
+}
+.heroInner a {
+  pointer-events: auto;
+}
+.heroTitle {
+  max-width: 780px;
+  color: var(--ink);
+  font-size: clamp(36px, 4.5vw, 60px);
+}
+.heroDates,
+.heroVenue,
+.heroDescription {
+  color: var(--ink);
+}
+.heroDescription {
+  max-width: 620px;
+}
+.sectionAlternate {
+  background: #edf3f6;
+}
+@media (max-width: 600px) {
+  .hero {
+    min-height: 720px;
+  }
+  .heroTitle {
+    font-size: 36px;
+  }
+}
+
+[data-interactive] .richText {
+  background: color-mix(in srgb, var(--page-background) 96%, transparent);
+}
+
+.committeePortrait {
+  height: auto;
+}

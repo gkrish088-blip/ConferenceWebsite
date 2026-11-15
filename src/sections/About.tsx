@@ -1,3 +1,4 @@
+import { PhotoGallery } from "../components/PhotoGallery";
 import { about, site } from "../content";
 import { ContentLink } from "../components/ContentLink";
 import { Section } from "../components/Section";
@@ -11,7 +12,12 @@ export function AboutSection() {
 
   return (
     <Section id="about" title={title}>
-      <RichText text={about.description} />
+      <div className={styles.aboutEditorial}>
+        <RichText text={about.description} />
+        <aside className={styles.aboutGallery}>
+          <PhotoGallery />
+        </aside>
+      </div>
       <div className={styles.institutionGrid}>
         {about.institutions.map((institution) => (
           <article
@@ -20,6 +26,14 @@ export function AboutSection() {
             data-institution-card
           >
             <InstitutionMark institution={institution} showName={false} />
+            {institution.secondaryLogo && (
+              <img
+                className={styles.departmentLogo}
+                src={institution.secondaryLogo.src}
+                alt={institution.secondaryLogo.alt}
+                loading="lazy"
+              />
+            )}
             <h3>{institution.name}</h3>
             <p>{institution.description}</p>
             <ContentLink

@@ -1,10 +1,4 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+import { mount } from "./components/mount";
 import { LandingApp } from "./app/LandingApp";
 import "./styles/base.css";
-
-createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <LandingApp fullMode={import.meta.env.VITE_LAUNCH_MODE !== "landing"} />
-  </React.StrictMode>,
-);
+mount(<LandingApp fullMode={import.meta.env.VITE_LAUNCH_MODE !== "landing"} />);

@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "static: landing-only at 1440,1024,768,390; no Enter site; one viewport; valid images and hydration",
+    "interactive: landing-only at 1440,1024,768,390; no Enter site; one viewport; valid images and hydration",
+    "multipage: landing-only at 1440,1024,768,390; no Enter site; one viewport; valid images and hydration",
+    "static: final full build focus, native disclosure, real 404 and hydration passed",
+    "interactive: final full build focus, native disclosure, real 404 and hydration passed",
+    "multipage: final full build focus, native disclosure, real 404 and hydration passed",
+    "Static gallery advances automatically and can be paused"
+  ],
+  "errors": []
+}

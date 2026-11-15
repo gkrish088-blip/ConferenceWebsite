@@ -1,0 +1,116 @@
+{
+  "source": "User-supplied assets/Images/Images and assets/Patrons pictures and logos.odt (15 November 2026)",
+  "notes": "Names and portrait assignments follow ODT captions. Supplied imagery is illustrative; membrane photographs are not represented as IIT Roorkee research facilities. Original files remain unchanged in the main workspace.",
+  "assets": [
+    {
+      "file": "campus/iitr-2.webp",
+      "source": "assets\\Images\\Images\\IITR\\iitr (2).png",
+      "alt": "IIT Roorkee main building and lawns"
+    },
+    {
+      "file": "campus/iitr-4.webp",
+      "source": "assets\\Images\\Images\\IITR\\iitr (4).png",
+      "alt": "IIT Roorkee main building beneath a cloudy sky"
+    },
+    {
+      "file": "campus/iitr-5.webp",
+      "source": "assets\\Images\\Images\\IITR\\iitr (5).png",
+      "alt": "Panoramic view of the IIT Roorkee main building"
+    },
+    {
+      "file": "science/membrane-plant.webp",
+      "source": "assets\\Images\\Images\\Membrane\\membrane  (1).png",
+      "alt": "Membrane filtration equipment in an industrial facility"
+    },
+    {
+      "file": "science/membrane-fibres.webp",
+      "source": "assets\\Images\\Images\\Membrane\\morphology  (1).png",
+      "alt": "Microscopy image showing a network of membrane fibres"
+    },
+    {
+      "file": "science/water-treatment.webp",
+      "source": "assets\\Images\\Images\\Membrane\\membrane  (4).png",
+      "alt": "Membrane modules beside a water treatment tank"
+    },
+    {
+      "file": "tourism/uttarakhand-1.webp",
+      "source": "assets\\Images\\Images\\Uttarakhand\\1 (1).png",
+      "alt": "River and mountain landscape in Uttarakhand"
+    },
+    {
+      "file": "tourism/uttarakhand-3.webp",
+      "source": "assets\\Images\\Images\\Uttarakhand\\1 (3).png",
+      "alt": "A bridge across a river in Uttarakhand"
+    },
+    {
+      "file": "tourism/uttarakhand-4.webp",
+      "source": "assets\\Images\\Images\\Uttarakhand\\1 (4).png",
+      "alt": "Riverfront and gathering in Uttarakhand"
+    },
+    {
+      "file": "tourism/uttarakhand-5.webp",
+      "source": "assets\\Images\\Images\\Uttarakhand\\1 (5).png",
+      "alt": "Uttarakhand riverfront in the evening"
+    },
+    {
+      "file": "tourism/uttarakhand-6.webp",
+      "source": "assets\\Images\\Images\\Uttarakhand\\1 (6).png",
+      "alt": "A montage of temples in Uttarakhand"
+    },
+    {
+      "file": "portraits/kamal-kishore-pant.webp",
+      "source": "ODT media/image1.jpeg",
+      "alt": "Prof. Kamal Kishore Pant"
+    },
+    {
+      "file": "portraits/harender-singh-bisht.webp",
+      "source": "ODT media/image3.jpeg",
+      "alt": "Dr. Harender Singh Bisht"
+    },
+    {
+      "file": "portraits/alicia-kyoungjin-an.webp",
+      "source": "ODT media/image5.jpeg",
+      "alt": "Prof. Alicia Kyoungjin An"
+    },
+    {
+      "file": "portraits/bhaskar-jyoti-deka.webp",
+      "source": "ODT media/image8.jpeg",
+      "alt": "Prof. Bhaskar Jyoti Deka"
+    },
+    {
+      "file": "portraits/racha-surya-murali.webp",
+      "source": "ODT media/image9.jpeg",
+      "alt": "Dr. Racha Surya Murali"
+    },
+    {
+      "file": "portraits/anshul-yadav.webp",
+      "source": "ODT media/image10.jpeg",
+      "alt": "Prof. Anshul Yadav"
+    },
+    {
+      "file": "portraits/gopinath-packirisamy.webp",
+      "source": "ODT media/image11.jpeg",
+      "alt": "Prof. Gopinath Packirisamy"
+    },
+    {
+      "file": "logos/iitr.webp",
+      "source": "ODT media/image2.png",
+      "alt": "IIT Roorkee logo"
+    },
+    {
+      "file": "logos/csir-iip.webp",
+      "source": "ODT media/image4.jpeg",
+      "alt": "CSIR–Indian Institute of Petroleum logo"
+    },
+    {
+      "file": "logos/hkust.webp",
+      "source": "ODT media/image6.jpeg",
+      "alt": "Hong Kong University of Science and Technology logo"
+    },
+    {
+      "file": "logos/hkust-cbe.webp",
+      "source": "ODT media/image7.png",
+      "alt": "Department of Chemical and Biological Engineering, HKUST logo"
+    }
+  ]
+}

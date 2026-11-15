@@ -80,3 +80,25 @@ Breakpoints: 1200, 900, 600. Laptop is the design target. Below 900 the nav coll
 ## Copy tone for placeholders
 
 Realistic, short, clearly fake. No lorem ipsum walls. Example: "Placeholder: one-paragraph description of the conference goes here (60 to 80 words)." This tells the content editor exactly what is needed.
+
+
+## Photography refresh (15 November 2026)
+
+Supersedes older placeholder-only imagery guidance. The supplied ODT provides
+three patron/leadership portraits, four conveners, three institution marks and
+the HKUST department mark. Preserve each logo's proportions on a white backing.
+Use original caption identities; do not infer new appointments or biographies.
+
+About uses a reading column beside a campus gallery, which moves below the copy
+on phones. Themes pair the technical subject with supplied membrane imagery.
+Tourism photographs appear only in the Uttarakhand hospitality disclosure.
+Science images are illustrative and are not described as IIT Roorkee facilities.
+
+Galleries crossfade over 900ms every seven seconds only while in view, unengaged
+and visible. Hover/focus temporarily suspends advancement; manual navigation
+stops it. Pause/play and 44px previous/next controls are keyboard accessible.
+Reduced motion disables automatic advancement and all transition effects.
+
+Static design: Newsreader/Public Sans; navy #10263F, river #1F5F8B, white #FBFCFD,
+soft blue #EDF3F6. The hero alternates supplied campus photographs with a locally
+drawn membrane/flow background. A light reading scrim preserves title contrast.

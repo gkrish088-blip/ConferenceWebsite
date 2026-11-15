@@ -1,0 +1,4 @@
+{
+  "kind": "static",
+  "routes": ["/", "/countdown/"]
+}

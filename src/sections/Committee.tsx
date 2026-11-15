@@ -9,7 +9,7 @@ type Member = Group["members"][number];
 
 function PersonDetails({
   member,
-  portrait = false,
+  portrait = true,
   headingLevel = 4,
 }: {
   member: Member;
@@ -21,6 +21,9 @@ function PersonDetails({
     <>
       {portrait && member.photo && (
         <img
+          loading="lazy"
+          width={400}
+          height={500}
           className={styles.committeePortrait}
           src={member.photo.src}
           alt={member.photo.alt}

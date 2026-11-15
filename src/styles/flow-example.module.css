@@ -12,7 +12,7 @@
   background: #101a17;
 }
 :global(html[data-flow-theme="light"]) {
-  background: #f2f0ea;
+  background: #f5f8f7;
 }
 
 .page {
@@ -42,8 +42,8 @@
 }
 .page[data-theme="light"] {
   color-scheme: light;
-  --page-background: #f2f0ea;
-  --surface: #e7e3d9;
+  --page-background: #f5f8f7;
+  --surface: #e8f0ed;
   --ink: #1b2421;
   --silt: #4f5d57;
   --river: #466d60;
@@ -184,5 +184,37 @@
   .heroDetails {
     flex-direction: column;
     gap: 3px;
+  }
+}
+
+.page[data-theme="light"] {
+  --page-background: #f5f8f7;
+  --surface: #e8f0ed;
+  --ink: #19372f;
+  --silt: #486158;
+  --river: #286954;
+  --marigold: #8d5035;
+  --accent-text: #fff;
+}
+
+/* Keep conference identity and event details together in the opening view. */
+.hero {
+  min-height: min(720px, calc(100svh - 235px));
+  padding: 80px 24px 54px;
+}
+.wordmark {
+  font-size: clamp(62px, 7vw, 104px);
+  margin-bottom: 20px;
+}
+.heroCopy h1 {
+  font-size: clamp(24px, 2.5vw, 36px);
+  max-width: 820px;
+}
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 105px;
+  }
+  .wordmark {
+    font-size: 64px;
   }
 }

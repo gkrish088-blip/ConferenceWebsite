@@ -1,3 +1,4 @@
+import { renderTime } from "../lib/renderTime";
 import React from "react";
 import { dates, site } from "../content";
 import {
@@ -12,7 +13,7 @@ import styles from "../styles/site.module.css";
 
 export function DatesSection() {
   const title = site.nav.find((item) => item.id === "dates")?.label ?? "";
-  const [now, setNow] = React.useState(Date.now());
+  const [now, setNow] = React.useState(renderTime);
   const milestones = getMilestoneStatuses(dates.milestones, now);
   const viewWidth = 1120;
   const viewHeight = 420;

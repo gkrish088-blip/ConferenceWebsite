@@ -5,7 +5,7 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 ## Event identity and programme
 
 - [x] Populate full and short conference names and description from the supplied poster and proposal.
-- [x] Populate 6–8 December 2027 and IIT Roorkee venue from the poster.
+- [x] Populate 6â€“8 December 2027 and IIT Roorkee venue from the poster.
 - [ ] Confirm exact start/end times and room or building details; replace the provisional midnight countdown target.
 - [x] Connect the supplied IIT Roorkee, CSIR-IIP and HKUST logos throughout both site modes.
 - [x] Add verified official institution websites to the About links and every logo.
@@ -45,3 +45,15 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 - [ ] Replace placeholder portraits with approved assets.
 - [ ] Run `npm run validate:content`, `npm run report:placeholders`, both builds and the verification checklist.
 - [ ] Run `npm run check:launch` after every placeholder has been replaced.
+
+
+## 15 November 2026 refresh
+
+- [x] Extract and prioritize the supplied ODT identity assets; add all seven portraits.
+- [x] Add campus galleries, membrane imagery and Uttarakhand tourism photographs.
+- [x] Default to a light theme; keep optional dark interactive presentation.
+- [x] Generate real HTML and hydrate each route; preserve both launch modes.
+- [x] Isolate the supplied multipage code on `codex/multipage-design`.
+- [ ] Organizer approval of remaining placeholder speakers, committee, contacts, dates, registration links and travel details.
+- [ ] Set deployment-specific SITE_ORIGIN for canonical links and sitemap.
+- [ ] Deploy the refreshed builds to the chosen hosting targets.

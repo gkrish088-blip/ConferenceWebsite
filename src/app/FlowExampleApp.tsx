@@ -12,15 +12,16 @@ import styles from "../styles/flow-example.module.css";
 
 export function FlowExampleApp() {
   const [paused, setPaused] = useState(false);
-  const [theme, setTheme] = useState<"dark" | "light">(() => {
+  const [theme, setTheme] = useState<"dark" | "light">("light");
+
+  useEffect(() => {
     try {
-      return localStorage.getItem("memdesai-theme") === "light"
-        ? "light"
-        : "dark";
+      const saved = localStorage.getItem("memdesai-theme");
+      if (saved === "dark") setTheme("dark");
     } catch {
-      return "dark";
+      /* Optional storage. */
     }
-  });
+  }, []);
 
   useEffect(() => {
     document.documentElement.dataset.flowTheme = theme;

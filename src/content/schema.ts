@@ -71,6 +71,7 @@ export const institutionSchema = z
     id: slug,
     name: z.string().min(1),
     logo: imageRef,
+    secondaryLogo: imageRef.optional(),
     description: richText,
     url: z
       .string()

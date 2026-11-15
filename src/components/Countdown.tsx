@@ -1,20 +1,25 @@
+import { renderTime } from "../lib/renderTime";
 import React from "react";
 import { site } from "../content/landing";
 import { getCountdown } from "../lib/countdown";
 import styles from "../styles/landing.module.css";
 
 export function Countdown() {
-  const [now, setNow] = React.useState(Date.now);
+  const [now, setNow] = React.useState(renderTime);
   const [announcement, setAnnouncement] = React.useState("");
   const lastAnnouncedMinute = React.useRef(-1);
-  const reducedMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)",
-  ).matches;
+  const reducedMotion =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const countdown = getCountdown(site.eventStart, now, site.eventEnd);
   const units = site.landing.countdownUnits;
 
   React.useEffect(() => {
-    if (reducedMotion) return undefined;
+    if (reducedMotion) {
+      setNow(Date.now());
+      return undefined;
+    }
+    setNow(Date.now());
     const timer = window.setInterval(() => {
       const updated = Date.now();
       setNow(updated);

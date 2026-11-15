@@ -1,3 +1,4 @@
+import { ScienceGallery } from "../components/ScienceGallery";
 import { site, themes } from "../content";
 import { Section } from "../components/Section";
 import { RichText } from "../components/RichText";
@@ -9,6 +10,7 @@ export function ThemesSection() {
 
   return (
     <Section id="themes" title={title} alternate>
+      <ScienceGallery />
       {themes.items.length > 0 ? (
         <div className={styles.themeList}>
           {themes.items.map((theme) => (

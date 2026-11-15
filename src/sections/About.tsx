@@ -1,3 +1,4 @@
+import { BrandImage } from "../components/BrandImage";
 import { PhotoGallery } from "../components/PhotoGallery";
 import { about, site } from "../content";
 import { ContentLink } from "../components/ContentLink";
@@ -34,10 +35,9 @@ export function AboutInstitutions() {
         >
           <InstitutionMark institution={institution} showName={false} />
           {institution.secondaryLogo && (
-            <img
+            <BrandImage
               className={styles.departmentLogo}
-              src={institution.secondaryLogo.src}
-              alt={institution.secondaryLogo.alt}
+              image={institution.secondaryLogo}
               loading="lazy"
             />
           )}

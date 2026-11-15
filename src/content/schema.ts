@@ -5,6 +5,10 @@ const placeholder = z.object({ placeholder: z.boolean() });
 const richText = z.string().min(1);
 const imageRef = z.object({
   src: z.string().regex(/^\/(?:assets|placeholders)\//),
+  darkSrc: z
+    .string()
+    .regex(/^\/(?:assets|placeholders)\//)
+    .optional(),
   alt: z.string().min(1),
   focus: z.enum(["center", "top", "right", "bottom", "left"]),
 });

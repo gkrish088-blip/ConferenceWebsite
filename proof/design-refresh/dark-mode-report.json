@@ -1,0 +1,8 @@
+{
+  "kind": "multipage",
+  "checks": [
+    "1440px: eight sections, dark identity/footer, dark logo sources, readable text, no inset dark blocks, no overflow, return to light",
+    "390px: eight sections, dark identity/footer, dark logo sources, readable text, no inset dark blocks, no overflow, return to light"
+  ],
+  "errors": []
+}

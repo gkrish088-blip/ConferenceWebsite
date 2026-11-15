@@ -1,0 +1,232 @@
+import { chromium } from "@playwright/test";
+import { readFile, mkdir, writeFile } from "node:fs/promises";
+import assert from "node:assert/strict";
+const { kind, routes } = JSON.parse(
+  await readFile("src/content/pages.json", "utf8"),
+);
+const origin =
+  process.env.CONFERENCE_ORIGIN ||
+  `http://127.0.0.1:${{ static: 5281, interactive: 5282, multipage: 5283 }[kind]}`;
+const out = "proof/design-refresh";
+await mkdir(out, { recursive: true });
+const browser = await chromium.launch({ headless: true });
+const errors = [],
+  failed = [],
+  external = new Set(),
+  checks = [];
+const watch = (page) => {
+  page.on("pageerror", (e) => errors.push(e.message));
+  page.on("console", (msg) => {
+    if (msg.type() === "error") errors.push(msg.text());
+  });
+  page.on("response", (response) => {
+    if (response.status() >= 400)
+      failed.push(`${response.status()} ${response.url()}`);
+  });
+  page.on("request", (request) => {
+    if (!request.url().startsWith(origin) && !request.url().startsWith("data:"))
+      external.add(request.url());
+  });
+};
+const overflow = async (page) =>
+  assert(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth + 1,
+    ),
+    `Horizontal overflow at ${page.viewportSize().width}px ${page.url()}`,
+  );
+const goto = async (page, path) => {
+  await page.goto(origin + path);
+  await page.waitForLoadState("networkidle");
+  await page.evaluate(() => document.fonts.ready);
+  await page.locator("img").evaluateAll((images) => {
+    for (const image of images) image.loading = "eager";
+  });
+  await page.waitForLoadState("networkidle");
+};
+try {
+  for (const width of [1440, 1024, 768, 390]) {
+    const context = await browser.newContext({
+      viewport: { width, height: 900 },
+      reducedMotion: "reduce",
+    });
+    const page = await context.newPage();
+    watch(page);
+    await goto(page, "/");
+    await overflow(page);
+    if (kind !== "static")
+      assert.equal(
+        await page.locator("[data-theme]").getAttribute("data-theme"),
+        "light",
+      );
+    await page.screenshot({ path: `${out}/home-${width}.png` });
+    await page.locator("#about").scrollIntoViewIfNeeded();
+    await page.screenshot({ path: `${out}/about-${width}.png` });
+    const gallery = page.getByRole("region", {
+      name: "IIT Roorkee campus photographs",
+    });
+    const pos = gallery.locator("[aria-live]");
+    const before = await pos.innerText();
+    await gallery.getByRole("button", { name: "Next photograph" }).click();
+    assert.notEqual(await pos.innerText(), before);
+    if (kind === "multipage") await goto(page, "/committee/");
+    else
+      await page
+        .locator("#committee")
+        .evaluate((el) =>
+          el.scrollIntoView({ block: "start", behavior: "instant" }),
+        );
+    assert.equal(
+      await page.locator('#committee img[src*="/approved/portraits/"]').count(),
+      7,
+    );
+    await page
+      .locator("#committee img")
+      .evaluateAll((images) =>
+        Promise.all(images.map((image) => image.decode())),
+      );
+    await overflow(page);
+    await page.screenshot({ path: `${out}/committee-${width}.png` });
+    if (kind === "multipage")
+      await goto(page, "/hospitality/#hospitality-uttarakhand");
+    else await goto(page, "/#hospitality-uttarakhand");
+    const tourism = page.locator("#hospitality-uttarakhand");
+    await tourism.waitFor({ state: "visible" });
+    assert(await tourism.evaluate((el) => el.open));
+    assert.equal(
+      await tourism.locator('img[src*="/approved/tourism/"]').count(),
+      5,
+    );
+    await overflow(page);
+    await tourism.screenshot({ path: `${out}/tourism-${width}.png` });
+    await tourism.locator("summary").focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await tourism.evaluate((el) => el.open), false);
+    await page.keyboard.press("Space");
+    assert.equal(await tourism.evaluate((el) => el.open), true);
+    assert.notEqual(
+      await tourism
+        .locator("summary")
+        .evaluate((el) => getComputedStyle(el).outlineStyle),
+      "none",
+    );
+    await goto(page, "/");
+    if (width < 900) {
+      const menu = page.getByRole("button", { name: "Open menu" });
+      if (await menu.count()) {
+        await menu.click();
+        assert.equal(await menu.getAttribute("aria-expanded"), "true");
+        await page.keyboard.press("Escape");
+        assert.equal(await menu.getAttribute("aria-expanded"), "false");
+      }
+    }
+    if (kind === "static") {
+      const hero = page.getByRole("region", {
+        name: "Conference background slideshow",
+      });
+      await hero.getByRole("button", { name: "Next photograph" }).click();
+      assert.equal(await hero.locator('[aria-hidden="false"] svg').count(), 1);
+    }
+    await goto(page, "/countdown/");
+    await overflow(page);
+    assert.equal(
+      await page.getByRole("link", { name: "Enter site" }).count(),
+      1,
+    );
+    await page.screenshot({ path: `${out}/countdown-${width}.png` });
+    assert.deepEqual(
+      await page
+        .locator("img")
+        .evaluateAll((imgs) =>
+          imgs
+            .filter((im) => !im.complete || im.naturalWidth === 0)
+            .map((im) => im.src),
+        ),
+      [],
+    );
+    checks.push(
+      `${width}px: home/about/committee/tourism/countdown, galleries, native accordions, focus, no overflow`,
+    );
+    await context.close();
+  }
+  // Verify real static responses and native disclosures with JavaScript disabled.
+  const context = await browser.newContext({
+    javaScriptEnabled: false,
+    viewport: { width: 390, height: 900 },
+  });
+  const page = await context.newPage();
+  watch(page);
+  for (const route of routes) {
+    const response = await page.goto(origin + route);
+    assert.equal(response.status(), 200);
+    assert(await page.locator("h1").textContent());
+    if (route === "/hospitality/" || (route === "/" && kind !== "multipage")) {
+      const details = page.locator("#hospitality-uttarakhand");
+      await details.locator("summary").click();
+      assert(await details.evaluate((el) => el.open));
+    }
+    if (route !== "/countdown/")
+      assert(
+        await page
+          .locator("[data-site-navigation]")
+          .getByRole("link", { name: "About", exact: true })
+          .isVisible(),
+      );
+  }
+  checks.push(
+    "All published routes contain readable HTML without JavaScript; mobile navigation and disclosures remain usable",
+  );
+  await context.close();
+  // Motion and theme preferences, history and client navigation after hydration.
+  const motion = await browser.newContext({
+    viewport: { width: 1440, height: 900 },
+  });
+  const p = await motion.newPage();
+  watch(p);
+  await goto(p, "/");
+  if (kind !== "static") {
+    await p.getByRole("button", { name: "Switch to dark theme" }).click();
+    assert.equal(
+      await p.locator("[data-theme]").getAttribute("data-theme"),
+      "dark",
+    );
+    await p.reload();
+    await p.waitForLoadState("networkidle");
+    assert.equal(
+      await p.locator("[data-theme]").getAttribute("data-theme"),
+      "dark",
+    );
+    await p.getByRole("button", { name: "Switch to light theme" }).click();
+  }
+  if (kind === "multipage") {
+    await p.locator('[data-site-navigation] a[href="/committee/"]').click();
+    await p.waitForURL("**/committee/");
+    assert(await p.locator("#committee").isVisible());
+    await p.goBack();
+    assert(await p.locator("#about").isVisible());
+  }
+  await motion.close();
+  assert.deepEqual(errors, [], "Browser/hydration errors");
+  assert.deepEqual(failed, [], "Failed asset requests");
+  assert.deepEqual([...external], [], "Unexpected external requests");
+  await writeFile(
+    `${out}/report.json`,
+    JSON.stringify(
+      { kind, origin, checks, errors, failed, external: [...external] },
+      null,
+      2,
+    ),
+  );
+  console.log(
+    JSON.stringify({
+      kind,
+      checks: checks.length,
+      errors,
+      failed,
+      external: [...external],
+      screenshots: out,
+    }),
+  );
+} finally {
+  await browser.close();
+}

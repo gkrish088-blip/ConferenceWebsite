@@ -6,7 +6,7 @@
       "id": "iitr",
       "name": "IIT Roorkee",
       "logo": {
-        "src": "/assets/logos/iitr.png",
+        "src": "/assets/approved/logos/iitr.webp",
         "alt": "IIT Roorkee logo",
         "focus": "center"
       },
@@ -19,8 +19,8 @@
       "id": "csir-iip",
       "name": "CSIR-IIP",
       "logo": {
-        "src": "/assets/logos/csir-iip.png",
-        "alt": "CSIR-IIP logo",
+        "src": "/assets/approved/logos/csir-iip.webp",
+        "alt": "CSIR–Indian Institute of Petroleum logo",
         "focus": "center"
       },
       "description": "Joint organizer of MemDesAI-2027. CSIR–Indian Institute of Petroleum, Dehradun, contributes expertise in catalysis, petroleum refining, industrial membrane applications, process modelling and plant-level data analytics. It will co-lead the Membrane Technology track and support engagement with the petroleum and energy sectors.",
@@ -32,14 +32,19 @@
       "id": "hkust",
       "name": "HKUST",
       "logo": {
-        "src": "/assets/logos/hkust.png",
-        "alt": "HKUST logo",
+        "src": "/assets/approved/logos/hkust.webp",
+        "alt": "Hong Kong University of Science and Technology logo",
         "focus": "center"
       },
       "description": "The Department of Chemical and Biological Engineering at the Hong Kong University of Science and Technology collaborates on MemDesAI-2027. Prof. Alicia Kyoung Jin An is listed in the proposal’s International Advisory Committee.",
       "url": "https://hkust.edu.hk/",
       "linkLabel": "Visit HKUST website",
-      "placeholder": false
+      "placeholder": false,
+      "secondaryLogo": {
+        "src": "/assets/approved/logos/hkust-cbe.webp",
+        "alt": "Department of Chemical and Biological Engineering, HKUST logo",
+        "focus": "center"
+      }
     }
   ],
   "placeholder": false

@@ -3,13 +3,20 @@ import { createServer } from "vite";
 const server = await createServer({
   configFile: "./vite.config.ts",
   optimizeDeps: { noDiscovery: true, include: [], entries: [] },
-  server: { middlewareMode: true },
+  server: { middlewareMode: true, hmr: false, ws: false },
   appType: "custom",
 });
 
 try {
+  await server.ssrLoadModule("/src/content/pages.ts");
+  await server.ssrLoadModule("/src/content/membranes.ts");
+  await server.ssrLoadModule("/src/content/media.ts");
   await server.ssrLoadModule("/src/content/index.ts");
-  console.log("Content schema validation passed for all nine JSON files.");
+  await server.ssrLoadModule("/src/content/flow-example.ts");
+  await server.ssrLoadModule("/src/content/membranes.ts");
+  console.log(
+    "Content schema validation passed for conference and interactive design data.",
+  );
 } catch (error) {
   console.error(error);
   process.exitCode = 1;

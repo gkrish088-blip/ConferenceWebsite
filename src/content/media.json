@@ -1,0 +1,105 @@
+{
+  "placeholder": false,
+  "campusTitle": "At IIT Roorkee",
+  "scienceTitle": "From membrane structure to water treatment",
+  "gallery": [
+    {
+      "src": "/assets/approved/campus/iitr-2.webp",
+      "alt": "IIT Roorkee main building and lawns",
+      "caption": "IIT Roorkee campus",
+      "focus": "center",
+      "width": 1600,
+      "height": 746,
+      "placeholder": false
+    },
+    {
+      "src": "/assets/approved/campus/iitr-4.webp",
+      "alt": "IIT Roorkee main building beneath a cloudy sky",
+      "caption": "IIT Roorkee campus",
+      "focus": "center",
+      "width": 1600,
+      "height": 900,
+      "placeholder": false
+    },
+    {
+      "src": "/assets/approved/campus/iitr-5.webp",
+      "alt": "Panoramic view of the IIT Roorkee main building",
+      "caption": "IIT Roorkee campus",
+      "focus": "center",
+      "width": 1600,
+      "height": 243,
+      "placeholder": false
+    }
+  ],
+  "science": [
+    {
+      "src": "/assets/approved/science/membrane-plant.webp",
+      "alt": "Membrane filtration equipment in an industrial facility",
+      "caption": "Membrane science · Images supplied for the conference",
+      "focus": "center",
+      "width": 1600,
+      "height": 900,
+      "placeholder": false
+    },
+    {
+      "src": "/assets/approved/science/membrane-fibres.webp",
+      "alt": "Microscopy image showing a network of membrane fibres",
+      "caption": "Membrane science · Images supplied for the conference",
+      "focus": "center",
+      "width": 1536,
+      "height": 1024,
+      "placeholder": false
+    },
+    {
+      "src": "/assets/approved/science/water-treatment.webp",
+      "alt": "Membrane modules beside a water treatment tank",
+      "caption": "Membrane science · Images supplied for the conference",
+      "focus": "center",
+      "width": 1600,
+      "height": 900,
+      "placeholder": false
+    }
+  ],
+  "ui": {
+    "previous": "Previous photograph",
+    "next": "Next photograph",
+    "pause": "Pause slideshow",
+    "play": "Play slideshow",
+    "position": "Photograph",
+    "of": "of",
+    "campusGallery": "IIT Roorkee campus photographs",
+    "heroGallery": "Conference background slideshow",
+    "designSlide": "Membranes, water and possibility",
+    "photoSource": "Images supplied by the conference team"
+  },
+  "heroSlides": [
+    {
+      "kind": "photo",
+      "image": {
+        "src": "/assets/approved/campus/iitr-2.webp",
+        "alt": "IIT Roorkee main building and lawns",
+        "caption": "IIT Roorkee campus",
+        "focus": "center",
+        "width": 1600,
+        "height": 746,
+        "placeholder": false
+      }
+    },
+    {
+      "kind": "design",
+      "caption": "Membranes, desalination and artificial intelligence"
+    },
+    {
+      "kind": "photo",
+      "image": {
+        "src": "/assets/approved/campus/iitr-4.webp",
+        "alt": "IIT Roorkee main building beneath a cloudy sky",
+        "caption": "IIT Roorkee campus",
+        "focus": "center",
+        "width": 1600,
+        "height": 900,
+        "placeholder": false
+      }
+    }
+  ]
+}

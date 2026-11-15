@@ -1,0 +1,83 @@
+{
+  "ui": {
+    "wordmark": ["MemDesAI", "2027"],
+    "pause": "Pause animation",
+    "resume": "Resume animation",
+    "lightTheme": "Switch to light theme",
+    "darkTheme": "Switch to dark theme",
+    "countdown": "Conference countdown",
+    "previous": "Previous page",
+    "next": "Next page",
+    "simulation": "Live membrane simulation",
+    "passed": "passed through",
+    "pagerLabel": "Page navigation"
+  },
+  "pages": [
+    {
+      "id": "about",
+      "scene": "ro",
+      "label": "Reverse osmosis desalination",
+      "caption": "Pressure drives water through a dense polymer membrane while hydrated salt ions are turned away.",
+      "species": { "water": "H₂O", "na": "Na⁺", "cl": "Cl⁻" }
+    },
+    {
+      "id": "themes",
+      "scene": "electrodialysis",
+      "label": "Electrodialysis and mineral recovery",
+      "caption": "An electric field pulls cations and anions through charged ion-exchange membranes, separating and concentrating dissolved minerals.",
+      "species": { "na": "Na⁺", "li": "Li⁺", "cl": "Cl⁻" }
+    },
+    {
+      "id": "dates",
+      "scene": "hollow-fibre",
+      "label": "Hollow-fibre filtration",
+      "caption": "Feed flows along the fibre bore and clean water crosses the pores. When foulants build up, a backwash pulse clears the surface.",
+      "species": { "water": "Water", "foul": "Foulants" }
+    },
+    {
+      "id": "speakers",
+      "scene": "gas",
+      "label": "Gas separation",
+      "caption": "In a mixed-matrix membrane the smaller CO₂ molecules permeate, while larger N₂ and CH₄ molecules are held back.",
+      "species": { "co2": "CO₂", "n2": "N₂", "ch4": "CH₄" }
+    },
+    {
+      "id": "committee",
+      "scene": "fuel-cell",
+      "label": "Proton-exchange membrane fuel cell",
+      "caption": "Hydrogen splits at the anode. Protons cross the membrane while electrons travel through the external circuit to form water at the cathode.",
+      "species": {
+        "h2": "H₂",
+        "hplus": "H⁺",
+        "e": "e⁻",
+        "o2": "O₂",
+        "h2o": "H₂O"
+      }
+    },
+    {
+      "id": "registration",
+      "scene": "dialysis",
+      "label": "Dialysis membrane",
+      "caption": "Small waste molecules such as urea diffuse across the membrane, while blood cells and proteins stay on the blood side.",
+      "species": {
+        "rbc": "Red blood cells",
+        "albumin": "Albumin",
+        "urea": "Urea"
+      }
+    },
+    {
+      "id": "hospitality",
+      "scene": "air",
+      "label": "Air-filtration membrane",
+      "caption": "A fibrous filter captures airborne particles while clean air flows through; captured particles are released when the filter is regenerated.",
+      "species": { "air": "Air", "pm25": "PM2.5", "pollen": "Pollen" }
+    },
+    {
+      "id": "contact",
+      "scene": "nanopore",
+      "label": "Single nanopore",
+      "caption": "A strongly hydrated ion cannot enter the narrow pore, while a weakly hydrated ion sheds its water shell and passes through.",
+      "species": { "water": "H₂O", "na": "Na⁺ (hydrated)", "k": "K⁺" }
+    }
+  ]
+}

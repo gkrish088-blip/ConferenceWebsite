@@ -7,14 +7,14 @@
       "members": [
         {
           "id": "patron-1",
-          "name": "Placeholder name",
+          "name": "Prof. Kamal Kishore Pant",
           "role": "Director, IIT Roorkee",
           "photo": {
-            "src": "/placeholders/portrait.svg",
-            "alt": "Placeholder portrait for the Patron",
-            "focus": "center"
+            "src": "/assets/approved/portraits/kamal-kishore-pant.webp",
+            "alt": "Prof. Kamal Kishore Pant",
+            "focus": "top"
           },
-          "placeholder": true
+          "placeholder": false
         }
       ]
     },
@@ -25,15 +25,25 @@
       "members": [
         {
           "id": "lead-1",
-          "name": "Placeholder name",
-          "role": "Director, CSIR-IIP Dehradun",
-          "placeholder": true
+          "name": "Dr. Harender Singh Bisht",
+          "role": "Director, CSIR–Indian Institute of Petroleum, Dehradun",
+          "placeholder": false,
+          "photo": {
+            "src": "/assets/approved/portraits/harender-singh-bisht.webp",
+            "alt": "Dr. Harender Singh Bisht",
+            "focus": "center"
+          }
         },
         {
           "id": "lead-2",
-          "name": "Placeholder name",
-          "role": "Professor, HKUST",
-          "placeholder": true
+          "name": "Prof. Alicia Kyoungjin An",
+          "role": "Professor, Hong Kong University of Science and Technology",
+          "placeholder": false,
+          "photo": {
+            "src": "/assets/approved/portraits/alicia-kyoungjin-an.webp",
+            "alt": "Prof. Alicia Kyoungjin An",
+            "focus": "center"
+          }
         }
       ]
     },
@@ -44,23 +54,50 @@
       "members": [
         {
           "id": "convener-a",
-          "name": "Dr. Bhaskar Jyoti Deka",
+          "name": "Prof. Bhaskar Jyoti Deka",
           "role": "Convener",
           "affiliation": "Associate Professor, Department of Hydrology, IIT Roorkee; Joint Faculty, Centre for Nanotechnology",
-          "placeholder": false
+          "placeholder": false,
+          "photo": {
+            "src": "/assets/approved/portraits/bhaskar-jyoti-deka.webp",
+            "alt": "Prof. Bhaskar Jyoti Deka",
+            "focus": "center"
+          }
         },
         {
           "id": "convener-b",
           "name": "Dr. Racha Surya Murali",
           "role": "Co-Convener",
           "affiliation": "Principal Scientist, Adsorption and Membrane Separation, CSIR-IIP Dehradun",
-          "placeholder": false
+          "placeholder": false,
+          "photo": {
+            "src": "/assets/approved/portraits/racha-surya-murali.webp",
+            "alt": "Dr. Racha Surya Murali",
+            "focus": "center"
+          }
         },
         {
           "id": "convener-c",
-          "name": "Dr. Anshul Yadav",
+          "name": "Prof. Anshul Yadav",
           "role": "Co-Convener",
           "affiliation": "Assistant Professor, Water Resources Development and Management, IIT Roorkee",
+          "placeholder": false,
+          "photo": {
+            "src": "/assets/approved/portraits/anshul-yadav.webp",
+            "alt": "Prof. Anshul Yadav",
+            "focus": "center"
+          }
+        },
+        {
+          "id": "convener-d",
+          "affiliation": "Professor, Biomedical Nanotechnology, IIT Roorkee",
+          "name": "Prof. Gopinath Packirisamy",
+          "role": "Co-Convener",
+          "photo": {
+            "src": "/assets/approved/portraits/gopinath-packirisamy.webp",
+            "alt": "Prof. Gopinath Packirisamy",
+            "focus": "center"
+          },
           "placeholder": false
         }
       ]
@@ -72,7 +109,7 @@
       "members": [
         {
           "id": "advisor-1",
-          "name": "Prof. Alicia Kyoung Jin An",
+          "name": "Prof. Alicia Kyoungjin An",
           "affiliation": "Department of Chemical and Biological Engineering, Hong Kong University of Science and Technology",
           "role": "Proposed international advisory committee member",
           "placeholder": false

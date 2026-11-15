@@ -40,3 +40,5 @@ export const content = {
   hospitality,
   contact,
 };
+
+export { media } from "./media";

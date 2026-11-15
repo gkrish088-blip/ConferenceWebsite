@@ -80,3 +80,31 @@ Breakpoints: 1200, 900, 600. Laptop is the design target. Below 900 the nav coll
 ## Copy tone for placeholders
 
 Realistic, short, clearly fake. No lorem ipsum walls. Example: "Placeholder: one-paragraph description of the conference goes here (60 to 80 words)." This tells the content editor exactly what is needed.
+
+## Interactive branch
+
+The interactive home page uses the continuous filtration schematic with the
+existing light and dark palettes, Bodoni Moda and Jost, and a pause control.
+The approved static palette and typography still apply to the countdown.
+
+
+## Photography refresh (15 November 2026)
+
+Supersedes older placeholder-only imagery guidance. The supplied ODT provides
+three patron/leadership portraits, four conveners, three institution marks and
+the HKUST department mark. Preserve each logo's proportions on a white backing.
+Use original caption identities; do not infer new appointments or biographies.
+
+About uses a reading column beside a campus gallery, which moves below the copy
+on phones. Themes pair the technical subject with supplied membrane imagery.
+Tourism photographs appear only in the Uttarakhand hospitality disclosure.
+Science images are illustrative and are not described as IIT Roorkee facilities.
+
+Galleries crossfade over 900ms every seven seconds only while in view, unengaged
+and visible. Hover/focus temporarily suspends advancement; manual navigation
+stops it. Pause/play and 44px previous/next controls are keyboard accessible.
+Reduced motion disables automatic advancement and all transition effects.
+
+Interactive designs: Bodoni Moda/Jost; paper #F5F8F7, surface #E8F0ED, ink #19372F,
+river #286954, muted #486158, accent #8D5035. The existing dark theme is optional.
+Preserve the filtration/membrane canvas as the main design signature.

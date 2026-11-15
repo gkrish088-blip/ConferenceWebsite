@@ -3,3 +3,7 @@ dist/
 *.tsbuildinfo
 *.local
 .DS_Store
+
+# Locally generated design review captures (report.json remains tracked).
+proof/design-refresh/*.png
+proof/design-refresh/*.log

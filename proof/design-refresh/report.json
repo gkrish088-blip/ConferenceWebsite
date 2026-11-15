@@ -1,0 +1,14 @@
+{
+  "kind": "multipage",
+  "origin": "http://127.0.0.1:5283",
+  "checks": [
+    "1440px: home/about/committee/tourism/countdown, galleries, native accordions, focus, no overflow",
+    "1024px: home/about/committee/tourism/countdown, galleries, native accordions, focus, no overflow",
+    "768px: home/about/committee/tourism/countdown, galleries, native accordions, focus, no overflow",
+    "390px: home/about/committee/tourism/countdown, galleries, native accordions, focus, no overflow",
+    "All published routes contain readable HTML without JavaScript; mobile navigation and disclosures remain usable"
+  ],
+  "errors": [],
+  "failed": [],
+  "external": []
+}

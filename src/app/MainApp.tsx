@@ -10,7 +10,10 @@ import styles from "../styles/site.module.css";
 
 export function MainApp() {
   const isCountdownPath =
-    window.location.pathname.replace(/\/+$/, "") === "/countdown";
+    (typeof window === "undefined" ? "/" : window.location.pathname).replace(
+      /\/+$/,
+      "",
+    ) === "/countdown";
 
   React.useEffect(() => {
     document.title = site.name;

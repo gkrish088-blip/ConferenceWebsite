@@ -15,6 +15,7 @@ export function Section({
   return (
     <section
       id={id}
+      data-section
       className={`${styles.section}${alternate ? ` ${styles.sectionAlternate}` : ""}`}
       aria-labelledby={`${id}-heading`}
     >

@@ -1,0 +1,21 @@
+{
+  "inventory": [
+    {
+      "path": "/",
+      "label": "Interactive conference site",
+      "placeholder": false
+    },
+    {
+      "path": "/countdown/",
+      "label": "Conference countdown",
+      "placeholder": false
+    }
+  ],
+  "sectionIds": ["about", "themes", "dates", "registration", "contact"],
+  "wordmark": ["MemDesAI", "2027"],
+  "pause": "Pause animation",
+  "resume": "Resume animation",
+  "lightTheme": "Switch to light theme",
+  "darkTheme": "Switch to dark theme",
+  "countdown": "Conference countdown"
+}

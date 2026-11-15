@@ -1,0 +1,14 @@
+{
+  "kind": "multipage",
+  "routes": [
+    "/",
+    "/themes/",
+    "/dates/",
+    "/speakers/",
+    "/committee/",
+    "/registration/",
+    "/hospitality/",
+    "/contact/",
+    "/countdown/"
+  ]
+}

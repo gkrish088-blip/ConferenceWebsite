@@ -1,53 +1,92 @@
-# IIT Roorkee conference website
+# MemDesAI 2027 — multipage design
 
-A static React and TypeScript conference site. The main page is a single, data-driven page; the countdown landing page is available as `/countdown/` in the full build and as `/` in the landing build. Event copy and the page inventory live in schema-validated JSON files under `src/content/`.
+Branch: `codex/multipage-design`.
+React + TypeScript + Vite; static hosting with build-time HTML and client hydration.
+No runtime server or new dependencies.
+
+## Run and build
+
+```sh
+npm ci
+npm run dev
+npm run build:full
+npm run preview
+```
+
+`npm run build:landing` emits only the countdown at `/`, without Enter site.
+`npm run build:full` emits the conference and `/countdown/` with Enter site.
+Both builds replace `dist/`; build full last for the full conference deployment.
+Deploy the complete `dist/` folder. Vercel uses `vercel.json`; no SPA catch-all
+rewrite is required. Unknown paths should return HTTP 404. Direct section paths
+on the multipage branch are real directories with an `index.html`.
 
 ## Page map
 
-| Route | Purpose |
-| --- | --- |
-| `/` | Main conference page: overview, institutions, themes, dates, speakers, committee, registration, hospitality and contact. |
-| `/countdown/` | Countdown landing page in the full build. |
-| `/` | Countdown landing page in the landing-only build. |
+- `/`
+- `/themes/`
+- `/dates/`
+- `/speakers/`
+- `/committee/`
+- `/registration/`
+- `/hospitality/`
+- `/contact/`
+- `/countdown/`
 
-The main navigation uses section anchors. Hospitality has six independent accordion items with direct hash links such as `/#hospitality-accommodation`.
+The single-page branches retain eight anchored sections. The multipage branch
+uses each section as a real page, with browser history and previous/next links.
+The countdown remains separate in every design.
 
-## Run locally
+## Content and asset ownership
 
-```bash
-npm install
-npm run dev
-```
+All event copy remains in schema-validated `src/content/`. `pages.json` owns
+route inventory; `media.json` owns gallery images, slide order and control labels.
+`about.json` owns institution/department marks; `committee.json` owns captioned
+patrons and conveners; `hospitality.json` owns the tourism gallery. The build
+validates these records before generating HTML.
 
-## Checks and builds
+`public/assets/approved/` contains optimized derivatives of user-supplied images.
+`provenance.json` maps files to the supplied Images folders and ODT media entries.
+The ODT names/portraits and logos take priority over older placeholder identity
+assets. Originals remain unchanged in the main workspace. No new external
+imagery, biography, date, fee, policy or contact information has been invented.
+Other unknown records retain `placeholder: true`.
 
-```bash
-npm run lint
-npm run typecheck
+## Readable without JavaScript
+
+`scripts/prerender.mjs` renders the actual React components into every page at
+build time. `hydrateRoot` attaches browser interactions to that same markup.
+Clock snapshots keep countdown/date hydration consistent. Native hospitality
+disclosures and real navigation links remain usable without JavaScript.
+The live countdown updates after hydration; without JavaScript its digits are
+a build-time snapshot and the event date remains visible.
+
+For canonical URLs, Open Graph URLs and a sitemap, set `SITE_ORIGIN` to that
+particular deployment's HTTPS origin before building. It is intentionally not
+hardcoded across three designs. A robots.txt is always generated. HTML availability
+improves crawler access but does not guarantee search indexing or bypass hosting
+access restrictions. Rebuild and redeploy to apply this fix to a live URL.
+
+Technical references: [React server rendering](https://react.dev/reference/react-dom/server/renderToString),
+[React hydration](https://react.dev/reference/react-dom/client/hydrateRoot),
+[Vite static generation](https://vite.dev/guide/ssr.html#pre-rendering-ssg).
+
+## Verification
+
+```sh
 npm test
 npm run validate:content
 npm run report:placeholders
 npm run build:landing
+node scripts/check-html.mjs --landing
 npm run build:full
-npm run capture:screenshots
+npm run check:html
+node scripts/verify-design.mjs
 ```
 
-`npm run build:landing` writes the countdown site to `dist/`. `npm run build:full` writes the main site and `/countdown/` entry to `dist/`. The landing build serves the countdown page at `/`; the full build serves the main page at `/` and the countdown at `/countdown/`. `npm run check:launch` intentionally fails until placeholder event data and links have been replaced with approved details.
-
-## Content and assets
-
-- `src/content/*.json` owns event copy, page inventory, labels, links, dates, people, hospitality topics and accessibility strings. `src/content/schema.ts` validates the data.
-- `src/main.tsx`, `src/app/`, `src/components/` and `src/sections/` render the shared page patterns from those JSON records.
-- `public/assets/logos/` contains the supplied conference and institution logos. `public/assets/hospitality/` contains licensed travel photographs, with credits in `src/content/hospitality.json`. `public/placeholders/` contains remaining portrait placeholders. Replace imagery only with approved assets.
-- Institute website links live in `src/content/about.json` and are shared by the About links and clickable logos in the header, footer and countdown page. External links open in a new tab.
-- `docs/` contains the supplied decisions, architecture, design and section requirements. `skills/verify-site/SKILL.md` contains the verification checklist.
-
-Every unconfirmed event-specific item is marked as a placeholder. Do not present example names, dates, costs, biographies, policies or destinations as verified information.
-
-Text has been populated from the three supplied PDFs: the MemDesAI-2027 poster, conference proposal and registration fee sheet. See [content sources and remaining confirmations](docs/07-content-sources.md) for the source mapping and provisional details. Registration now includes early bird and standard fee tables and all four sponsorship packages. The hospitality guide links to its travel and campus sources. Portraits awaiting approved images remain placeholders.
-
-## Design branches
-
-This is the static design. The existing Vercel project deploys from `main`.
-
-Update `src/content/about.json` and `src/content/themes.json` on both branches when conference copy changes.
+The browser check expects a static server on 5281 (static), 5282 (interactive),
+or 5283 (multipage), or `CONFERENCE_ORIGIN`. It covers 1440/1024/768/390px,
+images, gallery controls, reduced motion, keyboard disclosures, deep links,
+mobile menus, theme persistence, direct routes without JavaScript, browser
+errors, hydration and same-origin asset requests. Proof is saved under
+`proof/design-refresh/`. `npm run check:launch` still rejects unknown content;
+this design refresh does not approve remaining event details for launch.

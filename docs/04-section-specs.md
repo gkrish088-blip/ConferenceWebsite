@@ -69,3 +69,12 @@ Data lives in `committee.json` as an ordered array of groups. Each group has `ti
 - Button: "Enter site" shown only in `full` mode; in `landing` mode show nothing or a plain line from content ("Full website coming soon").
 - Motion: contour lines draw in once on load. Nothing else animates except the digits changing. Static under reduced motion.
 - Fits one screen at 1440x800 and 390x844 without scrolling.
+
+
+## 15 November 2026 behavior override
+
+Campus carousel in About; technical image strip in Themes; seven supplied ODT
+portraits in Committee, including both leadership members and all four conveners.
+Hospitality uses native `details`/`summary`, independent toggling and hash opening.
+Uttarakhand contains the five supplied tourism photos. Both launch modes must
+produce populated HTML. All eight section destinations have separate static HTML routes on this branch.

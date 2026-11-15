@@ -64,7 +64,7 @@ figure {
 }
 
 :focus-visible {
-  outline: 3px solid var(--marigold);
+  outline: 3px solid var(--river);
   outline-offset: 3px;
 }
 

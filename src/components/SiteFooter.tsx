@@ -1,8 +1,9 @@
+import type { ReactNode } from "react";
 import { about, contact, site } from "../content";
 import { InstitutionMark } from "./InstitutionMark";
 import styles from "../styles/site.module.css";
 
-export function SiteFooter() {
+export function SiteFooter({ extra }: { extra?: ReactNode } = {}) {
   return (
     <footer className={styles.siteFooter}>
       <div className={styles.container}>
@@ -25,6 +26,7 @@ export function SiteFooter() {
         >
           {contact.persons[0]?.email}
         </a>
+        {extra}
       </div>
     </footer>
   );

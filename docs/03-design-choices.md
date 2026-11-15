@@ -92,7 +92,7 @@ The approved static palette and typography still apply to the countdown.
 
 Supersedes older placeholder-only imagery guidance. The supplied ODT provides
 three patron/leadership portraits, four conveners, three institution marks and
-the HKUST department mark. Preserve each logo's proportions on a white backing.
+the HKUST department mark. Preserve each logo's proportions with a transparent surround.
 Use original caption identities; do not infer new appointments or biographies.
 
 About uses a reading column beside a campus gallery, which moves below the copy
@@ -108,3 +108,18 @@ Reduced motion disables automatic advancement and all transition effects.
 Interactive designs: Bodoni Moda/Jost; paper #F5F8F7, surface #E8F0ED, ink #19372F,
 river #286954, muted #486158, accent #8D5035. The existing dark theme is optional.
 Preserve the filtration/membrane canvas as the main design signature.
+
+
+## Logo surround refinement
+
+The user requests larger marks without rectangular white backgrounds. Transparent
+SVG presentation assets embed the original approved raster bytes unchanged and
+mask only near-white pixels connected to the image boundary. Enclosed whites and
+coloured logo backgrounds remain intact. The viewBox trims unused paper margins.
+CSS removes the previous white tiles and padding, enlarges conference/institution
+marks and keeps their proportions across header, About, footer and countdown.
+
+Identity and footer brand bands retain a light surface in both themes so the
+original dark-blue logo lettering stays readable without recolouring the marks.
+Countdown institution marks share one light identity band instead of individual
+white image tiles.

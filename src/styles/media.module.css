@@ -1,60 +1,37 @@
 .gallery {
+  isolation: isolate;
+  position: relative;
   min-width: 0;
-  border: 1px solid var(--hairline);
-  border-radius: 8px;
+  margin-inline: calc((100% - 100cqw) / 2);
   overflow: hidden;
   background: var(--paper);
 }
-.frames {
-  position: relative;
-  aspect-ratio: 5 / 4;
-}
-.frame {
+.campusImage {
   position: absolute;
   inset: 0;
-  margin: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition:
-    opacity 900ms ease,
-    visibility 900ms;
-}
-.frame.active {
-  opacity: 1;
-  visibility: visible;
-}
-.frame img {
+  z-index: -1;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.frame figcaption {
-  position: absolute;
-  inset: auto 0 0;
-  padding: 36px 20px 16px;
-  color: #fff;
-  background: linear-gradient(transparent, rgba(10, 29, 41, 0.82));
-  font-size: 13px;
-  line-height: 1.5;
+.campusIntro {
+  padding: clamp(24px, 4vw, 56px)
+    max(var(--gutter), calc((100% - var(--container)) / 2));
+  background: linear-gradient(
+    90deg,
+    rgb(18 43 57 / 98%) 0%,
+    rgb(18 43 57 / 93%) 48%,
+    rgb(18 43 57 / 82%) 68%,
+    rgb(18 43 57 / 10%) 100%
+  );
 }
-.galleryBar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 10px 14px;
-  color: var(--ink);
+.campusIntro > :is(h1, h2) {
+  color: var(--title-white);
 }
-.galleryBar p {
-  margin: 0;
-  font-size: 13px;
-  font-variant-numeric: tabular-nums;
+.campusIntro > div {
+  max-width: min(64ch, 70%);
+  color: var(--title-white);
 }
-.controls {
-  display: flex;
-  gap: 4px;
-}
-.controls button,
 .heroControls button {
   display: grid;
   place-items: center;
@@ -67,33 +44,11 @@
   color: inherit;
   font-size: 20px;
 }
-.controls button:hover,
 .heroControls button:hover {
   background: var(--shallows);
+  color: var(--marine);
 }
-.science {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr 1fr;
-  gap: 16px;
-  margin: 0 0 44px;
-}
-.science figure {
-  margin: 0;
-  min-width: 0;
-}
-.science img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  height: auto;
-  object-fit: cover;
-  border-radius: 4px;
-}
-.science figcaption {
-  padding: 12px 0 0;
-  color: var(--silt);
-  font-size: 13px;
-  line-height: 1.5;
-}
+
 .heroSlideshow {
   position: absolute;
   inset: 0;
@@ -116,26 +71,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 66% center;
-}
-.designed {
-  background: #dce9f1;
-  color: #1f5f8b;
-}
-.designed svg {
-  width: 100%;
-  height: 100%;
-  opacity: 0.28;
+  object-position: center 46%;
+  transform-origin: center 46%;
+  filter: grayscale(1);
 }
 .heroScrim {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(248, 251, 253, 0.98) 0%,
-    rgba(248, 251, 253, 0.94) 37%,
-    rgba(248, 251, 253, 0.65) 60%,
-    rgba(248, 251, 253, 0.12) 100%
+    rgb(18 43 57 / 99%) 0%,
+    rgb(24 56 74 / 96%) 36%,
+    rgb(24 56 74 / 84%) 60%,
+    rgb(24 56 74 / 37%) 100%
   );
 }
 .heroControls {
@@ -147,41 +95,48 @@
   gap: 8px;
   align-items: center;
   padding: 6px 8px;
-  border: 1px solid #bacbd5;
+  border: 1px solid var(--rule);
   border-radius: 40px;
-  background: rgba(251, 253, 255, 0.94);
-  color: #10263f;
+  background: var(--paper);
+  color: var(--marine);
   font-size: 13px;
 }
 @media (max-width: 700px) {
-  .frames {
-    aspect-ratio: 4 / 3;
-  }
-  .science {
-    grid-template-columns: 1fr 1fr;
-    gap: 18px 12px;
-  }
-  .science figure:first-child {
-    grid-column: 1 / -1;
-  }
-  .science figure:first-child img {
-    aspect-ratio: 2 / 1;
-  }
-  .heroScrim {
+  .campusIntro {
+    padding: 0 20px 20px;
     background: linear-gradient(
-      90deg,
-      rgba(248, 251, 253, 0.95),
-      rgba(248, 251, 253, 0.82)
+      to bottom,
+      transparent 0,
+      rgb(18 43 57 / 90%) 155px,
+      var(--deep-marine) 350px
     );
   }
+  .campusIntro > div {
+    padding-top: 170px;
+    max-width: none;
+  }
+  .campusImage {
+    height: 350px;
+  }
+
   .heroControls {
     right: 20px;
     bottom: 16px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .frame,
   .heroFrame {
     transition: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .heroScrim {
+    background: linear-gradient(
+      95deg,
+      rgb(18 43 57 / 96%) 0%,
+      rgb(24 56 74 / 87%) 66%,
+      rgb(24 56 74 / 73%) 100%
+    );
   }
 }

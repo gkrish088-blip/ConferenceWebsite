@@ -1,4 +1,4 @@
-import { ScienceGallery } from "../components/ScienceGallery";
+import { media } from "../content/media";
 import { site, themes } from "../content";
 import { Section } from "../components/Section";
 import { RichText } from "../components/RichText";
@@ -9,8 +9,12 @@ export function ThemesSection() {
     themes.title ?? site.nav.find((item) => item.id === "themes")?.label ?? "";
 
   return (
-    <Section id="themes" title={title} alternate>
-      <ScienceGallery />
+    <Section
+      id="themes"
+      title={title}
+      headingImage={media.science[0].src}
+      alternate
+    >
       {themes.items.length > 0 ? (
         <div className={styles.themeList}>
           {themes.items.map((theme) => (

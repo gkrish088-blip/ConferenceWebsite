@@ -28,13 +28,6 @@ export const mediaSchema = z.object({
     designSlide: text,
     photoSource: text,
   }),
-  heroSlides: z
-    .array(
-      z.discriminatedUnion("kind", [
-        z.object({ kind: z.literal("photo"), image }),
-        z.object({ kind: z.literal("design"), caption: text }),
-      ]),
-    )
-    .min(2),
+  titleImage: image,
 });
 export const media = mediaSchema.parse(data);

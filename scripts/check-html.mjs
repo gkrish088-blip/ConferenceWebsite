@@ -16,7 +16,7 @@ for (const route of routes) {
   if (
     route === "/committee/" ||
     (route === "/" &&
-      pages.kind !== "multipage" &&
+      !pages.routes.includes("/committee/") &&
       !process.argv.includes("--landing"))
   ) {
     for (const name of [

@@ -57,3 +57,5 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 - [ ] Organizer approval of remaining placeholder speakers, committee, contacts, dates, registration links and travel details.
 - [ ] Set deployment-specific SITE_ORIGIN for canonical links and sitemap.
 - [ ] Deploy the refreshed builds to the chosen hosting targets.
+
+- [x] Split the static conference into section pages and keep Contact on the final navigation page.

@@ -10,5 +10,5 @@ export function App({
 }) {
   if (!fullMode || /^\/countdown\/*$/.test(pathname))
     return <LandingApp fullMode={fullMode} />;
-  return <MainApp />;
+  return <MainApp pathname={pathname} />;
 }

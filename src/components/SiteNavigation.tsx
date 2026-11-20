@@ -1,12 +1,10 @@
 import React from "react";
 import { site } from "../content";
-import { useScrollSpy } from "../lib/useScrollSpy";
 import styles from "../styles/site.module.css";
 
-export function SiteNavigation() {
+export function SiteNavigation({ activeId }: { activeId: string }) {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const [identityScrolledOut, setIdentityScrolledOut] = React.useState(false);
-  const activeId = useScrollSpy(site.nav.map((item) => item.id));
 
   React.useEffect(() => {
     const identity = document.querySelector("[data-identity-band]");
@@ -36,7 +34,7 @@ export function SiteNavigation() {
       <div className={styles.container}>
         <a
           className={`${styles.navBrand}${identityScrolledOut ? ` ${styles.navBrandVisible}` : ""}`}
-          href="#top"
+          href="/#top"
           data-scrolled-brand
         >
           {site.shortName}
@@ -62,8 +60,8 @@ export function SiteNavigation() {
           {site.nav.map((item) => (
             <a
               key={item.id}
-              href={`#${item.id}`}
-              aria-current={activeId === item.id ? "location" : undefined}
+              href={item.id === "about" ? "/#about" : `/${item.id}/`}
+              aria-current={activeId === item.id ? "page" : undefined}
               className={[
                 styles.navLink,
                 item.id === "registration" ? styles.registrationNavLink : "",

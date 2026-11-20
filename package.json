@@ -17,7 +17,7 @@
     "report:placeholders": "node scripts/report-placeholders.mjs",
     "check:launch": "node scripts/check-launch.mjs",
     "make:placeholders": "node scripts/make-placeholders.mjs",
-    "capture:screenshots": "npm run typecheck && npm run validate:content && node scripts/capture-screenshots.mjs",
+    "capture:screenshots": "npm run build:full && node scripts/verify-design.mjs --local",
     "format": "prettier --write src scripts tests vite.config.ts index.html countdown/index.html eslint.config.mjs",
     "check:html": "node scripts/check-html.mjs"
   },

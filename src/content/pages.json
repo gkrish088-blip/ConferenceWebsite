@@ -1,4 +1,14 @@
 {
   "kind": "static",
-  "routes": ["/", "/countdown/"]
+  "routes": [
+    "/",
+    "/themes/",
+    "/dates/",
+    "/speakers/",
+    "/committee/",
+    "/registration/",
+    "/hospitality/",
+    "/contact/",
+    "/countdown/"
+  ]
 }

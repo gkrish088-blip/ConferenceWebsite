@@ -22,12 +22,11 @@ on the multipage branch are real directories with an `index.html`.
 
 ## Page map
 
-- `/`
-- `/countdown/`
-
-The single-page branches retain eight anchored sections. The multipage branch
-uses each section as a real page, with browser history and previous/next links.
-The countdown remains separate in every design.
+- `/` contains the conference title and About.
+- Themes, Dates, Speakers, Committee, Registration, Hospitality and Contact have their own prerendered section paths.
+- Contact details appear on `/contact/`, the last page in the conference navigation.
+- Legacy section bookmarks forward to the corresponding page. Hospitality topic fragments still open the matching disclosure.
+- The hero controls cycle through three crops of the approved membrane-fibre micrograph. Institutional descriptions have a reduced-motion-aware reveal.
 
 ## Content and asset ownership
 
@@ -73,10 +72,10 @@ npm run build:landing
 node scripts/check-html.mjs --landing
 npm run build:full
 npm run check:html
-node scripts/verify-design.mjs
+node scripts/verify-design.mjs --local
 ```
 
-The browser check expects a static server on 5281 (static), 5282 (interactive),
+The browser check starts a local preview with `--local`. Without that flag it expects a static server on 5281 (static), 5282 (interactive),
 or 5283 (multipage), or `CONFERENCE_ORIGIN`. It covers 1440/1024/768/390px,
 images, gallery controls, reduced motion, keyboard disclosures, deep links,
 mobile menus, theme persistence, direct routes without JavaScript, browser

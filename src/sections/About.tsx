@@ -11,13 +11,16 @@ export function AboutSection() {
     about.title ?? site.nav.find((item) => item.id === "about")?.label ?? "";
 
   return (
-    <Section id="about" title={title}>
-      <div className={styles.aboutEditorial}>
-        <RichText text={about.description} />
-        <aside className={styles.aboutGallery}>
-          <PhotoGallery />
-        </aside>
-      </div>
+    <Section
+      id="about"
+      title={title}
+      renderIntro={(heading) => (
+        <PhotoGallery>
+          {heading}
+          <RichText text={about.description} />
+        </PhotoGallery>
+      )}
+    >
       <div className={styles.institutionGrid}>
         {about.institutions.map((institution) => (
           <article
@@ -25,15 +28,17 @@ export function AboutSection() {
             key={institution.id}
             data-institution-card
           >
-            <InstitutionMark institution={institution} showName={false} />
-            {institution.secondaryLogo && (
-              <img
-                className={styles.departmentLogo}
-                src={institution.secondaryLogo.src}
-                alt={institution.secondaryLogo.alt}
-                loading="lazy"
-              />
-            )}
+            <div className={styles.instituteMarks}>
+              <InstitutionMark institution={institution} showName={false} />
+              {institution.secondaryLogo && (
+                <img
+                  className={styles.departmentLogo}
+                  src={institution.secondaryLogo.src}
+                  alt={institution.secondaryLogo.alt}
+                  loading="lazy"
+                />
+              )}
+            </div>
             <h3>{institution.name}</h3>
             <p>{institution.description}</p>
             <ContentLink

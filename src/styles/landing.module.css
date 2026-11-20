@@ -62,7 +62,7 @@
 .landingHeader h1 {
   margin: 0 0 14px;
   color: var(--paper);
-  font-size: clamp(28px, 3vw, 44px);
+  font-size: clamp(34px, 4vw, 54px);
   line-height: 1.06;
   overflow-wrap: anywhere;
 }
@@ -190,8 +190,8 @@
   padding: 10px 18px;
   border: 1px solid var(--river);
   border-radius: var(--radius);
-  color: var(--paper);
-  background: var(--river);
+  color: var(--deep-marine);
+  background: var(--tangerine);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -200,7 +200,7 @@
 
 .enterButton:hover,
 .enterButton:focus-visible {
-  background: var(--ink);
+  background: var(--sandstone);
 }
 
 .comingSoon {
@@ -216,7 +216,7 @@
 
   .landingHeader h1 {
     margin-bottom: 6px;
-    font-size: 28px;
+    font-size: 34px;
   }
 
   .landingTagline {
@@ -295,13 +295,17 @@
 }
 
 .landingMarks {
-  background: #edf3f6;
+  background: var(--sandstone);
   padding: 10px 14px;
   border-top: 0;
 }
 .landingMark span {
-  color: #19372f;
+  color: var(--marine);
 }
 .landingMark img {
   filter: none;
+}
+
+.landingScreen :focus-visible {
+  outline-color: var(--tangerine);
 }

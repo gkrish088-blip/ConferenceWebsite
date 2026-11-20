@@ -1,10 +1,16 @@
+import { preview } from "vite";
 import { chromium } from "@playwright/test";
 import { readFile, mkdir, writeFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 const { kind, routes } = JSON.parse(
   await readFile("src/content/pages.json", "utf8"),
 );
+const multipage = routes.includes("/committee/");
+const server = process.argv.includes("--local")
+  ? await preview({ preview: { host: "127.0.0.1", port: 0 } })
+  : null;
 const origin =
+  (server && `http://127.0.0.1:${server.httpServer.address().port}`) ||
   process.env.CONFERENCE_ORIGIN ||
   `http://127.0.0.1:${{ static: 5281, interactive: 5282, multipage: 5283 }[kind]}`;
 const out = "proof/design-refresh";
@@ -62,14 +68,14 @@ try {
     await page.screenshot({ path: `${out}/home-${width}.png` });
     await page.locator("#about").scrollIntoViewIfNeeded();
     await page.screenshot({ path: `${out}/about-${width}.png` });
-    const gallery = page.getByRole("region", {
-      name: "IIT Roorkee campus photographs",
-    });
-    const pos = gallery.locator("[aria-live]");
-    const before = await pos.innerText();
-    await gallery.getByRole("button", { name: "Next photograph" }).click();
-    assert.notEqual(await pos.innerText(), before);
-    if (kind === "multipage") await goto(page, "/committee/");
+    const campus = page.locator('#about img[src*="/approved/campus/"]');
+    assert.equal(await campus.count(), 1);
+    await campus.evaluate((image) => image.decode());
+    assert.equal(
+      await page.locator("#about [data-gallery-controls]").count(),
+      0,
+    );
+    if (multipage) await goto(page, "/committee/");
     else
       await page
         .locator("#committee")
@@ -87,8 +93,7 @@ try {
       );
     await overflow(page);
     await page.screenshot({ path: `${out}/committee-${width}.png` });
-    if (kind === "multipage")
-      await goto(page, "/hospitality/#hospitality-uttarakhand");
+    if (multipage) await goto(page, "/hospitality/#hospitality-uttarakhand");
     else await goto(page, "/#hospitality-uttarakhand");
     const tourism = page.locator("#hospitality-uttarakhand");
     await tourism.waitFor({ state: "visible" });
@@ -127,7 +132,10 @@ try {
         name: "Conference background slideshow",
       });
       await hero.getByRole("button", { name: "Next photograph" }).click();
-      assert.equal(await hero.locator('[aria-hidden="false"] svg').count(), 1);
+      assert.match(
+        await hero.locator('[aria-hidden="false"] img').getAttribute("src"),
+        /membrane-fibres\.webp$/,
+      );
     }
     await goto(page, "/countdown/");
     await overflow(page);
@@ -162,7 +170,19 @@ try {
     const response = await page.goto(origin + route);
     assert.equal(response.status(), 200);
     assert(await page.locator("h1").textContent());
-    if (route === "/hospitality/" || (route === "/" && kind !== "multipage")) {
+    assert.equal(
+      await page
+        .locator(
+          'footer #contact, footer a[href^="mailto:"], footer a[href^="tel:"]',
+        )
+        .count(),
+      0,
+    );
+    assert.equal(
+      await page.locator("main #contact").count(),
+      route === "/contact/" ? 1 : 0,
+    );
+    if (route === "/hospitality/" || (route === "/" && !multipage)) {
       const details = page.locator("#hospitality-uttarakhand");
       await details.locator("summary").click();
       assert(await details.evaluate((el) => el.open));
@@ -200,7 +220,7 @@ try {
     );
     await p.getByRole("button", { name: "Switch to light theme" }).click();
   }
-  if (kind === "multipage") {
+  if (multipage) {
     await p.locator('[data-site-navigation] a[href="/committee/"]').click();
     await p.waitForURL("**/committee/");
     assert(await p.locator("#committee").isVisible());
@@ -231,4 +251,5 @@ try {
   );
 } finally {
   await browser.close();
+  await server?.close();
 }

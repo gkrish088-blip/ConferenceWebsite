@@ -21,6 +21,7 @@ export function IdentityBand() {
           {about.institutions.map((institution) => (
             <InstitutionMark
               compact
+              showName={false}
               key={institution.id}
               institution={institution}
             />

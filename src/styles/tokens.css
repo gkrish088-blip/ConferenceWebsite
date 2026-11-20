@@ -1,12 +1,19 @@
 :root {
   color-scheme: light;
-  --ink: #10263f;
-  --river: #1f5f8b;
-  --shallows: #dce9f1;
-  --paper: #fbfcfd;
-  --silt: #6b6a60;
-  --marigold: #d8962a;
-  --hairline: rgba(107, 106, 96, 0.4);
+  --marine: #18384a;
+  --sandstone: #dcc5a5;
+  --tangerine: #f29a59;
+  --paper: color-mix(in srgb, var(--sandstone) 46%, #fffaf0);
+  --deep-marine: color-mix(in srgb, var(--marine) 77%, black);
+  --mid-marine: color-mix(in srgb, var(--marine) 85%, var(--sandstone));
+  --rule: color-mix(in srgb, var(--marine) 32%, var(--sandstone));
+  --title-white: #fffaf2;
+  --ink: var(--marine);
+  --river: var(--marine);
+  --shallows: var(--sandstone);
+  --silt: var(--mid-marine);
+  --marigold: var(--tangerine);
+  --hairline: var(--rule);
   --radius: 4px;
   --container: 1120px;
   --gutter: 24px;
@@ -14,8 +21,8 @@
   --heading-font: "Newsreader", Georgia, serif;
   --body-size: 17px;
   --small-size: 14px;
-  --heading-3-size: 22px;
-  --heading-2-size: 34px;
-  --heading-1-size: 52px;
+  --heading-3-size: clamp(25px, 2.25vw, 30px);
+  --heading-2-size: clamp(38px, 4vw, 52px);
+  --heading-1-size: clamp(40px, 5.3vw, 72px);
   --section-space: 96px;
 }

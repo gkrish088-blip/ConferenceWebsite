@@ -1,17 +1,43 @@
-import type { ReactNode } from "react";
+import { createContext, useContext, type ReactNode } from "react";
 import styles from "../styles/site.module.css";
+
+export const PageSection = createContext<string | undefined>(undefined);
 
 export function Section({
   id,
   title,
   alternate = false,
+  headingImage,
+  renderIntro,
   children,
 }: {
   id: string;
   title: string;
   alternate?: boolean;
+  headingImage?: string;
+  renderIntro?: (heading: ReactNode) => ReactNode;
   children: ReactNode;
 }) {
+  const Heading = useContext(PageSection) === id ? "h1" : "h2";
+  const heading = (
+    <Heading
+      id={`${id}-heading`}
+      className={
+        headingImage
+          ? `${styles.sectionHeading} ${styles.photoHeading}`
+          : styles.sectionHeading
+      }
+      style={
+        headingImage
+          ? {
+              backgroundImage: `linear-gradient(180deg, rgb(18 43 57 / 45%) 0%, rgb(18 43 57 / 81%) 52%, rgb(18 43 57 / 55%) 100%), url("${headingImage}")`,
+            }
+          : undefined
+      }
+    >
+      {title}
+    </Heading>
+  );
   return (
     <section
       id={id}
@@ -19,9 +45,7 @@ export function Section({
       aria-labelledby={`${id}-heading`}
     >
       <div className={styles.container}>
-        <h2 id={`${id}-heading`} className={styles.sectionHeading}>
-          {title}
-        </h2>
+        {renderIntro ? renderIntro(heading) : heading}
         {children}
       </div>
     </section>

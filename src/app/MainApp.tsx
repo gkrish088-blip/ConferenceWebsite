@@ -3,39 +3,42 @@ import { site } from "../content";
 import { IdentityBand } from "../components/IdentityBand";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteNavigation } from "../components/SiteNavigation";
-import { LandingApp } from "./LandingApp";
+import { pages } from "../content/pages";
+import { PageSection } from "../components/Section";
 import { Hero } from "../sections/Hero";
 import { sectionRegistry } from "../sections";
 import styles from "../styles/site.module.css";
 
-export function MainApp() {
-  const isCountdownPath =
-    (typeof window === "undefined" ? "/" : window.location.pathname).replace(
-      /\/+$/,
-      "",
-    ) === "/countdown";
-
+export function MainApp({ pathname }: { pathname: string }) {
+  const id = pathname.split("/").filter(Boolean)[0] ?? "about";
+  const Section = sectionRegistry[id];
+  const home = id === "about";
   React.useEffect(() => {
-    document.title = site.name;
-  }, []);
-
-  if (isCountdownPath) return <LandingApp fullMode />;
-
+    if (!home) return;
+    const forward = () => {
+      const hash = window.location.hash;
+      const target = hash.slice(1).split("-")[0];
+      const path = `/${target}/`;
+      if (target !== "countdown" && pages.routes.includes(path)) {
+        window.location.replace(path + window.location.search + hash);
+      }
+    };
+    forward();
+    window.addEventListener("hashchange", forward);
+    return () => window.removeEventListener("hashchange", forward);
+  }, [home]);
   return (
-    <>
+    <PageSection.Provider value={home ? undefined : id}>
       <a className={styles.skipLink} href="#main-content">
         {site.accessibility.skipLinkLabel}
       </a>
       <IdentityBand />
-      <SiteNavigation />
+      <SiteNavigation activeId={id} />
       <main id="main-content">
-        <Hero />
-        {site.nav.map((item) => {
-          const Component = sectionRegistry[item.id];
-          return Component ? <Component key={item.id} /> : null;
-        })}
+        {home && <Hero />}
+        {Section && <Section />}
       </main>
       <SiteFooter />
-    </>
+    </PageSection.Provider>
   );
 }

@@ -1,3 +1,4 @@
+import { SiteFooter } from "../components/SiteFooter";
 import React from "react";
 import { about, site } from "../content/landing";
 import { Countdown } from "../components/Countdown";
@@ -17,58 +18,61 @@ export function LandingApp({ fullMode }: { fullMode: boolean }) {
   }, []);
 
   return (
-    <main className={styles.landingScreen}>
-      <svg
-        className={styles.landingContours}
-        viewBox="0 0 1180 400"
-        preserveAspectRatio="xMidYMid slice"
-        aria-hidden="true"
-      >
-        {contours.map((path, index) => (
-          <path
-            className={styles.landingContourPath}
-            d={path}
-            pathLength={1}
-            data-landing-contour
-            key={index}
-            style={{ animationDelay: `${0.38 + index * 0.09}s` }}
-          />
-        ))}
-      </svg>
-      <div className={styles.landingContent} data-landing-content>
-        <header className={styles.landingHeader}>
-          <h1>{site.name}</h1>
-          <p className={styles.landingTagline}>{site.tagline}</p>
-        </header>
-        <Countdown />
-        {fullMode && (
-          <a className={styles.enterButton} href="/">
-            {site.landing.enterLabel}
-          </a>
-        )}
-        <div className={styles.landingDetails}>
-          <p>{site.datesText}</p>
-          <p>{site.venue}</p>
-          {!fullMode && (
-            <p className={styles.comingSoon}>{site.landing.comingSoon}</p>
-          )}
-        </div>
-        <div className={styles.landingMarks}>
-          {about.institutions.map((institution) => (
-            <a
-              className={styles.landingMark}
-              key={institution.id}
-              href={institution.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${institution.name} (${site.accessibility.externalLinkText})`}
-            >
-              <img src={institution.logo.src} alt={institution.logo.alt} />
-              <span>{institution.name}</span>
-            </a>
+    <>
+      <main className={styles.landingScreen}>
+        <svg
+          className={styles.landingContours}
+          viewBox="0 0 1180 400"
+          preserveAspectRatio="xMidYMid slice"
+          aria-hidden="true"
+        >
+          {contours.map((path, index) => (
+            <path
+              className={styles.landingContourPath}
+              d={path}
+              pathLength={1}
+              data-landing-contour
+              key={index}
+              style={{ animationDelay: `${0.38 + index * 0.09}s` }}
+            />
           ))}
+        </svg>
+        <div className={styles.landingContent} data-landing-content>
+          <header className={styles.landingHeader}>
+            <h1>{site.name}</h1>
+            <p className={styles.landingTagline}>{site.tagline}</p>
+          </header>
+          <Countdown />
+          {fullMode && (
+            <a className={styles.enterButton} href="/">
+              {site.landing.enterLabel}
+            </a>
+          )}
+          <div className={styles.landingDetails}>
+            <p>{site.datesText}</p>
+            <p>{site.venue}</p>
+            {!fullMode && (
+              <p className={styles.comingSoon}>{site.landing.comingSoon}</p>
+            )}
+          </div>
+          <div className={styles.landingMarks}>
+            {about.institutions.map((institution) => (
+              <a
+                className={styles.landingMark}
+                key={institution.id}
+                href={institution.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${institution.name} (${site.accessibility.externalLinkText})`}
+              >
+                <img src={institution.logo.src} alt={institution.logo.alt} />
+                <span>{institution.name}</span>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+      <SiteFooter />
+    </>
   );
 }

@@ -11,16 +11,10 @@ export function AboutSection() {
     about.title ?? site.nav.find((item) => item.id === "about")?.label ?? "";
 
   return (
-    <Section
-      id="about"
-      title={title}
-      renderIntro={(heading) => (
-        <PhotoGallery>
-          {heading}
-          <RichText text={about.description} />
-        </PhotoGallery>
-      )}
-    >
+    <Section id="about" title={title}>
+      <PhotoGallery>
+        <RichText text={about.description} />
+      </PhotoGallery>
       <div className={styles.institutionGrid}>
         {about.institutions.map((institution) => (
           <article

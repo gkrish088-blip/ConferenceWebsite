@@ -8,14 +8,12 @@ export function Section({
   title,
   alternate = false,
   headingImage,
-  renderIntro,
   children,
 }: {
   id: string;
   title: string;
   alternate?: boolean;
   headingImage?: string;
-  renderIntro?: (heading: ReactNode) => ReactNode;
   children: ReactNode;
 }) {
   const Heading = useContext(PageSection) === id ? "h1" : "h2";
@@ -45,7 +43,7 @@ export function Section({
       aria-labelledby={`${id}-heading`}
     >
       <div className={styles.container}>
-        {renderIntro ? renderIntro(heading) : heading}
+        {heading}
         {children}
       </div>
     </section>

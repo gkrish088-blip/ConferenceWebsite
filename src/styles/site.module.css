@@ -2090,7 +2090,6 @@
 /* Measure the full-width campus image against its section, excluding the scrollbar. */
 :global(#about) {
   container-type: inline-size;
-  padding-top: 0;
 }
 
 .photoHeading {

@@ -25,9 +25,6 @@
     rgb(18 43 57 / 10%) 100%
   );
 }
-.campusIntro > :is(h1, h2) {
-  color: var(--title-white);
-}
 .campusIntro > div {
   max-width: min(64ch, 70%);
   color: var(--title-white);

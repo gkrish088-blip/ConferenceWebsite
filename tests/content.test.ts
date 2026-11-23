@@ -37,10 +37,14 @@ describe("content records", () => {
     expect(speakers.delegates).toHaveLength(6);
     expect(
       committee.groups.find((group) => group.id === "advisory")?.members,
-    ).toHaveLength(5);
+    ).toHaveLength(4);
+    expect(
+      committee.groups.find((group) => group.id === "national-advisory")
+        ?.members,
+    ).toHaveLength(6);
     expect(
       committee.groups.find((group) => group.id === "organising")?.members,
-    ).toHaveLength(14);
+    ).toHaveLength(13);
     expect(
       committee.groups.find((group) => group.id === "students")?.members,
     ).toHaveLength(6);

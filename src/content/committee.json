@@ -104,134 +104,278 @@
     },
     {
       "id": "advisory",
-      "title": "Proposed international advisory committee",
+      "title": "International advisory committee",
       "layout": "list",
       "members": [
         {
-          "id": "advisor-1",
-          "name": "Prof. Alicia Kyoungjin An",
-          "affiliation": "Department of Chemical and Biological Engineering, Hong Kong University of Science and Technology",
-          "role": "Proposed international advisory committee member",
-          "placeholder": false
-        },
-        {
-          "id": "advisor-2",
+          "id": "ho-kyong-shon",
           "name": "Prof. Ho Kyong Shon",
-          "affiliation": "ARC Research Hub for Nutrients in a Circular Economy; Center for Technology in Water and Wastewater, School of Civil and Environmental Engineering, University of Technology Sydney, Australia",
-          "role": "Proposed international advisory committee member",
+          "affiliation": "University of Technology Sydney, Australia",
+          "photo": {
+            "src": "/assets/approved/portraits/ho-kyong-shon.webp",
+            "alt": "Prof. Ho Kyong Shon",
+            "focus": "center"
+          },
           "placeholder": false
         },
         {
-          "id": "advisor-3",
+          "id": "volkan-filiz",
           "name": "Dr. Volkan Filiz",
           "affiliation": "Institute of Membrane Research, Helmholtz-Zentrum Hereon, Hamburg, Germany",
-          "role": "Proposed international advisory committee member",
+          "photo": {
+            "src": "/assets/approved/portraits/volkan-filiz.webp",
+            "alt": "Dr. Volkan Filiz",
+            "focus": "center"
+          },
           "placeholder": false
         },
         {
-          "id": "advisor-4",
+          "id": "mark-hlawitschka",
           "name": "Prof. Dr.-Ing. Mark Hlawitschka",
           "affiliation": "Johannes Kepler University Linz, Austria",
-          "role": "Proposed international advisory committee member",
+          "photo": {
+            "src": "/assets/approved/portraits/mark-hlawitschka.webp",
+            "alt": "Prof. Dr.-Ing. Mark Hlawitschka",
+            "focus": "center"
+          },
           "placeholder": false
         },
         {
-          "id": "advisor-5",
+          "id": "sanghyun-jeong",
           "name": "Prof. Sanghyun Jeong",
           "affiliation": "Pusan National University, South Korea",
-          "role": "Proposed international advisory committee member",
+          "photo": {
+            "src": "/assets/approved/portraits/sanghyun-jeong.webp",
+            "alt": "Prof. Sanghyun Jeong",
+            "focus": "center"
+          },
+          "placeholder": false
+        }
+      ]
+    },
+    {
+      "id": "national-advisory",
+      "title": "National advisory committee",
+      "layout": "list",
+      "members": [
+        {
+          "id": "sundergopal-sridhar",
+          "name": "Dr. Sundergopal Sridhar",
+          "affiliation": "Chief Scientist at CSIR Indian Institute of Chemical Technology",
+          "photo": {
+            "src": "/assets/approved/portraits/sundergopal-sridhar.webp",
+            "alt": "Dr. Sundergopal Sridhar",
+            "focus": "center"
+          },
+          "placeholder": false
+        },
+        {
+          "id": "arun-m-isloor",
+          "name": "Prof. Arun M. Isloor",
+          "affiliation": "Department of Chemistry, National Institute of Technology Karnataka",
+          "photo": {
+            "src": "/assets/approved/portraits/arun-m-isloor.webp",
+            "alt": "Prof. Arun M. Isloor",
+            "focus": "center"
+          },
+          "placeholder": false
+        },
+        {
+          "id": "g-arthanareeswaran",
+          "name": "Prof. Dr. G. Arthanareeswaran",
+          "affiliation": "National Institute of Technology, Tiruchirappalli",
+          "photo": {
+            "src": "/assets/approved/portraits/g-arthanareeswaran.webp",
+            "alt": "Prof. Dr. G. Arthanareeswaran",
+            "focus": "center"
+          },
+          "placeholder": false
+        },
+        {
+          "id": "s-v-satyanarayana",
+          "name": "Dr. S.V. Satyanarayana",
+          "role": "Professor",
+          "affiliation": "Chemical Engineering and the Director of Academic & Planning at Jawaharlal Nehru Technological University, Anantapur (JNTUA)",
+          "photo": {
+            "src": "/assets/approved/portraits/s-v-satyanarayana.webp",
+            "alt": "Dr. S.V. Satyanarayana",
+            "focus": "center"
+          },
+          "placeholder": false
+        },
+        {
+          "id": "abhijit-maiti",
+          "name": "Abhijit Maiti",
+          "role": "Professor",
+          "affiliation": "Indian Institute of Technology Roorkee (Saharanpur campus)",
+          "photo": {
+            "src": "/assets/approved/portraits/abhijit-maiti.webp",
+            "alt": "Abhijit Maiti",
+            "focus": "center"
+          },
+          "placeholder": false
+        },
+        {
+          "id": "sujay-chattopadhyaya",
+          "name": "Sujay Chattopadhyaya",
+          "role": "Professor",
+          "affiliation": "Polymer and Process Engineering, IIT Roorkee, Saharanpur Campus",
+          "photo": {
+            "src": "/assets/approved/portraits/sujay-chattopadhyaya.webp",
+            "alt": "Sujay Chattopadhyaya",
+            "focus": "center"
+          },
           "placeholder": false
         }
       ]
     },
     {
       "id": "organising",
-      "title": "Organising committee",
+      "title": "IIT Roorkee organising committee",
       "layout": "list",
       "members": [
         {
-          "id": "organiser-1",
-          "name": "Placeholder member A",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "sumit-sen",
+          "name": "Prof. Sumit Sen",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/sumit-sen.webp",
+            "alt": "Prof. Sumit Sen",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-2",
-          "name": "Placeholder member B",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "brijesh-kumar-yadav",
+          "name": "Prof. Brijesh Kumar Yadav",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/brijesh-kumar-yadav.webp",
+            "alt": "Prof. Brijesh Kumar Yadav",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-3",
-          "name": "Placeholder member C",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "d-s-arya",
+          "name": "Prof. D.S. Arya",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/d-s-arya.webp",
+            "alt": "Prof. D.S. Arya",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-4",
-          "name": "Placeholder member D",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "manoj-kr-jain",
+          "name": "Prof. Manoj Kr. Jain",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/manoj-kr-jain.webp",
+            "alt": "Prof. Manoj Kr. Jain",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-5",
-          "name": "Placeholder member E",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "ankit-agarwal",
+          "name": "Prof. Ankit Agarwal",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/ankit-agarwal.webp",
+            "alt": "Prof. Ankit Agarwal",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-6",
-          "name": "Placeholder member F",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "ashutosh-sharma",
+          "name": "Prof. Ashutosh Sharma",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/ashutosh-sharma.webp",
+            "alt": "Prof. Ashutosh Sharma",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-7",
-          "name": "Placeholder member G",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "nitin-khandelwal",
+          "name": "Prof. Nitin Khandelwal",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/nitin-khandelwal.webp",
+            "alt": "Prof. Nitin Khandelwal",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-8",
-          "name": "Placeholder member H",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "adrija-roy",
+          "name": "Prof. Adrija Roy",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/adrija-roy.webp",
+            "alt": "Prof. Adrija Roy",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-9",
-          "name": "Placeholder member I",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "krishna-mohan-poluri",
+          "name": "Prof. Krishna Mohan Poluri",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/krishna-mohan-poluri.webp",
+            "alt": "Prof. Krishna Mohan Poluri",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-10",
-          "name": "Placeholder member J",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "prasenjit-mondal",
+          "name": "Prof. Prasenjit Mondal",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/prasenjit-mondal.webp",
+            "alt": "Prof. Prasenjit Mondal",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-11",
-          "name": "Placeholder member K",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "hari-prakash-veluswamy",
+          "name": "Prof. Hari Prakash Veluswamy",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/hari-prakash-veluswamy.webp",
+            "alt": "Prof. Hari Prakash Veluswamy",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-12",
-          "name": "Placeholder member L",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "basant-yadav",
+          "name": "Prof. Basant Yadav",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/basant-yadav.webp",
+            "alt": "Prof. Basant Yadav",
+            "focus": "center"
+          },
+          "placeholder": false
         },
         {
-          "id": "organiser-13",
-          "name": "Placeholder member M",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
-        },
-        {
-          "id": "organiser-14",
-          "name": "Placeholder member N",
-          "affiliation": "Placeholder affiliation",
-          "placeholder": true
+          "id": "amit-bhosale",
+          "name": "Prof. Amit Bhosale",
+          "affiliation": "IIT Roorkee",
+          "photo": {
+            "src": "/assets/approved/portraits/amit-bhosale.webp",
+            "alt": "Prof. Amit Bhosale",
+            "focus": "center"
+          },
+          "placeholder": false
         }
       ]
     },

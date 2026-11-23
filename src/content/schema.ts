@@ -203,7 +203,7 @@ const committeeGroupSchema = z.discriminatedUnion("layout", [
 ]);
 
 export const committeeSchema = z.object({
-  groups: z.array(committeeGroupSchema).length(6),
+  groups: z.array(committeeGroupSchema).min(1),
 });
 
 export const registrationSchema = z

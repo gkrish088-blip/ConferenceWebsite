@@ -41,7 +41,7 @@ Done when: the pipeline looks right with 1, 5 and 12 milestones, at 1440px and 3
 
 ## Phase 4: Committee, Registration, Hospitality, Contact
 
-- Committee: Patron, pair of boxes with connector lines, Conveners, Advisory, Organising, Student Council. All from one `committee.json` using `layout` types (`featured`, `pair`, `grid`, `list`).
+- Committee: Patron, pair of leadership cards, Conveners, Advisory, Organising, Student Council. All from one `committee.json` using `layout` types (`featured`, `pair`, `grid`, `list`).
 - Registration: details text, sponsorship tiers, link slots (buttons) for the Drive PDF items.
 - Hospitality: intro with anchor links, six accordion items, deep links.
 - Contact: persons, email, address, a map link (plain link, no embed).

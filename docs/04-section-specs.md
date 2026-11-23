@@ -37,7 +37,7 @@ All text and images come from content files. Names below match `docs/05-content-
 ## Committee (`#committee`)
 Data lives in `committee.json` as an ordered array of groups. Each group has `title`, `layout`, `members`.
 - `featured`: one large person block (Patron: IITR Director).
-- `pair`: two boxes directly below the Patron, joined to it by CSS connector lines (CSIR-IIP Director, HKUST professor).
+- `pair`: two boxes directly below the Patron (CSIR-IIP Director, HKUST professor).
 - `grid`: person blocks, 2 to 4 columns (four Conveners).
 - `list`: compact names with affiliations in 2 or 3 columns (Advisory, Organising). Built for 5 to 60 names.
 - `grid` with `role`: Student Council, role shown under the name.

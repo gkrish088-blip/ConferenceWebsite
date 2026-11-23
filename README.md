@@ -33,7 +33,7 @@ on the multipage branch are real directories with an `index.html`.
 All event copy remains in schema-validated `src/content/`. `pages.json` owns
 route inventory; `media.json` owns gallery images, slide order and control labels.
 `about.json` owns institution/department marks; `committee.json` owns captioned
-patrons and conveners; `hospitality.json` owns the tourism gallery. The build
+leadership, conveners, and the three portrait rosters supplied in the IITR Organizing, International Advisory, and National Advisory committee documents; `hospitality.json` owns the tourism gallery. The build
 validates these records before generating HTML.
 
 `public/assets/approved/` contains optimized derivatives of user-supplied images.

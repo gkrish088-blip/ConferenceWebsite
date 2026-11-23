@@ -1,5 +1,5 @@
 {
-  "source": "User-supplied assets/Images/Images and assets/Patrons pictures and logos.odt (15 November 2026)",
+  "source": "User-supplied assets/Images/Images and assets/Patrons pictures and logos.odt (15 November 2026) and three organizer-supplied committee DOCX rosters",
   "notes": "Names and portrait assignments follow ODT captions. Supplied imagery is illustrative; membrane photographs are not represented as IIT Roorkee research facilities. Original files remain unchanged in the main workspace.",
   "assets": [
     {
@@ -111,6 +111,121 @@
       "file": "logos/hkust-cbe.webp",
       "source": "ODT media/image7.png",
       "alt": "Department of Chemical and Biological Engineering, HKUST logo"
+    },
+    {
+      "file": "portraits/ho-kyong-shon.webp",
+      "source": "International advisory committee.docx / word/media/image1.png",
+      "alt": "Prof. Ho Kyong Shon"
+    },
+    {
+      "file": "portraits/volkan-filiz.webp",
+      "source": "International advisory committee.docx / word/media/image2.jpeg",
+      "alt": "Dr. Volkan Filiz"
+    },
+    {
+      "file": "portraits/mark-hlawitschka.webp",
+      "source": "International advisory committee.docx / word/media/image3.jpeg",
+      "alt": "Prof. Dr.-Ing. Mark Hlawitschka"
+    },
+    {
+      "file": "portraits/sanghyun-jeong.webp",
+      "source": "International advisory committee.docx / word/media/image4.jpeg",
+      "alt": "Prof. Sanghyun Jeong"
+    },
+    {
+      "file": "portraits/sundergopal-sridhar.webp",
+      "source": "National advisory committee.docx / word/media/image1.jpeg",
+      "alt": "Dr. Sundergopal Sridhar"
+    },
+    {
+      "file": "portraits/arun-m-isloor.webp",
+      "source": "National advisory committee.docx / word/media/image2.jpeg",
+      "alt": "Prof. Arun M. Isloor"
+    },
+    {
+      "file": "portraits/g-arthanareeswaran.webp",
+      "source": "National advisory committee.docx / word/media/image3.jpeg",
+      "alt": "Prof. Dr. G. Arthanareeswaran"
+    },
+    {
+      "file": "portraits/s-v-satyanarayana.webp",
+      "source": "National advisory committee.docx / word/media/image4.png",
+      "alt": "Dr. S.V. Satyanarayana"
+    },
+    {
+      "file": "portraits/abhijit-maiti.webp",
+      "source": "National advisory committee.docx / word/media/image5.jpeg",
+      "alt": "Abhijit Maiti"
+    },
+    {
+      "file": "portraits/sujay-chattopadhyaya.webp",
+      "source": "National advisory committee.docx / word/media/image6.jpeg",
+      "alt": "Sujay Chattopadhyaya"
+    },
+    {
+      "file": "portraits/sumit-sen.webp",
+      "source": "IITR Organizing committee.docx / word/media/image1.jpeg",
+      "alt": "Prof. Sumit Sen"
+    },
+    {
+      "file": "portraits/brijesh-kumar-yadav.webp",
+      "source": "IITR Organizing committee.docx / word/media/image2.jpeg",
+      "alt": "Prof. Brijesh Kumar Yadav"
+    },
+    {
+      "file": "portraits/d-s-arya.webp",
+      "source": "IITR Organizing committee.docx / word/media/image3.jpeg",
+      "alt": "Prof. D.S. Arya"
+    },
+    {
+      "file": "portraits/manoj-kr-jain.webp",
+      "source": "IITR Organizing committee.docx / word/media/image4.jpeg",
+      "alt": "Prof. Manoj Kr. Jain"
+    },
+    {
+      "file": "portraits/ankit-agarwal.webp",
+      "source": "IITR Organizing committee.docx / word/media/image5.jpeg",
+      "alt": "Prof. Ankit Agarwal"
+    },
+    {
+      "file": "portraits/ashutosh-sharma.webp",
+      "source": "IITR Organizing committee.docx / word/media/image6.jpeg",
+      "alt": "Prof. Ashutosh Sharma"
+    },
+    {
+      "file": "portraits/nitin-khandelwal.webp",
+      "source": "IITR Organizing committee.docx / word/media/image7.jpeg",
+      "alt": "Prof. Nitin Khandelwal"
+    },
+    {
+      "file": "portraits/adrija-roy.webp",
+      "source": "IITR Organizing committee.docx / word/media/image8.jpeg",
+      "alt": "Prof. Adrija Roy"
+    },
+    {
+      "file": "portraits/krishna-mohan-poluri.webp",
+      "source": "IITR Organizing committee.docx / word/media/image9.jpeg",
+      "alt": "Prof. Krishna Mohan Poluri"
+    },
+    {
+      "file": "portraits/prasenjit-mondal.webp",
+      "source": "IITR Organizing committee.docx / word/media/image10.jpeg",
+      "alt": "Prof. Prasenjit Mondal"
+    },
+    {
+      "file": "portraits/hari-prakash-veluswamy.webp",
+      "source": "IITR Organizing committee.docx / word/media/image11.jpeg",
+      "alt": "Prof. Hari Prakash Veluswamy"
+    },
+    {
+      "file": "portraits/basant-yadav.webp",
+      "source": "IITR Organizing committee.docx / word/media/image12.jpeg",
+      "alt": "Prof. Basant Yadav"
+    },
+    {
+      "file": "portraits/amit-bhosale.webp",
+      "source": "IITR Organizing committee.docx / word/media/image13.jpeg",
+      "alt": "Prof. Amit Bhosale"
     }
   ],
   "logoPresentation": "*-clear.svg embeds the approved source bytes unchanged, with a vector mask for the near-white exterior and a tightly framed viewBox; original marks and enclosed white details are retained."

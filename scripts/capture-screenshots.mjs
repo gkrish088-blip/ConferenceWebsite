@@ -442,49 +442,19 @@ async function checkReducedMotionOnLanding(browser, origin, pagePath) {
   await page.close();
 }
 
-async function checkCommitteeConnectors(page) {
-  for (const width of [1440, 1024]) {
-    await page.setViewportSize({ width, height: 900 });
-    await page.locator("[data-committee-tree]").scrollIntoViewIfNeeded();
-    const geometry = await page
-      .locator("[data-committee-pair]")
-      .evaluate((pair) => {
-        const rect = pair.getBoundingClientRect();
-        const bar = getComputedStyle(pair, "::before");
-        const resolveInset = (value) =>
-          value.endsWith("%")
-            ? (Number.parseFloat(value) / 100) * rect.width
-            : Number.parseFloat(value);
-        const barStart = rect.left + resolveInset(bar.left);
-        const barEnd = rect.right - resolveInset(bar.right);
-        const members = [...pair.children].map((member) => {
-          const box = member.getBoundingClientRect();
-          const drop = getComputedStyle(member, "::before");
-          return {
-            center: box.left + box.width / 2,
-            width: box.width,
-            top: box.top,
-            dropHeight: drop.height,
-            dropTop: drop.top,
-            dropLeft: drop.left,
-          };
-        });
-        return { barStart, barEnd, barTop: rect.top, members };
-      });
-    expect(
-      Math.abs(geometry.barStart - geometry.members[0].center) < 1 &&
-        Math.abs(geometry.barEnd - geometry.members[1].center) < 1 &&
-        geometry.members.every(
-          (member) =>
-            member.dropHeight === "24px" &&
-            member.dropTop === "-24px" &&
-            Math.abs(Number.parseFloat(member.dropLeft) - member.width / 2) <
-              1 &&
-            Math.abs(member.top - 24 - geometry.barTop) < 1,
+async function checkCommitteeCards(page) {
+  const hasNoConnectors = await page
+    .locator("[data-committee-pair]")
+    .evaluate((pair) =>
+      [
+        getComputedStyle(pair.previousElementSibling, "::after"),
+        getComputedStyle(pair, "::before"),
+        ...Array.from(pair.children, (card) =>
+          getComputedStyle(card, "::before"),
         ),
-      `Committee connector endpoints miss box centres at ${width}px: ${JSON.stringify(geometry)}`,
+      ].every((style) => style.content === "none"),
     );
-  }
+  expect(hasNoConnectors, "Committee cards should have no connecting lines");
 }
 
 async function checkMainInteractions(browser) {
@@ -595,7 +565,7 @@ async function checkMainInteractions(browser) {
     `Old placeholder copy remains: ${forbiddenCopy.join(", ")}`,
   );
 
-  await checkCommitteeConnectors(page);
+  await checkCommitteeCards(page);
   for (const [width, expected] of [
     [1100, 4],
     [800, 3],
@@ -932,17 +902,7 @@ async function checkMainInteractions(browser) {
     animations: "disabled",
   });
   await page.locator("[data-committee-tree]").scrollIntoViewIfNeeded();
-  const mobileConnectorDisplay = await page
-    .locator("[data-committee-pair]")
-    .evaluate((pair) => ({
-      bar: getComputedStyle(pair, "::before").display,
-      drop: getComputedStyle(pair.children[0], "::before").display,
-    }));
-  expect(
-    mobileConnectorDisplay.bar === "none" &&
-      mobileConnectorDisplay.drop === "none",
-    `Committee connectors should be hidden on mobile: ${JSON.stringify(mobileConnectorDisplay)}`,
-  );
+  await checkCommitteeCards(page);
   await page.locator("[data-committee-tree]").screenshot({
     path: resolve(screenshotDirectory, "mobile-committee-tree-390x844.png"),
     animations: "disabled",

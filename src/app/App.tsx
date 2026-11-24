@@ -8,7 +8,6 @@ export function App({
   pathname?: string;
   fullMode?: boolean;
 }) {
-  if (!fullMode || /^\/countdown\/*$/.test(pathname))
-    return <LandingApp fullMode={fullMode} />;
+  if (!fullMode) return <LandingApp />;
   return <MainApp pathname={pathname} />;
 }

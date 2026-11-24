@@ -4,10 +4,11 @@ import { defineConfig } from "vite";
 
 const projectRoot = fileURLToPath(new URL(".", import.meta.url));
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ mode, isPreview }) => {
   const launchMode = mode === "landing" ? "landing" : "full";
 
   return {
+    appType: isPreview ? "mpa" : "spa",
     plugins: [
       {
         name: "launch-mode-entry",
@@ -27,15 +28,6 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: resolve(projectRoot, "dist"),
       emptyOutDir: true,
-      rollupOptions: {
-        input:
-          launchMode === "landing"
-            ? [resolve(projectRoot, "index.html")]
-            : [
-                resolve(projectRoot, "index.html"),
-                resolve(projectRoot, "countdown/index.html"),
-              ],
-      },
     },
   };
 });

@@ -2,6 +2,8 @@
 
 Replace placeholders in `src/content/*.json` only with confirmed, approved information. Keep placeholder flags accurate until replacement data is ready.
 
+- [x] Retire the public countdown page and remove it from the production route inventory.
+
 ## Event identity and programme
 
 - [x] Populate full and short conference names and description from the supplied poster and proposal.

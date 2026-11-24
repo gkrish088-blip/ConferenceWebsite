@@ -14,7 +14,7 @@ npm run preview
 ```
 
 `npm run build:landing` emits only the countdown at `/`, without Enter site.
-`npm run build:full` emits the conference and `/countdown/` with Enter site.
+`npm run build:full` emits the eight conference pages. The retired `/countdown/` URL returns HTTP 404.
 Both builds replace `dist/`; build full last for the full conference deployment.
 Deploy the complete `dist/` folder. Vercel uses `vercel.json`; no SPA catch-all
 rewrite is required. Unknown paths should return HTTP 404. Direct section paths

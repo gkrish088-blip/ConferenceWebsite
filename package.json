@@ -11,14 +11,14 @@
     "preview": "vite preview --mode full --host 0.0.0.0",
     "preview:landing": "vite preview --mode landing --host 0.0.0.0",
     "typecheck": "tsc -b",
-    "lint": "eslint scripts && prettier --check src scripts tests vite.config.ts index.html countdown/index.html eslint.config.mjs",
+    "lint": "eslint scripts && prettier --check src scripts tests vite.config.ts index.html eslint.config.mjs",
     "test": "vitest run",
     "validate:content": "node scripts/validate-content.mjs",
     "report:placeholders": "node scripts/report-placeholders.mjs",
     "check:launch": "node scripts/check-launch.mjs",
     "make:placeholders": "node scripts/make-placeholders.mjs",
     "capture:screenshots": "npm run build:full && node scripts/verify-design.mjs --local",
-    "format": "prettier --write src scripts tests vite.config.ts index.html countdown/index.html eslint.config.mjs",
+    "format": "prettier --write src scripts tests vite.config.ts index.html eslint.config.mjs",
     "check:html": "node scripts/check-html.mjs"
   },
   "dependencies": {

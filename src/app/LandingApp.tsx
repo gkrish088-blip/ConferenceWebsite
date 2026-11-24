@@ -12,7 +12,7 @@ const contours = [
   "M-120 85 C60 155 165 170 275 140 S465 55 600 100 790 200 930 180 1110 105 1290 155",
 ];
 
-export function LandingApp({ fullMode }: { fullMode: boolean }) {
+export function LandingApp() {
   React.useEffect(() => {
     document.title = site.name;
   }, []);
@@ -43,17 +43,10 @@ export function LandingApp({ fullMode }: { fullMode: boolean }) {
             <p className={styles.landingTagline}>{site.tagline}</p>
           </header>
           <Countdown />
-          {fullMode && (
-            <a className={styles.enterButton} href="/">
-              {site.landing.enterLabel}
-            </a>
-          )}
           <div className={styles.landingDetails}>
             <p>{site.datesText}</p>
             <p>{site.venue}</p>
-            {!fullMode && (
-              <p className={styles.comingSoon}>{site.landing.comingSoon}</p>
-            )}
+            <p className={styles.comingSoon}>{site.landing.comingSoon}</p>
           </div>
           <div className={styles.landingMarks}>
             {about.institutions.map((institution) => (

@@ -31,26 +31,21 @@ try {
     ...template.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g),
   ].map((match) => match[1]);
   for (const pathname of routes) {
-    const countdown = !fullMode || pathname === "/countdown/";
     const label =
       pathname === "/"
         ? ""
         : site.nav.find((item) => pathname === `/${item.id}/`)?.label;
-    const title = countdown
+    const title = !fullMode
       ? `${site.shortName} | ${site.accessibility.countdownLabel}`
       : label
         ? `${label} | ${site.shortName}`
         : site.name;
     const description = `${site.name}. ${site.datesText}. ${site.venue}. ${site.tagline}`;
-    const pageTemplate =
-      fullMode && pathname === "/countdown/"
-        ? await readFile("dist/countdown/index.html", "utf8")
-        : template;
-    let html = pageTemplate.replace(
+    let html = template.replace(
       '<div id="root"></div>',
       `<div id="root">${render(pathname, fullMode, timestamp)}</div>`,
     );
-    if (html === pageTemplate)
+    if (html === template)
       throw new Error(`Prerender did not insert content for ${pathname}`);
     html = html.replace(
       /<title>.*?<\/title>/s,

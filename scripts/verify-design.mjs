@@ -137,25 +137,8 @@ try {
         /membrane-fibres\.webp$/,
       );
     }
-    await goto(page, "/countdown/");
-    await overflow(page);
-    assert.equal(
-      await page.getByRole("link", { name: "Enter site" }).count(),
-      1,
-    );
-    await page.screenshot({ path: `${out}/countdown-${width}.png` });
-    assert.deepEqual(
-      await page
-        .locator("img")
-        .evaluateAll((imgs) =>
-          imgs
-            .filter((im) => !im.complete || im.naturalWidth === 0)
-            .map((im) => im.src),
-        ),
-      [],
-    );
     checks.push(
-      `${width}px: home/about/committee/tourism/countdown, galleries, native accordions, focus, no overflow`,
+      `${width}px: home/about/committee/tourism, galleries, native accordions, focus, no overflow`,
     );
     await context.close();
   }
@@ -166,6 +149,10 @@ try {
   });
   const page = await context.newPage();
   watch(page);
+  assert.equal(
+    (await context.request.get(origin + "/countdown/")).status(),
+    404,
+  );
   for (const route of routes) {
     const response = await page.goto(origin + route);
     assert.equal(response.status(), 200);
@@ -187,13 +174,12 @@ try {
       await details.locator("summary").click();
       assert(await details.evaluate((el) => el.open));
     }
-    if (route !== "/countdown/")
-      assert(
-        await page
-          .locator("[data-site-navigation]")
-          .getByRole("link", { name: "About", exact: true })
-          .isVisible(),
-      );
+    assert(
+      await page
+        .locator("[data-site-navigation]")
+        .getByRole("link", { name: "About", exact: true })
+        .isVisible(),
+    );
   }
   checks.push(
     "All published routes contain readable HTML without JavaScript; mobile navigation and disclosures remain usable",

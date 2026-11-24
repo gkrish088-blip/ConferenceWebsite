@@ -954,21 +954,19 @@ async function withTemporaryTarget(state, work) {
 
 async function verifyTemporaryState(browser, state) {
   await withTemporaryTarget(state, async () => {
-    for (const mode of ["landing", "full"]) {
-      await buildMode(mode);
-      const child = startPreview(mode, ports[mode]);
-      try {
-        await waitForServer(origins[mode], child);
-        await checkCountdownState(
-          browser,
-          origins[mode],
-          mode === "landing" ? "/" : "/countdown/",
-          mode === "landing" ? "landing-only" : "full",
-          state,
-        );
-      } finally {
-        await stopPreview(child);
-      }
+    await buildMode("landing");
+    const child = startPreview("landing", ports.landing);
+    try {
+      await waitForServer(origins.landing, child);
+      await checkCountdownState(
+        browser,
+        origins.landing,
+        "/",
+        "landing-only",
+        state,
+      );
+    } finally {
+      await stopPreview(child);
     }
   });
 }
@@ -1267,20 +1265,6 @@ try {
           fullPage: true,
         });
       }
-      await captureLandingSet(
-        browser,
-        origins.full,
-        "full",
-        "/countdown/",
-        true,
-      );
-      await checkCountdownStability(
-        browser,
-        origins.full,
-        "/countdown/",
-        "Full-mode",
-      );
-      await checkReducedMotionOnLanding(browser, origins.full, "/countdown/");
     } finally {
       await stopPreview(child);
     }

@@ -22,7 +22,7 @@ Replace placeholders in `src/content/*.json` only with confirmed, approved infor
 - [ ] Patron and both institution leadership names and roles.
 - [x] Populate the three named conveners and their affiliations from the poster and proposal.
 - [x] Publish portraits and details for the four international advisors, six national advisors, and thirteen IIT Roorkee organisers from the supplied committee rosters.
-- [ ] Six Student Council members and roles.
+- [x] Publish the five student Website Development Team members with their supplied photos.
 
 ## Registration and contact
 

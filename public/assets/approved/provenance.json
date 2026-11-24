@@ -226,6 +226,31 @@
       "file": "portraits/amit-bhosale.webp",
       "source": "IITR Organizing committee.docx / word/media/image13.jpeg",
       "alt": "Prof. Amit Bhosale"
+    },
+    {
+      "file": "portraits/krish.webp",
+      "source": "pic with dog.jpg",
+      "alt": "Krish petting a dog outdoors"
+    },
+    {
+      "file": "portraits/kunal-sharma.webp",
+      "source": "Website development Team.docx / word/media/image1.png",
+      "alt": "Kunal Sharma"
+    },
+    {
+      "file": "portraits/anjali-pundir.webp",
+      "source": "Website development Team.docx / word/media/image2.png",
+      "alt": "Anjali Pundir"
+    },
+    {
+      "file": "portraits/gourav-jyoti-dutta.webp",
+      "source": "Website development Team.docx / word/media/image3.png",
+      "alt": "Gourav Jyoti Dutta"
+    },
+    {
+      "file": "portraits/prajwal-mallikarjun-timashetti.webp",
+      "source": "Website development Team.docx / word/media/image4.png",
+      "alt": "Prajwal Mallikarjun Timashetti"
     }
   ],
   "logoPresentation": "*-clear.svg embeds the approved source bytes unchanged, with a vector mask for the near-white exterior and a tightly framed viewBox; original marks and enclosed white details are retained."

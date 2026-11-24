@@ -47,7 +47,7 @@ describe("content records", () => {
     ).toHaveLength(13);
     expect(
       committee.groups.find((group) => group.id === "students")?.members,
-    ).toHaveLength(6);
+    ).toHaveLength(5);
     expect(registration.tiers).toHaveLength(4);
     expect(hospitality.items).toHaveLength(6);
   });

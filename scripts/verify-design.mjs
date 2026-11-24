@@ -84,7 +84,7 @@ try {
         );
     assert.equal(
       await page.locator('#committee img[src*="/approved/portraits/"]').count(),
-      30,
+      35,
     );
     await page
       .locator("#committee img")

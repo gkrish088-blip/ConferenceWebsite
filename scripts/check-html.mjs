@@ -1,7 +1,7 @@
 import { readFile, access } from "node:fs/promises";
 import { resolve } from "node:path";
 const pages = JSON.parse(await readFile("src/content/pages.json", "utf8"));
-const routes = process.argv.includes("--landing") ? ["/"] : pages.routes;
+const routes = pages.routes;
 for (const route of routes) {
   const html = await readFile(
     resolve("dist", route.slice(1), "index.html"),
@@ -15,9 +15,7 @@ for (const route of routes) {
     throw new Error(`Missing rendered content: ${route}`);
   if (
     route === "/committee/" ||
-    (route === "/" &&
-      !pages.routes.includes("/committee/") &&
-      !process.argv.includes("--landing"))
+    (route === "/" && !pages.routes.includes("/committee/"))
   ) {
     for (const name of [
       "Kamal Kishore Pant",

@@ -1,6 +1,6 @@
 import type { z } from "zod";
 import type { institutionSchema } from "../content/schema";
-import { site } from "../content/landing";
+import { site } from "../content";
 import styles from "../styles/site.module.css";
 
 type Institution = z.infer<typeof institutionSchema>;

@@ -1,6 +1,6 @@
 ---
 name: verify-site
-description: Checklist to run before reporting any phase or content update as done. Covers code checks, content checks, both launch builds, responsive and accessibility checks, and the no-external-requests rule.
+description: Checklist to run before reporting any phase or content update as done. Covers code checks, content checks, the production build, responsive and accessibility checks, and the no-external-requests rule.
 ---
 
 # Verify the site
@@ -27,14 +27,11 @@ Validation must pass. Paste the placeholder summary into your report. Before rea
 ## 3. Builds
 
 ```
-npm run build:landing
-npm run build:full
+npm run build
+npm run check:html
 ```
-Check the output folders:
-- landing mode: `/` is the countdown page, no "Enter site" button, no main site files.
-- full mode: `/` is the main site, `/countdown/` is the landing page with "Enter site".
 
-Serve each with `npx vite preview` (or a static server) and open them.
+Serve the build with `npm run preview`. Check the conference homepage and verify that `/countdown/` returns HTTP 404.
 
 ## 4. No external requests
 
@@ -42,7 +39,7 @@ Search `dist/` for `http://` and `https://` that are not plain links in content.
 
 ## 5. Visual and responsive (if a browser is available)
 
-Take screenshots at 1440, 1024, 768 and 390 pixels wide for the main site and the landing page. Look for: text overlap, horizontal scroll, clipped logos, unreadable text over the contour background, nav wrapping to two lines, dates pipeline overlap. Fix before reporting. If you cannot take screenshots, say so, and review the CSS breakpoints by reading it.
+Take screenshots at 1440, 1024, 768 and 390 pixels wide for the conference site. Look for: text overlap, horizontal scroll, clipped logos, unreadable text over the contour background, nav wrapping to two lines, dates pipeline overlap. Fix before reporting. If you cannot take screenshots, say so, and review the CSS breakpoints by reading it.
 
 ## 6. Accessibility
 
@@ -54,7 +51,6 @@ Take screenshots at 1440, 1024, 768 and 390 pixels wide for the main site and th
 
 ## 7. Specific behaviours
 
-- Countdown: tests cover before, exactly zero, after start, after end. IST is used for display.
 - Deep link `/#hospitality-accommodation` scrolls to and opens that item.
 - Nav scroll-spy highlights the right section while scrolling and does not flicker.
 - Stress the data: 0, 1 and many items in themes, speakers, committee lists, milestones, hospitality images.

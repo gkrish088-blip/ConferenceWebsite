@@ -1,15 +1,8 @@
 # Deployment
 
-The site is static files. After `npm run build:landing` or `npm run build:full`, everything the server needs is in `dist/`.
+Run `npm run build` and publish the generated `dist/` directory. Each conference route has its own static HTML file.
 
-## Which build when
-
-| Moment | Command | Result |
-|---|---|---|
-| Landing announced first | `npm run build:landing` | `/` is the countdown page. |
-| Main site launches | `npm run build:full` | `/` is the main site. `/countdown/` is still the landing page. |
-
-Before the `full` launch, run `npm run check:launch`. It must pass.
+Before launch, run `npm run check:launch`. It must pass.
 
 ## Ask IITR IT (do not guess these)
 
@@ -32,14 +25,14 @@ server {
   gzip_types text/css application/javascript image/svg+xml application/json;
   location /assets/ { add_header Cache-Control "public, max-age=31536000, immutable"; }
   location = /index.html { add_header Cache-Control "no-cache"; }
-  location /countdown/ { try_files $uri $uri/ /countdown/index.html; }
+  location / { try_files $uri $uri/ =404; }
 }
 ```
 Hashed build files can be cached for a year. HTML must not be, so a new launch shows up immediately.
 
 ## If it is S3 plus CloudFront
 
-Upload `dist/` to the bucket, set the default root object to `index.html`, and make sure `/countdown/` resolves to `/countdown/index.html` (a small CloudFront function if needed). Invalidate `/*` after each deploy.
+Upload `dist/` to the bucket, set the default root object to `index.html`, and resolve each conference page directory to its generated `index.html` (a small CloudFront function if needed). Invalidate `/*` after each deploy.
 
 ## Rollback
 

@@ -7,10 +7,7 @@ Work in order. After each phase: run `skills/verify-site`, commit, stop, report.
 - Vite + React + TypeScript project in the repo root. Add the planned dependencies from `docs/00-decisions.md`.
 - Add scripts listed in `AGENTS.md` (some can be stubs until Phase 1).
 - ESLint, Prettier, Vitest configured. `.gitignore`, `.nvmrc` (current LTS Node).
-- Two entries (`index.html`, `countdown/index.html`) both render a hello page.
-- `VITE_LAUNCH_MODE` switch works: `build:landing` and `build:full` both succeed and produce the folder shapes described in `docs/01-architecture.md`.
-
-Done when: both builds succeed, and `dist/` has the right entries for each mode.
+- Build the conference from `index.html` and prerender all published routes.
 
 ## Phase 1: foundation
 
@@ -48,14 +45,7 @@ Done when: the pipeline looks right with 1, 5 and 12 milestones, at 1440px and 3
 
 Done when: adding 30 names to Organising needs only JSON edits and the layout holds. Deep link `/#hospitality-accommodation` opens the item. Accordion works from keyboard.
 
-## Phase 5: Landing page
-
-- Full-screen landing from `docs/04-section-specs.md`. Countdown component with the three states. Mode-aware button.
-- Countdown unit tests: far future, exactly zero, one second before, after start, after end, DST-free IST check using fixed `nowMs`.
-
-Done when: landing builds alone in `landing` mode, shows "Enter site" only in `full` mode, and "Conference is live" appears when `nowMs` passes the target (verify with a temporary override of the target, then remove it).
-
-## Phase 6: polish, QA, deploy notes
+## Phase 5: polish, QA, deploy notes
 
 - Responsive pass at 1440, 1024, 768, 390.
 - Keyboard pass, focus order, reduced motion.

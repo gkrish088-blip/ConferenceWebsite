@@ -10,7 +10,7 @@ IIT Roorkee began as the Thomason College of Civil Engineering (1847), built aro
 
 ## Where the boldness goes
 
-One memorable element: the **dates pipeline drawn as a river** that runs through the milestones. Everything else stays quiet. The landing page gets one more moment: contour lines that draw in once on load behind a very large countdown.
+One memorable element: the **dates pipeline drawn as a river** that runs through the milestones. Everything else stays quiet.
 
 ## Starting tokens
 
@@ -37,7 +37,7 @@ This palette is deliberately institutional (navy, river blue, one warm marker). 
 - Scale (ratio about 1.25, laptop reading): body 17px/1.65, small 14px, h3 22px, h2 34px, h1 52px (hero) down to 36px on mobile. Use `clamp()`.
 - Line length under 72 characters for body text.
 - Sentence case for headings and buttons. No all-caps labels, no small labels above headings, no middle-dot strings, no arrows appended to links. Numbers appear only where the content is a sequence (the dates pipeline).
-- Tabular numerals for countdown digits and dates.
+- Tabular numerals for dates.
 
 ## Layout
 
@@ -111,12 +111,10 @@ SVG presentation assets embed the original approved raster bytes unchanged and
 mask only near-white pixels connected to the image boundary. Enclosed whites and
 coloured logo backgrounds remain intact. The viewBox trims unused paper margins.
 CSS removes the previous white tiles and padding, enlarges conference/institution
-marks and keeps their proportions across header, About, footer and countdown.
+marks and keeps their proportions across header, About and footer.
 
 Identity and footer brand bands retain a light surface in both themes so the
 original dark-blue logo lettering stays readable without recolouring the marks.
-Countdown institution marks share one light identity band instead of individual
-white image tiles.
 
 Header logo sizing was subsequently reduced to two-thirds of the enlarged
 presentation, on desktop and phones. Transparent surrounds remain unchanged;

@@ -2,9 +2,7 @@ import { createServer } from "vite";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { resolve } from "node:path";
 
-const fullMode = process.argv[2] !== "landing";
 const server = await createServer({
-  mode: fullMode ? "full" : "landing",
   configFile: "./vite.config.ts",
   optimizeDeps: { noDiscovery: true, include: [], entries: [] },
   server: { middlewareMode: true, hmr: false, ws: false },
@@ -22,7 +20,7 @@ try {
   const { render, site } = await server.ssrLoadModule("/src/entry-server.tsx");
   const { pages } = await server.ssrLoadModule("/src/content/pages.ts");
   const template = await readFile("dist/index.html", "utf8");
-  const routes = fullMode ? pages.routes : ["/"];
+  const routes = pages.routes;
   const timestamp = Date.now();
   const origin = process.env.SITE_ORIGIN?.replace(/\/$/, "");
   if (origin && !/^https:\/\/[^/]+$/.test(origin))
@@ -35,15 +33,11 @@ try {
       pathname === "/"
         ? ""
         : site.nav.find((item) => pathname === `/${item.id}/`)?.label;
-    const title = !fullMode
-      ? `${site.shortName} | ${site.accessibility.countdownLabel}`
-      : label
-        ? `${label} | ${site.shortName}`
-        : site.name;
+    const title = label ? `${label} | ${site.shortName}` : site.name;
     const description = `${site.name}. ${site.datesText}. ${site.venue}. ${site.tagline}`;
     let html = template.replace(
       '<div id="root"></div>',
-      `<div id="root">${render(pathname, fullMode, timestamp)}</div>`,
+      `<div id="root">${render(pathname, timestamp)}</div>`,
     );
     if (html === template)
       throw new Error(`Prerender did not insert content for ${pathname}`);

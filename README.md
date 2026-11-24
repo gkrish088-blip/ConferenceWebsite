@@ -9,13 +9,11 @@ No runtime server or new dependencies.
 ```sh
 npm ci
 npm run dev
-npm run build:full
+npm run build
 npm run preview
 ```
 
-`npm run build:landing` emits only the countdown at `/`, without Enter site.
-`npm run build:full` emits the eight conference pages. The retired `/countdown/` URL returns HTTP 404.
-Both builds replace `dist/`; build full last for the full conference deployment.
+`npm run build` generates the eight conference pages in `dist/`. The retired `/countdown/` URL returns HTTP 404.
 Deploy the complete `dist/` folder. Vercel uses `vercel.json`; no SPA catch-all
 rewrite is required. Unknown paths should return HTTP 404. Direct section paths
 on the multipage branch are real directories with an `index.html`.
@@ -47,10 +45,8 @@ Other unknown records retain `placeholder: true`.
 
 `scripts/prerender.mjs` renders the actual React components into every page at
 build time. `hydrateRoot` attaches browser interactions to that same markup.
-Clock snapshots keep countdown/date hydration consistent. Native hospitality
+The build timestamp keeps date hydration consistent. Native hospitality
 disclosures and real navigation links remain usable without JavaScript.
-The live countdown updates after hydration; without JavaScript its digits are
-a build-time snapshot and the event date remains visible.
 
 For canonical URLs, Open Graph URLs and a sitemap, set `SITE_ORIGIN` to that
 particular deployment's HTTPS origin before building. It is intentionally not
@@ -68,9 +64,7 @@ Technical references: [React server rendering](https://react.dev/reference/react
 npm test
 npm run validate:content
 npm run report:placeholders
-npm run build:landing
-node scripts/check-html.mjs --landing
-npm run build:full
+npm run build
 npm run check:html
 node scripts/verify-design.mjs --local
 ```

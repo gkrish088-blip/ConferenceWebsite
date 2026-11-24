@@ -35,12 +35,6 @@ Every file in `src/content/` is JSON, validated by `src/content/schema.ts` (zod)
     { "id": "hospitality", "label": "Hospitality" },
     { "id": "contact", "label": "Contact" }
   ],
-  "landing": {
-    "enterLabel": "Enter site",
-    "comingSoon": "Full website coming soon.",
-    "liveText": "Conference is live",
-    "endedText": "Conference has ended. Thank you for joining."
-  },
   "footer": { "copyright": "Placeholder copyright line" },
   "placeholder": true
 }

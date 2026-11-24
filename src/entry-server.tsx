@@ -1,9 +1,9 @@
 import { renderToString } from "react-dom/server";
-import { App } from "./app/App";
+import { MainApp } from "./app/MainApp";
 import { setRenderTime } from "./lib/renderTime";
 import { site } from "./content";
-export function render(pathname: string, fullMode: boolean, timestamp: number) {
+export function render(pathname: string, timestamp: number) {
   setRenderTime(timestamp);
-  return renderToString(<App pathname={pathname} fullMode={fullMode} />);
+  return renderToString(<MainApp pathname={pathname} />);
 }
 export { site };

@@ -8,33 +8,25 @@ import { build } from "vite";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const screenshotDirectory = resolve(root, "screenshots");
-const siteContentPath = resolve(root, "src/content/site.json");
 const datesContentPath = resolve(root, "src/content/dates.json");
 const themesContentPath = resolve(root, "src/content/themes.json");
 const speakersContentPath = resolve(root, "src/content/speakers.json");
 const committeeContentPath = resolve(root, "src/content/committee.json");
 const hospitalityContentPath = resolve(root, "src/content/hospitality.json");
-const ports = { full: 4173, landing: 4174 };
-const origins = Object.fromEntries(
-  Object.entries(ports).map(([name, port]) => [
-    name,
-    `http://127.0.0.1:${port}`,
-  ]),
-);
+const port = 4173;
+const siteOrigin = `http://127.0.0.1:${port}`;
 const servers = [];
 const failures = [];
 const externalRequests = [];
 const pageErrors = [];
 const consoleErrors = [];
 
-function startPreview(mode, port) {
+function startPreview() {
   const child = spawn(
     process.execPath,
     [
       resolve(root, "node_modules/vite/bin/vite.js"),
       "preview",
-      "--mode",
-      mode,
       "--host",
       "127.0.0.1",
       "--port",
@@ -51,8 +43,8 @@ function startPreview(mode, port) {
   return child;
 }
 
-async function buildMode(mode) {
-  await build({ configFile: resolve(root, "vite.config.ts"), mode });
+async function buildSite() {
+  await build({ configFile: resolve(root, "vite.config.ts") });
 }
 
 async function waitForServer(origin, child) {
@@ -246,11 +238,8 @@ async function capture(
   width,
   {
     main = false,
-    landing = false,
     height = 1000,
     fullPage = true,
-    expectedEnter = landing,
-    noVerticalScroll = false,
     minimumFontSize = 14,
     fileName,
   } = {},
@@ -264,17 +253,6 @@ async function capture(
   await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(180);
   await auditPage(page, { main, minimumFontSize });
-  if (noVerticalScroll) {
-    const scroll = await page.evaluate(() => ({
-      document: document.documentElement.scrollHeight,
-      body: document.body.scrollHeight,
-      viewport: window.innerHeight,
-    }));
-    expect(
-      scroll.document <= scroll.viewport && scroll.body <= scroll.viewport,
-      `Landing page scrolls vertically at ${width}x${height}: ${JSON.stringify(scroll)}`,
-    );
-  }
   await page.screenshot({
     path: resolve(
       screenshotDirectory,
@@ -283,162 +261,6 @@ async function capture(
     fullPage,
     animations: "disabled",
   });
-  if (expectedEnter !== undefined) {
-    const enterCount = await page
-      .getByRole("link", { name: "Enter site" })
-      .count();
-    expect(
-      enterCount === (expectedEnter ? 1 : 0),
-      expectedEnter
-        ? "Full build landing page is missing the Enter site link"
-        : "Landing-only page unexpectedly has an Enter site link",
-    );
-  }
-  await page.close();
-}
-
-const landingViewports = [
-  { width: 1440, height: 800 },
-  { width: 1024, height: 768 },
-  { width: 768, height: 1000 },
-  { width: 390, height: 844 },
-];
-
-async function captureLandingSet(browser, origin, mode, pagePath, enter) {
-  for (const viewport of landingViewports) {
-    await capture(
-      browser,
-      origin,
-      pagePath,
-      `landing-${mode}`,
-      viewport.width,
-      {
-        height: viewport.height,
-        fullPage: false,
-        expectedEnter: enter,
-        noVerticalScroll: true,
-        minimumFontSize: 16,
-        fileName: `landing-${mode}-${viewport.width}x${viewport.height}.png`,
-      },
-    );
-  }
-}
-
-async function checkCountdownStability(browser, origin, pagePath, mode) {
-  const page = await browser.newPage({
-    viewport: { width: 1440, height: 800 },
-  });
-  monitor(page, origin);
-  await page.goto(`${origin}${pagePath}`, { waitUntil: "networkidle" });
-  await page.evaluate(() => document.fonts.ready);
-  const readCells = () =>
-    page
-      .locator("[data-countdown-grid] [data-countdown-value]")
-      .evaluateAll((cells) =>
-        cells.map((cell) => {
-          const rect = cell.getBoundingClientRect();
-          return {
-            x: Number(rect.x.toFixed(2)),
-            width: Number(rect.width.toFixed(2)),
-            text: cell.textContent.trim(),
-          };
-        }),
-      );
-  const before = await readCells();
-  await page.waitForTimeout(10_000);
-  const after = await readCells();
-  expect(before.length === 4, `${mode} countdown does not show four units`);
-  expect(
-    JSON.stringify(before.map(({ x, width }) => [x, width])) ===
-      JSON.stringify(after.map(({ x, width }) => [x, width])),
-    `${mode} countdown cells shifted during ten seconds: ${JSON.stringify({ before, after })}`,
-  );
-  expect(
-    before[3]?.text !== after[3]?.text,
-    `${mode} countdown did not update during the ten-second observation`,
-  );
-  console.log(
-    `${mode} countdown cell geometry over 10s: ${JSON.stringify({ before, after })}`,
-  );
-  await page.close();
-}
-
-async function checkCountdownState(browser, origin, pagePath, mode, state) {
-  const text = state === "live" ? "Conference is live" : "Conference has ended";
-  for (const viewport of state === "live"
-    ? [landingViewports[0], landingViewports.at(-1)]
-    : [landingViewports[0]]) {
-    const page = await browser.newPage({ viewport });
-    monitor(page, origin);
-    await page.goto(`${origin}${pagePath}`, { waitUntil: "networkidle" });
-    await page.evaluate(() => document.fonts.ready);
-    expect(
-      (await page.getByText(text, { exact: false }).count()) > 0,
-      `${mode} ${state} state did not show “${text}”`,
-    );
-    expect(
-      (await page.locator("[data-countdown-grid]").count()) === 0,
-      `${mode} ${state} state still shows countdown numerals`,
-    );
-    await auditPage(page, { minimumFontSize: 16 });
-    const scroll = await page.evaluate(() => ({
-      document: document.documentElement.scrollHeight,
-      body: document.body.scrollHeight,
-      viewport: window.innerHeight,
-    }));
-    expect(
-      scroll.document <= scroll.viewport && scroll.body <= scroll.viewport,
-      `${mode} ${state} page scrolls vertically: ${JSON.stringify(scroll)}`,
-    );
-    if (state === "live") {
-      await page.screenshot({
-        path: resolve(
-          screenshotDirectory,
-          `landing-live-${mode}-${viewport.width}x${viewport.height}.png`,
-        ),
-        fullPage: false,
-        animations: "disabled",
-      });
-    }
-    await page.close();
-  }
-}
-
-async function checkReducedMotionOnLanding(browser, origin, pagePath) {
-  const page = await browser.newPage({
-    viewport: { width: 1440, height: 800 },
-  });
-  monitor(page, origin);
-  await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.goto(`${origin}${pagePath}`, { waitUntil: "networkidle" });
-  const motion = await page.evaluate(() => ({
-    contourDuration: getComputedStyle(
-      document.querySelector("[data-landing-contour]"),
-    ).animationDuration,
-    contourOffset: getComputedStyle(
-      document.querySelector("[data-landing-contour]"),
-    ).strokeDashoffset,
-    contourName: getComputedStyle(
-      document.querySelector("[data-landing-contour]"),
-    ).animationName,
-    headerOpacity: getComputedStyle(document.querySelector("h1")).opacity,
-    hiddenContent: [
-      ...document.querySelectorAll("[data-landing-content] *"),
-    ].filter((element) => {
-      {
-        const style = getComputedStyle(element);
-        return style.opacity === "0" || style.visibility === "hidden";
-      }
-    }).length,
-  }));
-  expect(
-    Number.parseFloat(motion.contourDuration) <= 0.00001 &&
-      motion.contourName === "none" &&
-      Number.parseFloat(motion.contourOffset) === 0 &&
-      motion.headerOpacity === "1" &&
-      motion.hiddenContent === 0,
-    `Landing reduced-motion state leaves animation or hidden content: ${JSON.stringify(motion)}`,
-  );
   await page.close();
 }
 
@@ -461,8 +283,8 @@ async function checkMainInteractions(browser) {
   const page = await browser.newPage({
     viewport: { width: 1440, height: 900 },
   });
-  monitor(page, origins.full);
-  await page.goto(origins.full, { waitUntil: "networkidle" });
+  monitor(page, siteOrigin);
+  await page.goto(siteOrigin, { waitUntil: "networkidle" });
   await page.evaluate(() => document.fonts.ready);
   const requiredHospitalityTitles = [
     "About Roorkee",
@@ -659,7 +481,7 @@ async function checkMainInteractions(browser) {
     animations: "disabled",
   });
 
-  await page.goto(`${origins.full}/?fresh=1#hospitality-accommodation`, {
+  await page.goto(`${siteOrigin}/?fresh=1#hospitality-accommodation`, {
     waitUntil: "networkidle",
   });
   await page.evaluate(() => document.fonts.ready);
@@ -758,7 +580,7 @@ async function checkMainInteractions(browser) {
     `Active navigation underline is not visible in river blue: ${JSON.stringify(underline)}`,
   );
 
-  await page.goto(origins.full, { waitUntil: "networkidle" });
+  await page.goto(siteOrigin, { waitUntil: "networkidle" });
   const expectedFocusCount = await page.evaluate(() => {
     const candidates = [
       ...document.querySelectorAll(
@@ -808,7 +630,7 @@ async function checkMainInteractions(browser) {
     `Only ${expectedFocusCount} focusable controls found`,
   );
 
-  await page.goto(origins.full, { waitUntil: "networkidle" });
+  await page.goto(siteOrigin, { waitUntil: "networkidle" });
   await page.keyboard.press("Tab");
   const focus = await page.evaluate(() => {
     const style = getComputedStyle(document.activeElement);
@@ -894,7 +716,7 @@ async function checkMainInteractions(browser) {
     "Reduced-motion preference is not respected",
   );
 
-  await page.goto(origins.full, { waitUntil: "networkidle" });
+  await page.goto(siteOrigin, { waitUntil: "networkidle" });
   await page.setViewportSize({ width: 390, height: 844 });
   await page.locator("#dates").scrollIntoViewIfNeeded();
   await page.locator("#dates").screenshot({
@@ -935,42 +757,6 @@ async function stopPreview(child) {
   ]);
 }
 
-async function withTemporaryTarget(state, work) {
-  const original = await readFile(siteContentPath);
-  const site = JSON.parse(original.toString("utf8"));
-  site.eventStart = "2020-12-15T09:00:00+05:30";
-  if (state === "ended") site.eventEnd = "2020-12-17T18:00:00+05:30";
-  await writeFile(
-    siteContentPath,
-    `${JSON.stringify(site, null, 2)}\n`,
-    "utf8",
-  );
-  try {
-    await work();
-  } finally {
-    await writeFile(siteContentPath, original);
-  }
-}
-
-async function verifyTemporaryState(browser, state) {
-  await withTemporaryTarget(state, async () => {
-    await buildMode("landing");
-    const child = startPreview("landing", ports.landing);
-    try {
-      await waitForServer(origins.landing, child);
-      await checkCountdownState(
-        browser,
-        origins.landing,
-        "/",
-        "landing-only",
-        state,
-      );
-    } finally {
-      await stopPreview(child);
-    }
-  });
-}
-
 async function verifyMilestoneCount(browser, count) {
   const original = await readFile(datesContentPath);
   const dates = JSON.parse(original.toString("utf8"));
@@ -987,15 +773,15 @@ async function verifyMilestoneCount(browser, count) {
     "utf8",
   );
   try {
-    await buildMode("full");
-    const child = startPreview("full", ports.full);
+    await buildSite();
+    const child = startPreview();
     try {
-      await waitForServer(origins.full, child);
+      await waitForServer(siteOrigin, child);
       const page = await browser.newPage({
         viewport: { width: 1440, height: 900 },
       });
-      monitor(page, origins.full);
-      await page.goto(origins.full, { waitUntil: "networkidle" });
+      monitor(page, siteOrigin);
+      await page.goto(siteOrigin, { waitUntil: "networkidle" });
       await page.evaluate(() => document.fonts.ready);
       for (const width of [1440, 1024]) {
         await page.setViewportSize({ width, height: 900 });
@@ -1156,15 +942,15 @@ async function verifyContentExtremes(browser) {
         ),
       );
 
-      await buildMode("full");
-      const child = startPreview("full", ports.full);
+      await buildSite();
+      const child = startPreview();
       try {
-        await waitForServer(origins.full, child);
+        await waitForServer(siteOrigin, child);
         const page = await browser.newPage({
           viewport: { width: 1440, height: 1000 },
         });
-        monitor(page, origins.full);
-        await page.goto(origins.full, { waitUntil: "networkidle" });
+        monitor(page, siteOrigin);
+        await page.goto(siteOrigin, { waitUntil: "networkidle" });
         await page.evaluate(() => document.fonts.ready);
         const expectedCounts = {
           zero: {
@@ -1229,7 +1015,7 @@ async function verifyContentExtremes(browser) {
     await Promise.all(
       contentPaths.map((path, index) => writeFile(path, originals[index])),
     );
-    await buildMode("full");
+    await buildSite();
   }
 }
 
@@ -1237,29 +1023,13 @@ try {
   await mkdir(screenshotDirectory, { recursive: true });
   const browser = await chromium.launch({ headless: true });
   try {
-    await buildMode("landing");
-    let child = startPreview("landing", ports.landing);
+    await buildSite();
+    const child = startPreview();
     try {
-      await waitForServer(origins.landing, child);
-      await captureLandingSet(browser, origins.landing, "only", "/", false);
-      await checkCountdownStability(
-        browser,
-        origins.landing,
-        "/",
-        "Landing-only",
-      );
-      await checkReducedMotionOnLanding(browser, origins.landing, "/");
-    } finally {
-      await stopPreview(child);
-    }
-
-    await buildMode("full");
-    child = startPreview("full", ports.full);
-    try {
-      await waitForServer(origins.full, child);
+      await waitForServer(siteOrigin, child);
       await checkMainInteractions(browser);
       for (const width of [1440, 1024, 768, 390]) {
-        await capture(browser, origins.full, "/", "main-full-page", width, {
+        await capture(browser, siteOrigin, "/", "main-full-page", width, {
           main: true,
           height: 1000,
           fullPage: true,
@@ -1269,13 +1039,11 @@ try {
       await stopPreview(child);
     }
 
-    await verifyTemporaryState(browser, "live");
-    await verifyTemporaryState(browser, "ended");
     await verifyMilestoneCount(browser, 0);
     await verifyMilestoneCount(browser, 1);
     await verifyMilestoneCount(browser, 12);
     await verifyContentExtremes(browser);
-    await buildMode("full");
+    await buildSite();
   } finally {
     await browser.close();
   }

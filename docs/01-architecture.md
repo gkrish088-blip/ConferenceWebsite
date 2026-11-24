@@ -9,27 +9,23 @@ Two things pull in different directions. The site should be easy to hand over (c
 ```
 /
   index.html                 main site entry (served at / in full mode)
-  countdown/index.html       landing page entry
   src/
     entries/
       main.tsx               mounts <MainApp/>
-      landing.tsx            mounts <LandingApp/>
     app/
       MainApp.tsx            nav + all sections in order + footer
-      LandingApp.tsx         full-screen countdown page
     sections/                one folder per section, each: Component.tsx + Component.module.css
       Hero/  About/  Themes/  Dates/  Speakers/  Committee/  Registration/  Hospitality/  Contact/
       index.ts               ordered registry: [{ id, navLabel, Component }]
     components/
       layout/                Container, Section, Nav, Footer
-      ui/                    Accordion, Button, PersonCard, InstitutionMark, Countdown, RichText
+      ui/                    Accordion, Button, PersonCard, InstitutionMark, RichText
     content/
       site.json  about.json  themes.json  dates.json  speakers.json
       committee.json  registration.json  hospitality.json  contact.json
       schema.ts              zod schemas, one per file
       index.ts               loads + validates, exports typed content
     lib/
-      countdown.ts           pure countdown math (unit tested)
       dates.ts               IST formatting, past/next/future status for milestones
       scrollspy.ts           IntersectionObserver hook for nav highlighting
       richText.ts            tiny safe parser: paragraphs, **bold**, [text](url or #anchor)
@@ -43,17 +39,12 @@ Two things pull in different directions. The site should be easy to hand over (c
   scripts/
     validate-content.ts  report-placeholders.ts  check-launch.ts  make-placeholders.ts
   tests/
-    countdown.test.ts  content.test.ts  dates.test.ts
+    content.test.ts  dates.test.ts
 ```
 
-## Two launch modes
+## Build
 
-Set with `VITE_LAUNCH_MODE`:
-
-- `landing`: only the landing page is built. `/` shows the countdown. No "Enter site" button, because there is nothing to enter.
-- `full`: `/` shows the main site. The landing page still exists at `/countdown/`. The landing page now shows an "Enter site" button.
-
-Implementation is left to the agent (a small Vite config switch plus a post-build copy step is enough). Requirements: both modes build from the same code and content, and the mode is the only thing that changes. Launching the main site later means rebuilding with `full` and redeploying.
+Run `npm run build` to prerender each route in `src/content/pages.json`.
 
 ## Main site behaviour
 
@@ -69,14 +60,6 @@ Implementation is left to the agent (a small Vite config switch plus a post-buil
 - All items start closed. Items toggle independently, so a reader can compare two.
 - Deep links work: `/#hospitality-accommodation` scrolls to Hospitality and opens that item. The intro paragraph can contain links like `[Accommodation](#hospitality-accommodation)` and they open the item too.
 - Height animation uses the `grid-template-rows: 0fr to 1fr` technique. Content is in the DOM when closed but hidden from assistive tech until open.
-
-## Countdown
-
-- `getCountdown(targetISO, nowMs)` returns `{ state: "before" | "live" | "ended", days, hours, minutes, seconds }`.
-- The target is a full ISO string with `+05:30`, so it means the same moment for every viewer. Display strings use `Intl.DateTimeFormat` with `timeZone: "Asia/Kolkata"`.
-- Ticks once a second with `setInterval`, cleared on unmount. The container is not `aria-live` while ticking. A visually hidden line updates once per minute.
-- `live` starts at zero and shows "Conference is live". `ended` appears only if `eventEnd` exists in `site.json`.
-- It uses the viewer's device clock. A wrong clock gives a wrong countdown. That is acceptable for this site.
 
 ## Content layer rules
 

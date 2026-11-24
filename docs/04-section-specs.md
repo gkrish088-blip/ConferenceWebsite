@@ -62,19 +62,9 @@ Data lives in `committee.json` as an ordered array of groups. Each group has `ti
 ## Footer
 - Institution marks, short name, contact email, copyright line from content.
 
-## Landing page (`/` in landing mode, `/countdown/` in full mode)
-- Full viewport. Conference name, tagline, then the countdown as the dominant element: days, hours, minutes, seconds in very large tabular numerals with plain labels.
-- Below: date and venue (IST shown as "IST"), and the three institution marks.
-- States: before (counting), live ("Conference is live"), ended (only if `eventEnd` set; text from content).
-- Button: "Enter site" shown only in `full` mode; in `landing` mode show nothing or a plain line from content ("Full website coming soon").
-- Motion: contour lines draw in once on load. Nothing else animates except the digits changing. Static under reduced motion.
-- Fits one screen at 1440x800 and 390x844 without scrolling.
-
-
 ## 15 November 2026 behavior override
 
 Campus carousel in About; technical image strip in Themes; seven supplied ODT
 portraits in Committee, including both leadership members and all four conveners.
 Hospitality uses native `details`/`summary`, independent toggling and hash opening.
-Uttarakhand contains the five supplied tourism photos. Both launch modes must
-produce populated HTML. The eight sections remain in-page anchors.
+Uttarakhand contains the five supplied tourism photos. The build must produce populated HTML. The eight sections remain in-page anchors.

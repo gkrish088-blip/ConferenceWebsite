@@ -19,7 +19,7 @@ export function MainApp({ pathname }: { pathname: string }) {
       const hash = window.location.hash;
       const target = hash.slice(1).split("-")[0];
       const path = `/${target}/`;
-      if (target !== "countdown" && pages.routes.includes(path)) {
+      if (pages.routes.includes(path)) {
         window.location.replace(path + window.location.search + hash);
       }
     };

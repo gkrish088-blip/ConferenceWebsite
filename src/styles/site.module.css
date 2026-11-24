@@ -768,6 +768,28 @@
   gap: 12px;
 }
 
+.committeeGrid[data-committee-grid="conveners"] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 16px;
+}
+
+.committeeGrid[data-committee-grid="conveners"] > :first-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc((100% - 24px) / 3);
+}
+
+@media (max-width: 699px) {
+  .committeeGrid[data-committee-grid="conveners"] {
+    grid-template-columns: minmax(0, 360px);
+    justify-content: center;
+  }
+
+  .committeeGrid[data-committee-grid="conveners"] > :first-child {
+    width: 100%;
+  }
+}
+
 .committeeGridMember {
   min-height: 110px;
   padding: 16px;

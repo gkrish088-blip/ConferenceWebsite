@@ -72,7 +72,7 @@ function CommitteeGroup({ group }: { group: Group }) {
     return (
       <div className={styles.committeeGroup}>
         <h3>{group.title}</h3>
-        <div className={styles.committeeGrid} data-committee-grid>
+        <div className={styles.committeeGrid} data-committee-grid={group.id}>
           {group.members.map((member) => (
             <article className={styles.committeeGridMember} key={member.id}>
               <PersonDetails member={member} />

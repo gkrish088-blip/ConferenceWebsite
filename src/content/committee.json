@@ -388,37 +388,67 @@
           "id": "student-1",
           "name": "Placeholder member A",
           "role": "Placeholder role A",
-          "placeholder": true
+          "placeholder": true,
+          "photo": {
+            "src": "/placeholders/portrait.svg",
+            "alt": "Student council portrait placeholder",
+            "focus": "center"
+          }
         },
         {
           "id": "student-2",
           "name": "Placeholder member B",
           "role": "Placeholder role B",
-          "placeholder": true
+          "placeholder": true,
+          "photo": {
+            "src": "/placeholders/portrait.svg",
+            "alt": "Student council portrait placeholder",
+            "focus": "center"
+          }
         },
         {
           "id": "student-3",
           "name": "Placeholder member C",
           "role": "Placeholder role C",
-          "placeholder": true
+          "placeholder": true,
+          "photo": {
+            "src": "/placeholders/portrait.svg",
+            "alt": "Student council portrait placeholder",
+            "focus": "center"
+          }
         },
         {
           "id": "student-4",
           "name": "Placeholder member D",
           "role": "Placeholder role D",
-          "placeholder": true
+          "placeholder": true,
+          "photo": {
+            "src": "/placeholders/portrait.svg",
+            "alt": "Student council portrait placeholder",
+            "focus": "center"
+          }
         },
         {
           "id": "student-5",
           "name": "Placeholder member E",
           "role": "Placeholder role E",
-          "placeholder": true
+          "placeholder": true,
+          "photo": {
+            "src": "/placeholders/portrait.svg",
+            "alt": "Student council portrait placeholder",
+            "focus": "center"
+          }
         },
         {
           "id": "student-6",
           "name": "Placeholder member F",
           "role": "Placeholder role F",
-          "placeholder": true
+          "placeholder": true,
+          "photo": {
+            "src": "/placeholders/portrait.svg",
+            "alt": "Student council portrait placeholder",
+            "focus": "center"
+          }
         }
       ]
     }

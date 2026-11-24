@@ -41,7 +41,7 @@ This palette is deliberately institutional (navy, river blue, one warm marker). 
 
 ## Layout
 
-12-column grid, container 1120px, 24px gutters, left-aligned text everywhere. The only centred element is the committee hierarchy, because a tree reads best centred. Sections alternate `--paper` and `--shallows` backgrounds, with generous vertical space (96px desktop, 56px mobile).
+12-column grid, 24px desktop gutters and a shared container that grows from 1120px to 88% of viewport width on larger screens, capped at 2320px, left-aligned text everywhere. The only centred element is the committee hierarchy, because a tree reads best centred. Sections alternate `--paper` and `--shallows` backgrounds, with generous vertical space (96px desktop, 56px mobile).
 
 Top of the page:
 

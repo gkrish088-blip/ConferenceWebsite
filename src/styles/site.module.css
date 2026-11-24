@@ -679,6 +679,18 @@
   font-size: 15px;
 }
 
+.committeeTree,
+.committeeGroup {
+  --committee-portrait-width: 216px;
+}
+
+@media (max-width: 950px) {
+  .committeeTree,
+  .committeeGroup {
+    --committee-portrait-width: 208px;
+  }
+}
+
 .committeeTree {
   width: 100%;
   margin-bottom: 46px;
@@ -705,8 +717,8 @@
 
 .featuredCommitteePerson {
   display: grid;
-  width: min(620px, 100%);
-  grid-template-columns: 280px minmax(0, 1fr);
+  width: min(740px, 100%);
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   align-items: center;
   overflow: hidden;
   border: 1px solid var(--hairline);
@@ -715,9 +727,15 @@
 }
 
 .committeePortrait {
-  width: 100%;
+  width: min(100%, var(--committee-portrait-width));
   aspect-ratio: 4 / 5;
   object-fit: cover;
+}
+
+.featuredCommitteePerson .committeePortrait {
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .personDetails {
@@ -768,6 +786,13 @@
   gap: 12px;
 }
 
+.committeeGrid[data-committee-grid="students"] {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, calc(var(--committee-portrait-width) + 48px)), 1fr)
+  );
+}
+
 .committeeGrid[data-committee-grid="conveners"] {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   row-gap: 16px;
@@ -779,7 +804,13 @@
   width: calc((100% - 24px) / 3);
 }
 
-@media (max-width: 699px) {
+@media (min-width: 740px) and (max-width: 839px) {
+  .committeeGrid[data-committee-grid="conveners"] > article {
+    padding-inline: 6px;
+  }
+}
+
+@media (max-width: 739px) {
   .committeeGrid[data-committee-grid="conveners"] {
     grid-template-columns: minmax(0, 360px);
     justify-content: center;
@@ -818,10 +849,14 @@
 }
 
 .committeeList li:has(.committeePortrait) {
-  display: grid;
-  grid-template-columns: clamp(112px, 11vw, 144px) minmax(0, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   align-items: start;
   gap: 12px;
+}
+
+.committeeList .personDetails {
+  flex: 1 1 150px;
 }
 
 .committeeList .committeePortrait {
@@ -1522,11 +1557,6 @@
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
-    padding-top: 16px;
-  }
-
-  .featuredCommitteePerson .committeePortrait {
-    width: min(240px, 100%);
   }
 
   .featuredCommitteePerson .personDetails {
@@ -1750,7 +1780,7 @@
 }
 .pairMember {
   display: grid;
-  grid-template-columns: 216px minmax(0, 1fr);
+  grid-template-columns: var(--committee-portrait-width) minmax(0, 1fr);
   align-items: center;
   gap: 20px;
   padding: 20px;
@@ -1759,8 +1789,6 @@
   border-radius: 3px;
 }
 .committeeGridMember .committeePortrait {
-  width: 100%;
-  max-width: 190px;
   margin: 0 auto 18px;
   border-radius: 3px;
 }
@@ -1822,7 +1850,6 @@
 }
 @media (max-width: 950px) {
   .pairMember {
-    grid-template-columns: 208px minmax(0, 1fr);
     gap: 14px;
   }
 }
@@ -1846,9 +1873,6 @@
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
-  }
-  .pairMember .committeePortrait {
-    width: min(208px, 100%);
   }
   .committeeGrid {
     grid-template-columns: 1fr 1fr;
@@ -1877,7 +1901,7 @@
   pointer-events: auto;
 }
 .heroTitle {
-  max-width: 780px;
+  max-width: clamp(780px, 62vw, 1450px);
   color: var(--title-white);
   font-size: var(--heading-1-size);
 }
@@ -1889,6 +1913,18 @@
 .heroDescription {
   max-width: 620px;
 }
+@media (min-width: 1440px) {
+  .heroTitle {
+    font-size: clamp(72px, 4.35vw, 96px);
+  }
+  .navLinks {
+    gap: clamp(24px, 2vw, 48px);
+  }
+  .navLink {
+    font-size: clamp(14px, 0.95vw, 18px);
+  }
+}
+
 .sectionAlternate {
   background: var(--sandstone);
 }

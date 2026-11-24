@@ -85,7 +85,7 @@
 }
 .heroControls {
   position: absolute;
-  right: max(24px, calc((100vw - 1120px) / 2));
+  right: max(var(--gutter), calc((100% - var(--container)) / 2));
   bottom: 24px;
   z-index: 3;
   display: flex;

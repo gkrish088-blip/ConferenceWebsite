@@ -15,7 +15,7 @@
   --marigold: var(--tangerine);
   --hairline: var(--rule);
   --radius: 4px;
-  --container: 1120px;
+  --container: clamp(1120px, 88vw, 2320px);
   --gutter: 24px;
   --body-font: "Public Sans", Arial, sans-serif;
   --heading-font: "Newsreader", Georgia, serif;
